@@ -7,4 +7,20 @@
     #fff 71.91%,
     rgba(255, 255, 255, 0) 99.87%
   );
+
+  &__title {
+    margin-bottom: 25px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .hero-block {
+    &__title {
+      margin-bottom: 10px;
+    }
+
+    &__text {
+      font-size: 16px;
+    }
+  }
 }

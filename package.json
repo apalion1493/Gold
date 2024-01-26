@@ -14,10 +14,6 @@
     "prettier": "prettier --write \"**/*.{js,jsx,ts,tsx,json,html,css,md,yaml,yml}\"",
     "predeploy": "npm run build"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/StarkElessar/gulp-2022.git"
-  },
   "keywords": [
     "gulp",
     "webpack",
@@ -28,10 +24,7 @@
   ],
   "author": "Alexandr Petrovich <apalion97@gmail.com>",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/StarkElessar/gulp-2022/issues"
-  },
-  "homepage": "https://github.com/StarkElessar/gulp-2022#readme",
+  "homepage": "https://apalion1493.github.io/Gold/dist/index.html",
   "devDependencies": {
     "@babel/core": "^7.22.10",
     "@babel/preset-env": "^7.19.1",

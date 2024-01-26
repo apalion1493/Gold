@@ -9545,7 +9545,7 @@ a.text-dark:hover, a.text-dark:focus {
 * Все иконки
 */
 .main-icon-white {
-  background: url(../../images/Main-logo-white.svg) no-repeat center;
+  background: url(../images/Main-logo-white.svg) no-repeat center;
   background-size: 100% auto;
   width: 285px;
   height: 79px;
@@ -9553,7 +9553,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .main-icon {
-  background: url(../../images/main-logo.svg) no-repeat center;
+  background: url(../images/main-logo.svg) no-repeat center;
   background-size: 100% auto;
   width: 285px;
   height: 79px;
@@ -9561,7 +9561,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .certificate-icon {
-  background: url(../../images/certificate.svg) no-repeat center;
+  background: url(../images/certificate.svg) no-repeat center;
   background-size: 100% auto;
   width: 30px;
   height: 30px;
@@ -9569,7 +9569,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .clock-icon {
-  background: url(../../images/clock.svg) no-repeat center;
+  background: url(../images/clock.svg) no-repeat center;
   background-size: 100% auto;
   width: 30px;
   height: 30px;
@@ -9577,7 +9577,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .coins-icon {
-  background: url(../../images/coins.svg) no-repeat center;
+  background: url(../images/coins.svg) no-repeat center;
   background-size: 100% auto;
   width: 50px;
   height: 50px;
@@ -9585,7 +9585,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .dollar-icon {
-  background: url(../../images/dollar.svg) no-repeat center;
+  background: url(../images/dollar.svg) no-repeat center;
   background-size: 100% auto;
   width: 50px;
   height: 50px;
@@ -9593,7 +9593,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .eu-icon {
-  background: url(../../images/eu.svg) no-repeat center;
+  background: url(../images/eu.svg) no-repeat center;
   background-size: 100% auto;
   width: 50px;
   height: 50px;
@@ -9601,7 +9601,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .experiment-icon {
-  background: url(../../images/Experiment.svg) no-repeat center;
+  background: url(../images/Experiment.svg) no-repeat center;
   background-size: 100% auto;
   width: 30px;
   height: 30px;
@@ -9609,7 +9609,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .file-icon {
-  background: url(../../images/file.svg) no-repeat center;
+  background: url(../images/file.svg) no-repeat center;
   background-size: 100% auto;
   width: 24px;
   height: 30px;
@@ -9617,7 +9617,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .gold-small-icon {
-  background: url(../../images/gold-small.svg) no-repeat center;
+  background: url(../images/gold-small.svg) no-repeat center;
   background-size: 100% auto;
   width: 25px;
   height: 23px;
@@ -9625,7 +9625,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .gold-icon {
-  background: url(../../images/gold.svg) no-repeat center;
+  background: url(../images/gold.svg) no-repeat center;
   background-size: 100% auto;
   width: 50px;
   height: 50px;
@@ -9633,7 +9633,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .location-icon {
-  background: url(../../images/Location.svg) no-repeat center;
+  background: url(../images/Location.svg) no-repeat center;
   background-size: 100% auto;
   width: 36px;
   height: 36px;
@@ -9641,7 +9641,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .male-graduate-icon {
-  background: url(../../images/Male-Graduate.svg) no-repeat center;
+  background: url(../images/Male-Graduate.svg) no-repeat center;
   background-size: 100% auto;
   width: 30px;
   height: 30px;
@@ -9649,7 +9649,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .map-gold-icon {
-  background: url(../../images/Map-gold.svg) no-repeat center;
+  background: url(../images/Map-gold.svg) no-repeat center;
   background-size: 100% auto;
   width: 30px;
   height: 30px;
@@ -9657,7 +9657,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .money-growth-icon {
-  background: url(../../images/money-growth.svg) no-repeat center;
+  background: url(../images/money-growth.svg) no-repeat center;
   background-size: 100% auto;
   width: 50px;
   height: 50px;
@@ -9665,7 +9665,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .photo-icon {
-  background: url(../../images/photo.svg) no-repeat center;
+  background: url(../images/photo.svg) no-repeat center;
   background-size: 100% auto;
   width: 32px;
   height: 26px;
@@ -9673,7 +9673,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .picture-icon {
-  background: url(../../images/picture.svg) no-repeat center;
+  background: url(../images/picture.svg) no-repeat center;
   background-size: 100% auto;
   width: 28px;
   height: 28px;
@@ -9681,7 +9681,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .police-icon {
-  background: url(../../images/police.svg) no-repeat center;
+  background: url(../images/police.svg) no-repeat center;
   background-size: 100% auto;
   width: 50px;
   height: 50px;
@@ -9689,7 +9689,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .rub-yellow-icon {
-  background: url(../../images/rub-yellow.svg) no-repeat center;
+  background: url(../images/rub-yellow.svg) no-repeat center;
   background-size: 100% auto;
   width: 30px;
   height: 30px;
@@ -9697,7 +9697,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .silver-icon {
-  background: url(../../images/silver.svg) no-repeat center;
+  background: url(../images/silver.svg) no-repeat center;
   background-size: 100% auto;
   width: 50px;
   height: 50px;
@@ -9705,7 +9705,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .star-icon {
-  background: url(../../images/Star.svg) no-repeat center;
+  background: url(../images/Star.svg) no-repeat center;
   background-size: 100% auto;
   width: 20px;
   height: 19px;
@@ -9713,7 +9713,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .taxi-yellow-icon {
-  background: url(../../images/taxi-yellow.svg) no-repeat center;
+  background: url(../images/taxi-yellow.svg) no-repeat center;
   background-size: 100% auto;
   width: 30px;
   height: 30px;
@@ -9721,7 +9721,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .tg-icon {
-  background: url(../../images/tg.svg) no-repeat center;
+  background: url(../images/tg.svg) no-repeat center;
   background-size: 100% auto;
   width: 26px;
   height: 22px;
@@ -9729,7 +9729,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .time-icon {
-  background: url(../../images/time.svg) no-repeat center;
+  background: url(../images/time.svg) no-repeat center;
   background-size: 100% auto;
   width: 50px;
   height: 50px;
@@ -9737,7 +9737,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .way-yellow-icon {
-  background: url(../../images/way-yellow.svg) no-repeat center;
+  background: url(../images/way-yellow.svg) no-repeat center;
   background-size: 100% auto;
   width: 30px;
   height: 30px;
@@ -9745,7 +9745,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .wp-icon {
-  background: url(../../images/wp.svg) no-repeat center;
+  background: url(../images/wp.svg) no-repeat center;
   background-size: 100% auto;
   width: 26px;
   height: 26px;
@@ -9753,7 +9753,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .arrow-gold {
-  background: url(../../images/arrow-gold.svg) no-repeat center;
+  background: url(../images/arrow-gold.svg) no-repeat center;
   background-size: 100% auto;
   width: 20px;
   height: 12px;
@@ -9761,7 +9761,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .arrow-black {
-  background: url(../../images/arrow-black.svg) no-repeat center;
+  background: url(../images/arrow-black.svg) no-repeat center;
   background-size: 100% auto;
   width: 20px;
   height: 12px;
@@ -9769,7 +9769,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .arrow-green {
-  background: url(../../images/arrow-green.svg) no-repeat center;
+  background: url(../images/arrow-green.svg) no-repeat center;
   background-size: 100% auto;
   width: 20px;
   height: 12px;
@@ -9777,7 +9777,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .green-phone {
-  background: url(../../images/green-phone.svg) no-repeat center;
+  background: url(../images/green-phone.svg) no-repeat center;
   background-size: 100% auto;
   width: 25px;
   height: 25px;
@@ -9785,7 +9785,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .gold-icon-phone {
-  background: url(../../images/gold-icon-phone.svg) no-repeat center;
+  background: url(../images/gold-icon-phone.svg) no-repeat center;
   background-size: 100% auto;
   width: 25px;
   height: 25px;
@@ -9793,7 +9793,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .gold-icon-tg {
-  background: url(../../images/gold-icon-tg.svg) no-repeat center;
+  background: url(../images/gold-icon-tg.svg) no-repeat center;
   background-size: 100% auto;
   width: 25px;
   height: 20.66px;
@@ -9801,7 +9801,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .icon-plus {
-  background: url(../../images/icon-plus.svg) no-repeat center;
+  background: url(../images/icon-plus.svg) no-repeat center;
   background-size: 100% auto;
   width: 40px;
   height: 40px;
@@ -9809,7 +9809,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .icon-minus {
-  background: url(../../images/icon-minus.svg) no-repeat center;
+  background: url(../images/icon-minus.svg) no-repeat center;
   background-size: 100% auto;
   width: 40px;
   height: 40px;
@@ -9817,7 +9817,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .close-icon {
-  background: url(../../images/Close-icon.svg) no-repeat center;
+  background: url(../images/Close-icon.svg) no-repeat center;
   background-size: 100% auto;
   width: 20px;
   height: 20px;
@@ -9825,7 +9825,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .clip-icon {
-  background: url(../../images/clip-icon.svg) no-repeat center;
+  background: url(../images/clip-icon.svg) no-repeat center;
   background-size: 100% auto;
   width: 20px;
   height: 20px;
@@ -9833,7 +9833,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .clip-icon-black {
-  background: url(../../images/clip-icon-black.svg) no-repeat center;
+  background: url(../images/clip-icon-black.svg) no-repeat center;
   background-size: 100% auto;
   width: 20px;
   height: 20px;
@@ -10282,6 +10282,10 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 @media (max-width: 767.98px) {
+  .h1 {
+    font-size: 36px;
+    line-height: 100%; /* 36px */
+  }
   .h2 {
     font-size: 28px;
     line-height: 140%; /* 39.2px */
@@ -11130,7 +11134,18 @@ a.text-dark:hover, a.text-dark:focus {
   align-items: flex-start;
   background: linear-gradient(90deg, #fff 71.91%, rgba(255, 255, 255, 0) 99.87%);
 }
+.hero-block__title {
+  margin-bottom: 25px;
+}
 
+@media (max-width: 767.98px) {
+  .hero-block__title {
+    margin-bottom: 10px;
+  }
+  .hero-block__text {
+    font-size: 16px;
+  }
+}
 .contacts-block {
   background: var(--white-color);
   box-shadow: -2px -2px 4px 0px rgba(10, 50, 49, 0.15), 4px 4px 6px 0px rgba(10, 50, 49, 0.25);
