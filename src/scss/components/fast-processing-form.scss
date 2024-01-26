@@ -1,0 +1,55 @@
+.fast-processing-form {
+  $this: &;
+
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 4px 4px 10px 0px rgba(10, 50, 49, 0.2),
+    -4px -4px 10px 0px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+
+  &__wrapper {
+    border-radius: 5px;
+    border: 1px solid var(--gold-color);
+    padding: 50px 25px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title {
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  &__name {
+    display: block;
+    margin-bottom: 15px;
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+
+    .form-group {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__link {
+    color: var(--dark-green-color);
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 120%; /* 14.4px */
+    text-decoration-line: underline;
+    text-transform: lowercase;
+  }
+
+  &__button-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    gap: 10px;
+
+    .button {
+      flex: 1;
+    }
+  }
+}

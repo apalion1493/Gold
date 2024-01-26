@@ -1,0 +1,104 @@
+/** Базовые анимации: */
+@import 'keyframes';
+
+/** Стили для полноэкранного блока: */
+// @import "fullscreen";
+
+/*
+* (i) Стили будут применяться ко
+* всем классам содержащим *__container
+* Например header__container, main__container и т.д.
+*/
+[class*='__container'] {
+  max-width: rem($maxWidthContainer);
+  margin: 0 auto;
+  padding: 0 rem($mainOffset);
+}
+
+// Стили отзывчивых картинок (IBG) ============================================
+[class*='-ibg'] {
+  position: relative;
+
+  img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+  }
+}
+
+[class*='-ibg_contain'] {
+  img {
+    object-fit: contain;
+  }
+}
+
+// Оболочка ===================================================================
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+
+  /** Поменять на clip - если используется в проекте position: sticky */
+  overflow: hidden;
+}
+
+.page {
+  position: relative;
+  flex: 1 1 auto;
+
+  [data-observ] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: rem(2);
+    background: transparent;
+    pointer-events: none;
+  }
+
+  &_start {
+    padding-top: rem($headerHeight);
+  }
+}
+
+#wrapMap {
+  position: absolute;
+  cursor: help;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+.find-us__map {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.map-container {
+  position: relative;
+  height: 671px;
+}
+
+.mapTitle {
+  position: absolute;
+  z-index: 1000;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 0 5px;
+  display: none;
+  padding: 5px 20px;
+  border-radius: 5px;
+  background: rgb(255, 255, 255);
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(204, 204, 204);
+  border-image: initial;
+}

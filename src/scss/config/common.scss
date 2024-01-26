@@ -1,0 +1,481 @@
+// Заголовки, общие БЄМ блоки и проче...
+.section {
+  $this: &;
+  padding: 40px 0;
+
+  &--30 {
+    padding: 30px 0;
+  }
+
+  &--80 {
+    padding: 80px 0;
+  }
+
+  &--grey-1 {
+    background: var(--grey-1-color);
+  }
+
+  &--blue-2 {
+    background: var(--blue-2-color);
+  }
+}
+
+.h1 {
+  color: var(--dark-green-color);
+  font-family: 'Lora', serif;
+  font-size: 68px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 110%; /* 74.8px */
+  text-transform: uppercase;
+}
+
+.h2 {
+  color: var(--dark-green-color);
+  font-family: 'Lora', serif;
+  font-size: 42px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%; /* 42px */
+  text-transform: uppercase;
+}
+
+.h3 {
+  color: var(--dark-green-color);
+  font-family: 'Lora', serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%; /* 32px */
+  letter-spacing: 0.32px;
+}
+
+.h4 {
+  color: var(--dark-green-color);
+  font-family: 'Lora', serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%; /* 33.6px */
+  text-transform: uppercase;
+}
+
+.h4-2 {
+  color: var(--dark-green-color);
+  font-family: 'Lora', serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%; /* 33.6px */
+  text-transform: uppercase;
+}
+
+.h5 {
+  color: var(--dark-green-color);
+  font-family: 'Lora', serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%; /* 24px */
+  letter-spacing: 0.24px;
+}
+
+.h1-min {
+  color: var(--dark-green-color);
+  font-family: 'Lora', serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%; /* 24px */
+  letter-spacing: 0.4px;
+}
+
+.h2-min {
+  color: var(--dark-green-color);
+  font-family: 'Hind Madurai', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%; /* 16px */
+  text-transform: uppercase;
+}
+
+.h3-min {
+  color: var(--dark-green-color);
+  font-family: 'Hind Madurai', sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%; /* 28.8px */
+}
+
+.h4-min {
+  color: var(--dark-green-color);
+  font-family: 'Lora', serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 110%; /* 19.8px */
+  letter-spacing: 0.36px;
+}
+
+.h5-min {
+  color: var(--dark-green-color);
+  font-family: 'Lora', serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%; /* 32px */
+  letter-spacing: 0.32px;
+}
+
+.text-1 {
+  color: var(--dark-green-color);
+  font-family: 'Hind Madurai', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 19.2px */
+}
+
+.text-2 {
+  color: var(--dark-green-color);
+  font-family: 'Lora', serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%; /* 16px */
+  letter-spacing: 0.32px;
+}
+
+.text-3 {
+  color: var(--dark-green-color);
+  font-family: 'Lora', serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%; /* 12px */
+  letter-spacing: 0.24px;
+}
+
+.text-4 {
+  color: var(--dark-green-color);
+  font-family: 'Hind Madurai', sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 21.6px */
+}
+
+.text-5 {
+  color: var(--dark-green-color);
+  font-family: 'Hind Madurai', sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 16.8px */
+}
+
+.text-6 {
+  color: var(--dark-green-color);
+  font-family: 'Lora', serif;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%; /* 12px */
+  letter-spacing: 0.2px;
+  text-transform: uppercase;
+}
+
+.text-7 {
+  color: var(--dark-green-color);
+  font-family: 'Hind Madurai', sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%; /* 12px */
+}
+
+.text-8 {
+  color: var(--dark-green-color);
+  font-family: 'Hind Madurai', sans-serif;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%; /* 10px */
+}
+
+.link-1 {
+  color: var(--dark-green-color);
+  font-family: 'Hind Madurai', sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%; /* 16.8px */
+  text-decoration-line: underline;
+  text-transform: lowercase;
+}
+
+.link-2 {
+  color: var(--dark-green-color);
+  font-family: 'Hind Madurai', sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%; /* 14.4px */
+  text-decoration-line: underline;
+  text-transform: lowercase;
+}
+
+.link-3 {
+  color: var(--dark-green-color);
+  font-family: 'Lora', serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 28.8px */
+  letter-spacing: 0.36px;
+  text-decoration-line: underline;
+}
+
+.mb-40 {
+  margin-bottom: 40px;
+}
+
+.color-danger {
+  color: var(--red-color);
+}
+
+.invalid-feedback {
+  font-family: 'Hind Madurai', sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%; /* 12px */
+  color: var(--red-color);
+  margin-top: 3px;
+}
+
+.block-requests {
+  display: flex;
+  flex-direction: column;
+
+  &__clip {
+    background: initial;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    border: 1px solid var(--primary-color);
+    padding: 10px;
+
+    &:hover,
+    &.active {
+      background: var(--primary-hover-color);
+    }
+  }
+
+  &__btnGroup {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 15px;
+    margin-bottom: 5px;
+
+    .button {
+      white-space: nowrap;
+      padding: 5px;
+    }
+  }
+
+  &__text-1 {
+    margin-bottom: 15px;
+  }
+
+  &__fileList {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 15px;
+
+    &:not(.show) {
+      display: none;
+    }
+  }
+
+  &__fileList-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__fileList-num {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 20px;
+    height: 20px;
+    margin-right: 15px;
+
+    border-radius: 5px;
+    border: 1px solid var(--primary-color);
+    background: var(--primary-hover-color);
+
+    font-family: 'Hind Madurai', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; /* 19.2px */
+    color: var(--primary-color);
+  }
+
+  &__fileList-item-text-1 {
+    color: var(--black-color);
+    font-family: 'Hind Madurai';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%; /* 16.8px */
+    text-decoration-line: underline;
+    text-transform: lowercase;
+    margin-bottom: 0;
+    margin-right: 4px;
+  }
+
+  &__fileList-item-text-2 {
+    color: var(--black-color);
+    font-family: 'Hind Madurai';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    text-transform: uppercase;
+    margin-bottom: 0;
+  }
+
+  &__fileList-item-close {
+    display: flex;
+    align-items: center;
+    background: initial;
+    margin-left: 15px;
+
+    span {
+      margin-left: 5px;
+      color: var(--secondary-color);
+      font-family: 'Hind Madurai', sans-serif;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 120%; /* 16.8px */
+      text-decoration-line: underline;
+      text-transform: lowercase;
+    }
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+.swiper-button {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: var(--white-color);
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+
+  &::after {
+    display: none;
+  }
+
+  &__wrapper {
+    border: 1px solid var(--primary-color);
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__icon-rt {
+    transform: rotate(180deg);
+  }
+}
+
+.download-files-modal {
+  .modal-dialog {
+    max-width: 310px;
+  }
+
+  &__wrapper {
+    border: 1px solid var(--turquoise-color);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+  }
+
+  .modal-content {
+    box-shadow: -2px -2px 4px 0px rgba(10, 50, 49, 0.15),
+      4px 4px 6px 0px rgba(10, 50, 49, 0.25);
+  }
+
+  .modal-body {
+    padding: 10px;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 0;
+    gap: 20px;
+  }
+
+  &__elem {
+    display: flex;
+    align-items: flex-end;
+    color: var(--black-color);
+    font-family: 'Lora', serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 110%; /* 19.8px */
+    letter-spacing: 0.36px;
+    margin-bottom: 0;
+    align-items: baseline;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  &__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: 1px solid var(--primary-color);
+    width: 40px;
+    min-width: 40px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .h2 {
+    font-size: 28px;
+    line-height: 140%; /* 39.2px */
+  }
+}

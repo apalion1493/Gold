@@ -1,0 +1,101 @@
+.review-banner {
+  padding: 10px;
+  background: var(--white-color);
+  box-shadow: -2px -2px 4px 0px rgba(10, 50, 49, 0.15),
+    4px 4px 6px 0px rgba(10, 50, 49, 0.25);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__wrapper {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid var(--primary-color);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    max-width: 100%;
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  &__row {
+    display: flex;
+    align-items: baseline;
+    width: 100%;
+  }
+
+  &__rating {
+    border-radius: 5px;
+    background: #32ba43;
+    padding: 3px 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__rating-num {
+    color: var(--white-color);
+    font-family: 'Hind Madurai', sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 28.8px */
+  }
+
+  &__t1 {
+    margin-left: auto;
+  }
+
+  &__t2 {
+    color: var(--secondary-color);
+    font-family: 'Hind Madurai', sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; /* 14.4px */
+    margin-bottom: 0;
+  }
+
+  &__link {
+    color: var(--black-color);
+    font-family: 'Hind Madurai', sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%; /* 14.4px */
+    text-decoration-line: underline;
+    text-transform: lowercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media (max-width: 1199.98px) {
+    &__wrapper {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    &__body {
+      width: 100%;
+      margin-top: 15px;
+    }
+
+    &__row {
+      width: 100%;
+    }
+
+    &__t2 {
+      margin-right: auto;
+    }
+  }
+}

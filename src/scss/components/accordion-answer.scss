@@ -1,0 +1,74 @@
+.accordion-answer {
+  display: flex;
+  flex-direction: column;
+  gap: 33px;
+
+  .card {
+    border-radius: 5px;
+    border: 1px solid var(--turquoise-color) !important;
+  }
+
+  .card-header {
+    background: initial;
+    border-bottom: 0;
+
+    .btn {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      &.collapsed {
+        .card-header__btnBlock-plus {
+          display: block;
+        }
+
+        .card-header__btnBlock-minus {
+          display: none;
+        }
+      }
+    }
+
+    &__btnBlock {
+      min-width: 40px;
+      height: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-left: auto;
+    }
+
+    &__btnBlock-plus {
+      display: none;
+    }
+
+    &__btnBlock-minus {
+      display: block;
+    }
+  }
+
+  .btn {
+    font-family: 'Lora', serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%; /* 24px */
+    letter-spacing: 0.4px;
+    color: var(--black-color);
+    padding: 0;
+
+    &:hover,
+    &:focus {
+      text-decoration: none;
+      color: var(--black-color);
+      box-shadow: none;
+    }
+  }
+
+  .card-header {
+    padding: 20px;
+  }
+
+  .card-body {
+    padding: 15px 20px 20px;
+  }
+}

@@ -1,0 +1,68 @@
+@use 'sass:math';
+
+/**
+* Подключение шрифтов локально из папки "./src/fonts"
+*/
+@import 'config/fonts';
+
+/** Подключение переменных */
+@import 'config/vars';
+
+/**
+* Подключение sass function и mixins и extends стилей
+*/
+@import 'config/functions';
+@import 'config/mixins';
+@import 'config/patternSelectors';
+
+/** Обнуление */
+@import 'config/reset';
+
+/**
+* Библиотеки
+* раскомментировать для использования
+*/
+// @import 'libs/aos';
+// @import 'libs/swiper';
+@import 'libs/bootstrap/scss/bootstrap';
+
+/**
+* Подключение custom scrollbar для всего сайта
+*/
+@import 'config/scrollbar';
+
+/**
+* Общие параметры, шаблоны(заготовки) и вспомогательные классы
+*/
+@import 'config/base';
+
+/**
+* Все иконки
+*/
+@import 'config/icons';
+
+/**
+* БЕМ блоки используемые во всё проекте
+*/
+@import 'config/common';
+
+/**
+* Подключение стилей отдельных блоков и секций
+*/
+@import 'components/section-blocks';
+@import 'components/buying-row';
+@import 'components/media-block';
+@import 'components/fast-processing-form';
+@import 'components/step-block';
+@import 'components/info-block-1';
+@import 'components/footer';
+@import 'components/link-button';
+@import 'components/calculator';
+@import 'components/hero-block';
+@import 'components/contact';
+@import 'components/review';
+@import 'components/review-banner';
+@import 'components/accordion-answer';
+@import 'components/feedback-form';
+@import 'components/header';
+@import 'components/purchase-price';

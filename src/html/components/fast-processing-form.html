@@ -1,0 +1,56 @@
+<div class='fast-processing-form'>
+	<div class='fast-processing-form__wrapper'>
+		<span class='fast-processing-form__title h3'>Оформите оценку онлайн за 15 минут</span>
+		<p class='fast-processing-form__name text-4'>Введите контактную информацию</p>
+		<form class='fast-processing-form__body' action="">
+			<div class="form-group">
+				<input type="text" placeholder='Имя*' class="form-control" id="exampleInputPassword1">
+			</div>
+			<div class="form-group">
+				<input type="text" placeholder='Номер телефона*' class="form-control" id="exampleInputPassword2">
+			</div>
+			<span class='fast-processing-form__name mt-3 text-4'>Прикрепите несколько фото и отправьте заявку. Мы вам
+				перезвоним</span>
+			<div class='block-requests__fileList show'>
+				<div class='block-requests__fileList-item'>
+					<span class='block-requests__fileList-num'>1</span>
+					<p class='block-requests__fileList-item-text-1'>1683258190_2-1.jpg,</p>
+					<p class='block-requests__fileList-item-text-2'>159 KB</p>
+					<a href='#' class='block-requests__fileList-item-close'>
+						<i class='close-icon'></i>
+						<span>закрыть</span>
+					</a>
+				</div>
+				<div class='block-requests__fileList-item'>
+					<span class='block-requests__fileList-num'>2</span>
+					<p class='block-requests__fileList-item-text-1'>1683258190_2-1.jpg,</p>
+					<p class='block-requests__fileList-item-text-2'>159 KB</p>
+					<a href='#' class='block-requests__fileList-item-close'>
+						<i class='close-icon'></i>
+						<span>закрыть</span>
+					</a>
+				</div>
+			</div>
+			<div class='fast-processing-form__button-group'>
+				<a class='block-requests__clip' href="#" data-toggle="modal" data-target="#clipFileModal">
+					<span class='clip-icon-black'></span>
+				</a>
+				@@include('link.html', {
+				'title': 'отправить заявку',
+				'color': 'green',
+				'arrow': 'arrow-green',
+				'url': '#',
+				})
+				@@include('link.html', {
+				'title': 'Онлайн оценка',
+				'color': 'gold',
+				'arrow': 'green-phone',
+				'url': '#',
+				})
+			</div>
+			<a class='fast-processing-form__link' href="#">Нажимая кнопку «Отправить заявку» я даю свое согласие
+				на обработку персональных
+				данных</a>
+		</form>
+	</div>
+</div>

@@ -1,0 +1,174 @@
+// !Адаптивное свойство (clamp)
+@mixin adaptiveClamp(
+  $property,
+  $startSize,
+  $minSize,
+  $widthFrom: $containerWidth,
+  $widthTo: $minWidth,
+  $keepSize: 0
+) {
+  // Для calc();
+  $addSize: math.div($startSize - $minSize, 16);
+
+  @if ($widthFrom == $containerWidth and $maxWidthContainer == 0) {
+    $widthFrom: $maxWidth;
+  }
+  @if ($minSize <= 0) {
+    $minSize: 0.0001;
+  }
+  @if ($startSize <= 0) {
+    $startSize: 0.0001;
+  }
+
+  // Брейк-поинты в EM
+  $widthFromMedia: em($widthFrom);
+  $widthToMedia: em($widthTo);
+
+  // Формула плавающего значения
+  // Источник: https://css-tricks.com/linearly-scale-font-size-with-css-clamp-based-on-the-viewport/
+  $slope: math.div(($startSize - $minSize), ($widthFrom - $widthTo));
+  $yIntersection: -$widthTo * $slope + $minSize;
+  $flyValue: #{rem($yIntersection)}' + ' #{$slope * 100}vw;
+
+  // Получение значения свойства
+  $propertyValue: #{'clamp(' rem($minSize) ',' $flyValue ',' rem($startSize) ')'};
+  // Если отрицательные значения
+  @if ($minSize > $startSize) {
+    $propertyValue: #{'clamp('
+      rem($startSize)
+      ','
+      $flyValue
+      ','
+      rem($minSize)
+      ')'};
+  }
+
+  @if $widthFrom ==
+    $containerWidth or
+    $widthFrom ==
+    $maxWidth or
+    $keepSize ==
+    1 or
+    $keepSize ==
+    2
+  {
+    @media (min-width: $widthFromMedia) {
+      #{$property}: rem($startSize);
+    }
+  }
+  @media (min-width: $widthToMedia) and (max-width: $widthFromMedia) {
+    // Если поддерживается clamp();
+    @supports (#{$property}: $propertyValue) {
+      #{$property}: $propertyValue;
+    }
+    // Если не поддерживается clamp();
+    @supports not (#{$property}: $propertyValue) {
+      #{$property}: calc(
+        #{rem($minSize)} + #{$addSize} * (100vw - #{rem($widthTo)}) / #{math.div(
+            $widthFrom,
+            16
+          ) - math.div($widthTo, 16)}
+      );
+    }
+  }
+  @if $widthTo == $minWidth or $keepSize == 1 or $keepSize == 3 {
+    @media (max-width: $widthToMedia) {
+      #{$property}: rem($minSize);
+    }
+  }
+}
+
+// !gradient for text
+@mixin text-gradient($gradient) {
+  background: $gradient;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@mixin media-mx($value) {
+  $width: em($value);
+
+  @media (max-width: $width) {
+    @content;
+  }
+}
+
+@mixin media-mn($value) {
+  $width: em($value + 0.98);
+
+  @media (min-width: $width) {
+    @content;
+  }
+}
+
+@mixin any-hover() {
+  @media (any-hover: hover) {
+    &:hover {
+      @content;
+    }
+  }
+}
+
+// !:not (last-child)
+@mixin not-last() {
+  &:not(:last-child) {
+    @content;
+  }
+}
+
+// !:not (first-child)
+@mixin not-first() {
+  &:not(:first-child) {
+    @content;
+  }
+}
+
+// !обрезает текст до определенного кол-ва строк, остаток заменяет на 3 точки (...)
+@mixin line-clamp($value) {
+  display: -webkit-box;
+  -webkit-line-clamp: $value;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+// !styled placeholder for TextArea
+@mixin styled-placeholder($color, $fontSize: inherit, $lineHeight: normal) {
+  &:-moz-placeholder,
+  &::-moz-placeholder,
+  &::-webkit-input-placeholder,
+  &:-ms-input-placeholder {
+    color: $color;
+    font-size: $fontSize;
+    line-height: $lineHeight;
+  }
+}
+
+// !плавное убирание placeholder
+@mixin hide-placeholder($time: 300, $effect: ease) {
+  &::-webkit-input-placeholder,
+  &::-moz-placeholder,
+  &:-moz-placeholder,
+  &:-ms-input-placeholder {
+    opacity: 1;
+    transition: opacity #{$time} + ms $effect;
+  }
+
+  &:focus {
+    &::-webkit-input-placeholder,
+    &::-moz-placeholder,
+    &:-moz-placeholder,
+    &:-ms-input-placeholder {
+      opacity: 0;
+      transition: opacity #{$time} + ms $effect;
+    }
+  }
+}
+
+// !after-before
+@mixin pseudo-cell($type, $pos: absolute) {
+  &::#{$type} {
+    content: '';
+    position: $pos;
+    @content;
+  }
+}
