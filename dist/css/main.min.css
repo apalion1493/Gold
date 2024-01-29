@@ -12316,6 +12316,7 @@ a.text-dark:hover, a.text-dark:focus {
 .purchasePrice__btn {
   flex: 1;
   position: relative;
+  color: var(--black-color);
 }
 .purchasePrice__btn.active {
   background: initial;

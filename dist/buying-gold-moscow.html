@@ -121,7 +121,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="header__mb" id="accordionHeader">
+	<div class="header__mb d-none" id="accordionHeader">
 		<img class="header__mb-line" src="images/lines.svg" alt="">
 		<div class="header__mb-content">
 			<div class="collapse" data-parent="#accordionHeader" aria-labelledby="heading1" id="collapseExample1">
@@ -490,55 +490,59 @@
 
 	$(document).ready(function () {
 
+		let scrollPrev = 0
 		$(window).scroll(function () {
-			let sticky = $('#header-top-menu-mobil'),
+
+			let topMenuMob = $('#header-top-menu-mobil'),
+				accordionHeaderMenu = $('#accordionHeader'),
 				scroll = $(window).scrollTop()
 
-			if (scroll >= 170) sticky.addClass('hidden')
-			else sticky.removeClass('hidden')
+			if (scroll > 100) {
+				topMenuMob.addClass('hidden')
+				accordionHeaderMenu.removeClass('d-none')
+			}
+			else {
+				topMenuMob.removeClass('hidden')
+				accordionHeaderMenu.addClass('d-none')
+			}
+
+			if (scroll > 100 && scroll > scrollPrev) {
+				accordionHeaderMenu.addClass('partial')
+			} else {
+				accordionHeaderMenu.removeClass('partial')
+			}
+
+			scrollPrev = scroll
 
 		})
-		// let prevScrollpos = $(window).scrollTop()
 
-		// $(window).scroll(function () {
-		// 	const currentScrollPos = $(window).scrollTop()
-		// 	const main = $('.main-wrapper')
-		// 	const header = $('#header-top-menu-mobil')
-		// 	const footer = $('#accordionHeader')
 
-		// 	if (currentScrollPos <= 200) {
-		// 		// Верхняя часть страницы
-		// 		footer.removeClass('partial')
-		// 		main.removeClass('main-scrolled main-scrolled-up')
-		// 	} else if (prevScrollpos < currentScrollPos) {
-		// 		// Прокрутка вниз
-		// 		footer.addClass('partial')
-		// 		main.addClass('main-scrolled')
-		// 	} else {
-		// 		// Прокрутка вверх
-		// 		footer.removeClass('partial')
-		// 		main.removeClass('main-scrolled')
-		// 	}
+		let prevScrollpos = $(window).scrollTop()
 
-		// 	if (currentScrollPos <= 200) {
-		// 		main.removeClass('main-scrolled-up')
-		// 	} else if (currentScrollPos < prevScrollpos) {
-		// 		// Прокрутка вверх
-		// 		main.addClass('main-scrolled-up')
-		// 	}
+		window.addEventListener('scroll', function () {
+			const currentScrollPos = window.pageYOffset
+			const main = document.querySelector('.main-wrapper')
 
-		// 	if (prevScrollpos > currentScrollPos && currentScrollPos >= 200) {
-		// 		// Прокрутка вверх к самому верху страницы
-		// 		header.removeClass('hidden')
-		// 		main.removeClass('hidden')
-		// 	} else {
-		// 		// Прокрутка вниз или не к самому верху страницы
-		// 		header.addClass('hidden')
-		// 		main.addClass('hidden')
-		// 	}
+			if (currentScrollPos === 0) {
+				// Верхняя часть страницы
+				main.classList.remove('main-scrolled', 'main-scrolled-up')
+			} else if (prevScrollpos < currentScrollPos) {
+				// Прокрутка вниз
+				main.classList.add('main-scrolled')
+			} else {
+				// Прокрутка вверх
+				main.classList.remove('main-scrolled')
+			}
 
-		// 	prevScrollpos = currentScrollPos
-		// })
+			if (currentScrollPos === 0) {
+				main.classList.remove('main-scrolled-up')
+			} else if (currentScrollPos < prevScrollpos) {
+				// Прокрутка вверх
+				main.classList.add('main-scrolled-up')
+			}
+
+			prevScrollpos = currentScrollPos
+		})
 	})
 
 	$('.main-scrolled').parent().addClass('test');
