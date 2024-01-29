@@ -488,45 +488,48 @@
 	})
 
 
-	let prevScrollpos = window.pageYOffset
-	window.addEventListener('scroll', function () {
-		const currentScrollPos = window.pageYOffset
-		const main = document.querySelector('.main-wrapper')
-		const header = document.querySelector('#header-top-menu-mobil')
-		const footer = document.querySelector('#accordionHeader')
+	$(document).ready(function () {
+		let prevScrollpos = $(window).scrollTop()
 
-		if (currentScrollPos <= 50) {
-			// Верхняя часть страницы
-			footer.classList.remove('partial')
-			main.classList.remove('main-scrolled', 'main-scrolled-up')
-		} else if (prevScrollpos < currentScrollPos) {
-			// Прокрутка вниз
-			footer.classList.add('partial')
-			main.classList.add('main-scrolled')
-		} else {
-			// Прокрутка вверх
-			footer.classList.remove('partial')
-			main.classList.remove('main-scrolled')
-		}
+		$(window).scroll(function () {
+			const currentScrollPos = $(window).scrollTop()
+			const main = $('.main-wrapper')
+			const header = $('#header-top-menu-mobil')
+			const footer = $('#accordionHeader')
 
-		if (currentScrollPos <= 50) {
-			main.classList.remove('main-scrolled-up')
-		} else if (currentScrollPos < prevScrollpos) {
-			// Прокрутка вверх
-			main.classList.add('main-scrolled-up')
-		}
+			if (currentScrollPos === 0) {
+				// Верхняя часть страницы
+				footer.removeClass('partial')
+				main.removeClass('main-scrolled main-scrolled-up')
+			} else if (prevScrollpos < currentScrollPos) {
+				// Прокрутка вниз
+				footer.addClass('partial')
+				main.addClass('main-scrolled')
+			} else {
+				// Прокрутка вверх
+				footer.removeClass('partial')
+				main.removeClass('main-scrolled')
+			}
 
-		if (prevScrollpos > currentScrollPos && currentScrollPos <= 100) {
-			// Прокрутка вверх к самому верху страницы
-			header.classList.remove('hidden')
-			main.classList.remove('hidden')
-		} else {
-			// Прокрутка вниз или не к самому верху страницы
-			header.classList.add('hidden')
-			main.classList.add('hidden')
-		}
+			if (currentScrollPos === 0) {
+				main.removeClass('main-scrolled-up')
+			} else if (currentScrollPos < prevScrollpos) {
+				// Прокрутка вверх
+				main.addClass('main-scrolled-up')
+			}
 
-		prevScrollpos = currentScrollPos
+			if (prevScrollpos > currentScrollPos && currentScrollPos === 0) {
+				// Прокрутка вверх к самому верху страницы
+				header.removeClass('hidden')
+				main.removeClass('hidden')
+			} else {
+				// Прокрутка вниз или не к самому верху страницы
+				header.addClass('hidden')
+				main.addClass('hidden')
+			}
+
+			prevScrollpos = currentScrollPos
+		})
 	})
 
 	$('.main-scrolled').parent().addClass('test');
