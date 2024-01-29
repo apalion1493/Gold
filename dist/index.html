@@ -1544,7 +1544,7 @@
 		const header = document.querySelector('#header-top-menu-mobil')
 		const footer = document.querySelector('#accordionHeader')
 
-		if (currentScrollPos === 0) {
+		if (currentScrollPos <= 50) {
 			// Верхняя часть страницы
 			footer.classList.remove('partial')
 			main.classList.remove('main-scrolled', 'main-scrolled-up')
@@ -1558,7 +1558,7 @@
 			main.classList.remove('main-scrolled')
 		}
 
-		if (currentScrollPos === 0) {
+		if (currentScrollPos <= 50) {
 			main.classList.remove('main-scrolled-up')
 		} else if (currentScrollPos < prevScrollpos) {
 			// Прокрутка вверх
