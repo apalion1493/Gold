@@ -5,8 +5,8 @@
 })
 
 <body>
-  <div class="wrapper">
-    <!-- @@include('html/header.html') -->
+  <div class="wrapper main-wrapper hidden">
+    @@include('html/header.html')
 
     <main class="page">
       <section class="section section-block--hero section-block--1">
@@ -42,11 +42,9 @@
               <h2 class="h2">Скупка и оценка</h2>
             </div>
             <div class="col-lg-6">
-              <p class='text-lg-right mb-0 h1-min'>Компания «МосГосСкупка» осуществляет скупку бриллиантов по дорогой
-                цене.
-                Если
-                вы
-                хотите выгодно продать
+              <p class='text-lg-right mb-0 h1-min section-block--2__desc'>Компания «МосГосСкупка» осуществляет скупку
+                бриллиантов по дорогой
+                цене. Если вы хотите выгодно продать
                 свои драгоценные камни, мы рады предложить вам лучшие условия и сервис обслуживания.</p>
             </div>
             <div class="col-12">
@@ -792,7 +790,7 @@
                               <div class="contacts-block__box-body-2">
                                 <div>
                                   <a href="#">м. Октябрьская кольцевая</a>
-                                  <span><i></i>200 м</span>
+                                  <span><i class='walking-human-icon'></i>200 м</span>
                                 </div>
                                 <p>119049, г. Москва, ул. Ленинский пр-т, д. 2а офис 915, 9 этаж</p>
                                 <div class='contacts-block__box-body-1'>
@@ -889,6 +887,7 @@
   </div>
 
   @@include('html/script.html')
+
 </body>
 
 </html>

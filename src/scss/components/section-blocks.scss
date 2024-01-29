@@ -123,4 +123,19 @@
     line-height: 120%;
     margin-bottom: 10px;
   }
+
+  .section-block--hero::before {
+    left: 50%;
+    right: auto;
+    transform: translate(-50%, 0);
+    max-width: 100%;
+    top: -20%;
+  }
+
+  .section-block--2__desc {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+  }
 }

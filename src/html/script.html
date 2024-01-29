@@ -3,3 +3,57 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
 	integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
 <script src="js/main.min.js" defer></script>
+
+<script>
+	$('#header-burger').click(function () {
+		$('#header-top-menu-mobil').toggleClass('open')
+	})
+
+	$('#heading4').click(function () {
+		$("#header-burger").click()
+	})
+
+
+	let prevScrollpos = window.pageYOffset
+	window.addEventListener('scroll', function () {
+		const currentScrollPos = window.pageYOffset
+		const main = document.querySelector('.main-wrapper')
+		const header = document.querySelector('#header-top-menu-mobil')
+		const footer = document.querySelector('#accordionHeader')
+
+		if (currentScrollPos === 0) {
+			// Верхняя часть страницы
+			footer.classList.remove('partial')
+			main.classList.remove('main-scrolled', 'main-scrolled-up')
+		} else if (prevScrollpos < currentScrollPos) {
+			// Прокрутка вниз
+			footer.classList.add('partial')
+			main.classList.add('main-scrolled')
+		} else {
+			// Прокрутка вверх
+			footer.classList.remove('partial')
+			main.classList.remove('main-scrolled')
+		}
+
+		if (currentScrollPos === 0) {
+			main.classList.remove('main-scrolled-up')
+		} else if (currentScrollPos < prevScrollpos) {
+			// Прокрутка вверх
+			main.classList.add('main-scrolled-up')
+		}
+
+		if (prevScrollpos > currentScrollPos && currentScrollPos <= 100) {
+			// Прокрутка вверх к самому верху страницы
+			header.classList.remove('hidden')
+			main.classList.remove('hidden')
+		} else {
+			// Прокрутка вниз или не к самому верху страницы
+			header.classList.add('hidden')
+			main.classList.add('hidden')
+		}
+
+		prevScrollpos = currentScrollPos
+	})
+
+	$('.main-scrolled').parent().addClass('test');
+</script>
