@@ -15,9 +15,8 @@ import BurgerMenu from './modules/BurgerMenu';
 import PopupManager from './modules/PopupManager';
 // import Tabs from './modules/Tabs';
 // core version + navigation, pagination modules:
-import Swiper from 'swiper';
-import Navigation from '../../node_modules/swiper/modules/navigation/navigation';
-import Pagination from '../../node_modules/swiper/modules/pagination/pagination';
+import { Splide } from '@splidejs/splide';
+import { Grid } from '@splidejs/splide-extension-grid';
 
 BaseHelpers.checkWebpSupport();
 
@@ -27,98 +26,24 @@ BaseHelpers.addLoadedClass();
 
 BaseHelpers.headerFixed();
 
-const swiper = new Swiper('.mySwiper', {
-  slidesPerView: 7,
-  spaceBetween: 20,
-  modules: [Navigation, Pagination],
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-  pagination: {
-    el: '.swiper-pagination',
-  },
+console.log(123);
+
+new Splide('.buying-row', {
+  perPage: 7,
+  gap: 20,
+  arrows: false,
+}).mount({ Grid });
+
+new Splide('.information-about-services', {
+  perPage: 3,
+  gap: 20,
+  arrows: false,
   breakpoints: {
-    // when window width is >= 320px
-    320: {
-      slidesPerView: 2,
-      spaceBetween: 20,
-    },
-    // when window width is >= 480px
     1200: {
-      slidesPerView: 5,
-      spaceBetween: 20,
-    },
-    // when window width is >= 640px
-    1480: {
-      slidesPerView: 7,
-      spaceBetween: 20,
+      perPage: 2,
     },
   },
-});
-
-const swiper2 = new Swiper('.information-about-services', {
-  slidesPerView: 3,
-  spaceBetween: 20,
-  autoHeight: false,
-  modules: [Navigation, Pagination],
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-  pagination: {
-    el: '.swiper-pagination',
-  },
-  breakpoints: {
-    // when window width is >= 320px
-    320: {
-      slidesPerView: 2,
-      spaceBetween: 20,
-    },
-    // when window width is >= 480px
-    1200: {
-      slidesPerView: 3,
-      spaceBetween: 20,
-    },
-    // when window width is >= 640px
-    1480: {
-      slidesPerView: 3,
-      spaceBetween: 20,
-    },
-  },
-});
-
-const swiper3 = new Swiper('.review-group', {
-  slidesPerView: 1,
-  spaceBetween: 20,
-  autoHeight: false,
-  modules: [Navigation, Pagination],
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-  pagination: {
-    el: '.swiper-pagination',
-  },
-  breakpoints: {
-    // when window width is >= 320px
-
-    768: {
-      slidesPerView: 2,
-      spaceBetween: 20,
-    },
-
-    991: {
-      slidesPerView: 3,
-      spaceBetween: 20,
-    },
-    // when window width is >= 640px
-    1200: {
-      slidesPerView: 4,
-      spaceBetween: 20,
-    },
-  },
-});
+}).mount();
 
 /**
  * Открытие/закрытие модальных окон

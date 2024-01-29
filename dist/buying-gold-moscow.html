@@ -15,7 +15,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@400;500;700&family=Lora:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/splidejs/4.1.4/css/splide.min.css" integrity="sha512-KhFXpe+VJEu5HYbJyKQs9VvwGB+jQepqb4ZnlhUF/jQGxYJcjdxOTf6cr445hOc791FFLs18DKVpfrQnONOB1g==" crossorigin="anonymous" referrerpolicy="no-referrer">
   <link rel="stylesheet" href="css/main.min.css">
 
   <script defer="defer" src="js/main.min.js"></script>
@@ -121,7 +121,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="header__mb d-none" id="accordionHeader">
+	<div class="header--mob d-none header__mb" id="accordionHeader">
 		<img class="header__mb-line" src="images/lines.svg" alt="">
 		<div class="header__mb-content">
 			<div class="collapse" data-parent="#accordionHeader" aria-labelledby="heading1" id="collapseExample1">
@@ -232,18 +232,39 @@
 					<div class="header__mb-btnGroup">
 						<button class="collapsed header__mb-btn" id="heading1" type="button" data-toggle="collapse" data-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample1">
 							<span class="header__mb-btn-icon">
-								<i class="location-icon"></i>
+								<i class="header__mb-btn-icon-gold location-gold-icon"></i>
+								<i class="header__mb-btn-icon-white location-white-icon"></i>
 							</span>
-							<span class="header__mb-btn-text">адрес <i class="arrow-white header__mb-btn-arrow"></i></span>
+							<span class="header__mb-btn-text">адрес
+								<i class="arrow-white header__mb-btn-arrow-white"></i>
+								<i class="arrow-gold-top header__mb-btn-arrow-gold"></i>
+							</span>
 						</button>
-						<button class="btn btn-primary collapsed" id="heading2" type="button" data-toggle="collapse" data-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample2">
-							Button 2
+						<button class="collapsed header__mb-btn" id="heading2" type="button" data-toggle="collapse" data-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample2">
+							<span class="header__mb-btn-icon">
+								<i class="header__mb-btn-icon-gold location-gold-icon"></i>
+								<i class="header__mb-btn-icon-white location-white-icon"></i>
+							</span>
+							<span class="header__mb-btn-text">цены
+								<i class="arrow-white header__mb-btn-arrow-white"></i>
+								<i class="arrow-gold-top header__mb-btn-arrow-gold"></i>
+							</span>
 						</button>
-						<button class="btn btn-primary collapsed" id="heading3" type="button" data-toggle="collapse" data-target="#collapseExample3" aria-expanded="false" aria-controls="collapseExample3">
-							Button 3
+						<button class="collapsed header__mb-btn" id="heading3" type="button" data-toggle="collapse" data-target="#collapseExample3" aria-expanded="false" aria-controls="collapseExample3">
+							<span class="header__mb-btn-icon">
+								<i class="header__mb-btn-icon-gold location-gold-icon"></i>
+								<i class="header__mb-btn-icon-white location-white-icon"></i>
+							</span>
+							<span class="header__mb-btn-text">звонок
+								<i class="arrow-white header__mb-btn-arrow-white"></i>
+								<i class="arrow-gold-top header__mb-btn-arrow-gold"></i>
+							</span>
 						</button>
-						<button class="btn btn-primary collapsed" id="heading4" type="button" data-toggle="collapse" data-target="#collapseExample4" aria-expanded="false" aria-controls="collapseExample4">
-							Button 4
+						<button class="header__mb-btn header__mb-btn-burger" id="heading4" type="button" data-toggle="collapse" data-target="#collapseExample4" aria-expanded="false" aria-controls="collapseExample4">
+							<span class="header__mb-btn-icon">
+								<i class="header__mb-btn-icon-white location-white-icon"></i>
+							</span>
+							<span class="header__mb-btn-text">цены</span>
 						</button>
 					</div>
 
@@ -251,7 +272,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="header__mb-tp" id="header-top-menu-mobil">
+	<div class="header--mob header__mb-tp" id="header-top-menu-mobil">
 		<div class="container">
 			<div class="row">
 				<div class="col-12">
@@ -481,6 +502,7 @@
 <script>
 	$('#header-burger').click(function () {
 		$('#header-top-menu-mobil').toggleClass('open')
+		$('body').toggleClass('overflow-hidden')
 	})
 
 	$('#heading4').click(function () {
@@ -545,7 +567,7 @@
 		})
 	})
 
-	$('.main-scrolled').parent().addClass('test');
+	$('.main-scrolled').parent().addClass('test')
 </script>
 </body>
 

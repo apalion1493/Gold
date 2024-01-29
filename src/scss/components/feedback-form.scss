@@ -60,4 +60,35 @@
       }
     }
   }
+
+  @media (max-width: 1199.98px) {
+    &--mt {
+      margin-top: 33px;
+    }
+  }
+
+  @media (max-width: 767.98px) {
+    &__wrapper {
+      padding: 10px;
+    }
+
+    &__mob-block {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: flex-end;
+      align-items: center;
+      gap: 5px;
+      margin-bottom: 9px;
+
+      .block-requests__clip {
+        min-width: 40px;
+      }
+    }
+
+    &__subtitle {
+      text-transform: none;
+      font-size: 12px;
+      margin-bottom: 0;
+    }
+  }
 }

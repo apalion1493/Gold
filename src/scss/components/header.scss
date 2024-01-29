@@ -1,3 +1,7 @@
+header.header .header--mob {
+  display: none;
+}
+
 .header {
   &__list {
     background: var(--grey-1-color);
@@ -293,6 +297,9 @@
     left: 0;
     right: 0;
     transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     background: linear-gradient(
         0deg,
         rgba(0, 0, 0, 0.2) 0%,
@@ -396,8 +403,24 @@
     background: initial;
   }
 
-  &__mb-btn:not(.collapsed) &__mb-btn-arrow {
-    transform: rotate(180deg);
+  &__mb-btn &__mb-btn-arrow-white {
+    display: inline-block;
+    position: relative;
+    bottom: -3px;
+  }
+
+  &__mb-btn &__mb-btn-arrow-gold {
+    display: none;
+    position: relative;
+    bottom: -3px;
+  }
+
+  &__mb-btn:not(.collapsed) &__mb-btn-arrow-white {
+    display: none;
+  }
+
+  &__mb-btn:not(.collapsed) &__mb-btn-arrow-gold {
+    display: inline-block;
   }
 
   &__mb-btn:not(.collapsed) &__mb-btn-text {
@@ -406,6 +429,22 @@
 
   &__mb-btn:not(.collapsed) &__mb-btn-icon {
     border-color: var(--primary-color);
+  }
+
+  &__mb-btn.collapsed &__mb-btn-icon-gold {
+    display: none;
+  }
+
+  &__mb-btn.collapsed &__mb-btn-icon-white {
+    display: block;
+  }
+
+  &__mb-btn:not(.collapsed) &__mb-btn-icon-gold {
+    display: block;
+  }
+
+  &__mb-btn:not(.collapsed) &__mb-btn-icon-white {
+    display: none;
   }
 
   &__mb-btn-icon {
@@ -431,9 +470,15 @@
     text-transform: uppercase;
   }
 
-  &__mb-btn-arrow {
-    position: relative;
-    bottom: -3px;
+  &__mb-btn-burger span {
+    color: var(--white-color) !important;
+  }
+  &__mb-btn-burger &__mb-btn-icon {
+    border-color: var(--white-color) !important;
+  }
+
+  &__mb-btn-burger &__mb-btn-icon-white {
+    display: block !important;
   }
 
   @media (max-width: 1199.98px) {
@@ -708,5 +753,22 @@
 
   &__btn {
     width: 100%;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .header__media {
+    gap: 20px;
+    align-items: flex-start;
+  }
+
+  .header__media-icon {
+    display: none;
+  }
+}
+
+@media (max-width: 991.98px) {
+  header.header .header--mob {
+    display: flex;
   }
 }

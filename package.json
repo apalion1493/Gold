@@ -68,6 +68,8 @@
     "webpack-stream": "^7.0.0"
   },
   "dependencies": {
+    "@splidejs/splide": "^4.1.4",
+    "@splidejs/splide-extension-grid": "^0.4.1",
     "aos": "^2.3.4",
     "bootstrap": "^4.6.2",
     "swiper": "^8.4.7"

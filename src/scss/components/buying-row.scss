@@ -1,12 +1,24 @@
 .buying-row {
   $this: &;
 
+  margin-left: -10px;
+  margin-right: -10px;
+
   // display: flex;
   // justify-content: center;
   // align-items: center;
   // flex-wrap: wrap;
   // gap: 20px;
   margin-top: 40px;
+
+  .splide__track {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+
+  .splide__arrows {
+    display: none;
+  }
 
   &__item {
     // flex: 1;

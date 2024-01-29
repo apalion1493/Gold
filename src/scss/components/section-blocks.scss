@@ -99,12 +99,22 @@
   }
 }
 
-@media (max-width: 767.98px) {
+@media (max-width: 991.98px) {
   .section {
     padding-top: 30px;
     padding-bottom: 30px;
   }
 
+  .section--80 {
+    padding: 30px 0;
+  }
+
+  .section--inf-ab-serv {
+    padding: 30px 0;
+  }
+}
+
+@media (max-width: 767.98px) {
   .section-block--4 {
     padding: 10px 10px 20px;
 

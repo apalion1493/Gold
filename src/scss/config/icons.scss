@@ -94,6 +94,22 @@
   display: block;
 }
 
+.location-white-icon {
+  background: url(../images/Location-white-icon.svg) no-repeat center;
+  background-size: 100% auto;
+  width: 20px;
+  height: 24px;
+  display: block;
+}
+
+.location-gold-icon {
+  background: url(../images/Location-gold-icon.svg) no-repeat center;
+  background-size: 100% auto;
+  width: 20px;
+  height: 24px;
+  display: block;
+}
+
 .male-graduate-icon {
   background: url(../images/Male-Graduate.svg) no-repeat center;
   background-size: 100% auto;
@@ -330,6 +346,15 @@
 
 .arrow-white {
   background: url(../images/arrow-white.svg) no-repeat center;
+  background-size: 100% auto;
+  width: 15px;
+  min-width: 15px;
+  height: 15px;
+  display: inline-block;
+}
+
+.arrow-gold-top {
+  background: url(../images/arrow-gold-top.svg) no-repeat center;
   background-size: 100% auto;
   width: 15px;
   min-width: 15px;

@@ -15,7 +15,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@400;500;700&family=Lora:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/splidejs/4.1.4/css/splide.min.css" integrity="sha512-KhFXpe+VJEu5HYbJyKQs9VvwGB+jQepqb4ZnlhUF/jQGxYJcjdxOTf6cr445hOc791FFLs18DKVpfrQnONOB1g==" crossorigin="anonymous" referrerpolicy="no-referrer">
   <link rel="stylesheet" href="css/main.min.css">
 
   <script defer="defer" src="js/main.min.js"></script>
@@ -121,7 +121,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="d-none header__mb" id="accordionHeader">
+	<div class="d-none header--mob header__mb" id="accordionHeader">
 		<img class="header__mb-line" src="images/lines.svg" alt="">
 		<div class="header__mb-content">
 			<div class="collapse" data-parent="#accordionHeader" aria-labelledby="heading1" id="collapseExample1">
@@ -232,18 +232,39 @@
 					<div class="header__mb-btnGroup">
 						<button class="collapsed header__mb-btn" id="heading1" type="button" data-toggle="collapse" data-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample1">
 							<span class="header__mb-btn-icon">
-								<i class="location-icon"></i>
+								<i class="header__mb-btn-icon-gold location-gold-icon"></i>
+								<i class="header__mb-btn-icon-white location-white-icon"></i>
 							</span>
-							<span class="header__mb-btn-text">адрес <i class="arrow-white header__mb-btn-arrow"></i></span>
+							<span class="header__mb-btn-text">адрес
+								<i class="arrow-white header__mb-btn-arrow-white"></i>
+								<i class="arrow-gold-top header__mb-btn-arrow-gold"></i>
+							</span>
 						</button>
-						<button class="btn collapsed btn-primary" id="heading2" type="button" data-toggle="collapse" data-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample2">
-							Button 2
+						<button class="collapsed header__mb-btn" id="heading2" type="button" data-toggle="collapse" data-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample2">
+							<span class="header__mb-btn-icon">
+								<i class="header__mb-btn-icon-gold location-gold-icon"></i>
+								<i class="header__mb-btn-icon-white location-white-icon"></i>
+							</span>
+							<span class="header__mb-btn-text">цены
+								<i class="arrow-white header__mb-btn-arrow-white"></i>
+								<i class="arrow-gold-top header__mb-btn-arrow-gold"></i>
+							</span>
 						</button>
-						<button class="btn collapsed btn-primary" id="heading3" type="button" data-toggle="collapse" data-target="#collapseExample3" aria-expanded="false" aria-controls="collapseExample3">
-							Button 3
+						<button class="collapsed header__mb-btn" id="heading3" type="button" data-toggle="collapse" data-target="#collapseExample3" aria-expanded="false" aria-controls="collapseExample3">
+							<span class="header__mb-btn-icon">
+								<i class="header__mb-btn-icon-gold location-gold-icon"></i>
+								<i class="header__mb-btn-icon-white location-white-icon"></i>
+							</span>
+							<span class="header__mb-btn-text">звонок
+								<i class="arrow-white header__mb-btn-arrow-white"></i>
+								<i class="arrow-gold-top header__mb-btn-arrow-gold"></i>
+							</span>
 						</button>
-						<button class="btn collapsed btn-primary" id="heading4" type="button" data-toggle="collapse" data-target="#collapseExample4" aria-expanded="false" aria-controls="collapseExample4">
-							Button 4
+						<button class="header__mb-btn header__mb-btn-burger" id="heading4" type="button" data-toggle="collapse" data-target="#collapseExample4" aria-expanded="false" aria-controls="collapseExample4">
+							<span class="header__mb-btn-icon">
+								<i class="header__mb-btn-icon-white location-white-icon"></i>
+							</span>
+							<span class="header__mb-btn-text">цены</span>
 						</button>
 					</div>
 
@@ -251,7 +272,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="header__mb-tp" id="header-top-menu-mobil">
+	<div class="header--mob header__mb-tp" id="header-top-menu-mobil">
 		<div class="container">
 			<div class="row">
 				<div class="col-12">
@@ -446,87 +467,85 @@
                 свои драгоценные камни, мы рады предложить вам лучшие условия и сервис обслуживания.</p>
             </div>
             <div class="col-12">
-              <div class="swiper buying-row mySwiper">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <div class="buying-row__item">
-	<div class="buying-row__item-border">
-		<a class="buying-row__link" href="">
-			<img class="buying-row__img" loading="lazy" src="../../images/img-1.jpg" alt="Alt">
-			<span class="buying-row__title">Скупка золота</span>
-		</a>
-	</div>
-</div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="buying-row__item">
-	<div class="buying-row__item-border">
-		<a class="buying-row__link" href="">
-			<img class="buying-row__img" loading="lazy" src="../../images/img-1.jpg" alt="Alt">
-			<span class="buying-row__title">Скупка ювелирных украшений</span>
-		</a>
-	</div>
-</div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="buying-row__item">
-	<div class="buying-row__item-border">
-		<a class="buying-row__link" href="">
-			<img class="buying-row__img" loading="lazy" src="../../images/img-1.jpg" alt="Alt">
-			<span class="buying-row__title">Скупка бриллиантов</span>
-		</a>
-	</div>
-</div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="buying-row__item">
-	<div class="buying-row__item-border">
-		<a class="buying-row__link" href="">
-			<img class="buying-row__img" loading="lazy" src="../../images/img-1.jpg" alt="Alt">
-			<span class="buying-row__title">Скупка золотых слитков</span>
-		</a>
-	</div>
-</div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="buying-row__item">
-	<div class="buying-row__item-border">
-		<a class="buying-row__link" href="">
-			<img class="buying-row__img" loading="lazy" src="../../images/img-1.jpg" alt="Alt">
-			<span class="buying-row__title">Скупка золотых монет</span>
-		</a>
-	</div>
-</div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="buying-row__item">
-	<div class="buying-row__item-border">
-		<a class="buying-row__link" href="">
-			<img class="buying-row__img" loading="lazy" src="../../images/img-1.jpg" alt="Alt">
-			<span class="buying-row__title">Скупка часов</span>
-		</a>
-	</div>
-</div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="buying-row__item">
-	<div class="buying-row__item-border">
-		<a class="buying-row__link" href="">
-			<img class="buying-row__img" loading="lazy" src="../../images/img-1.jpg" alt="Alt">
-			<span class="buying-row__title">Скупка серебра</span>
-		</a>
-	</div>
-</div>
-                  </div>
+              <div class="splide buying-row" role="group" aria-label="Splide Basic HTML Example">
+                <div class="splide__track">
+                  <ul class="splide__list">
+                    <li class="splide__slide">
+                      <div class="buying-row__item">
+                        <div class="buying-row__item-border">
+                          <a class="buying-row__link" href="#">
+                            <img class="buying-row__img" loading="lazy" src="images/img-1.jpg" alt="">
+                            <span class="buying-row__title">1</span>
+                          </a>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="splide__slide">
+                      <div class="buying-row__item">
+                        <div class="buying-row__item-border">
+                          <a class="buying-row__link" href="#">
+                            <img class="buying-row__img" loading="lazy" src="images/img-1.jpg" alt="">
+                            <span class="buying-row__title">2</span>
+                          </a>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="splide__slide">
+                      <div class="buying-row__item">
+                        <div class="buying-row__item-border">
+                          <a class="buying-row__link" href="#">
+                            <img class="buying-row__img" loading="lazy" src="images/img-1.jpg" alt="">
+                            <span class="buying-row__title">3</span>
+                          </a>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="splide__slide">
+                      <div class="buying-row__item">
+                        <div class="buying-row__item-border">
+                          <a class="buying-row__link" href="#">
+                            <img class="buying-row__img" loading="lazy" src="images/img-1.jpg" alt="">
+                            <span class="buying-row__title">4</span>
+                          </a>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="splide__slide">
+                      <div class="buying-row__item">
+                        <div class="buying-row__item-border">
+                          <a class="buying-row__link" href="#">
+                            <img class="buying-row__img" loading="lazy" src="images/img-1.jpg" alt="">
+                            <span class="buying-row__title">5</span>
+                          </a>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="splide__slide">
+                      <div class="buying-row__item">
+                        <div class="buying-row__item-border">
+                          <a class="buying-row__link" href="#">
+                            <img class="buying-row__img" loading="lazy" src="images/img-1.jpg" alt="">
+                            <span class="buying-row__title">6</span>
+                          </a>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="splide__slide">
+                      <div class="buying-row__item">
+                        <div class="buying-row__item-border">
+                          <a class="buying-row__link" href="#">
+                            <img class="buying-row__img" loading="lazy" src="images/img-1.jpg" alt="">
+                            <span class="buying-row__title">7</span>
+                          </a>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
                 </div>
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-pagination"></div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
+      </div></section>
       <section class="section section-block--3">
         <div class="container">
           <div class="row">
@@ -853,55 +872,61 @@
               <h2 class="h2 section--inf-ab-serv__title">информация об услугах</h2>
             </div>
             <div class="col-12">
-              <div class="swiper information-about-services">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide mb-2">
-                    <div class="info-block-1">
-                      <div class="info-block-1__header">
-                        <span class="info-block-1__title">Скупка драгоценных металлов</span>
+              <div class="splide information-about-services">
+                <div class="splide__track">
+                  <ul class="splide__list">
+                    <li class="splide__slide">
+                      <div class="info-block-1">
+                        <div class="info-block-1__header">
+                          <span class="info-block-1__title">Скупка драгоценных металлов</span>
+                        </div>
+                        <div class="info-block-1__img">
+                          <img src="images/Purchase_of_precious_metals.png" alt="Image">
+                        </div>
+                        <p class="info-block-1__text">Скупка золота и серебра это приоритетное направление нашей
+                          компании.
+                          У нас можно выгодно сдать золото. Цена за грамм напрямую зависит от пробы драгоценного
+                          металла.
+                          Мы принимаем золото лом от 375 до 999 пробы. Точные расценки полностью соответствуют
+                          действительности. Чем больше вес, тем дороже цена за грамм. При оценке золота лом, наш
+                          специалист при вас проверяет пробу и определяет точный вес.</p>
+                        <a class="btn button button--green info-block-1__button" href="#">Подробнее <span class="button__icon arrow-green"></span></a>
                       </div>
-                      <div class="info-block-1__img">
-                        <img src="images/Purchase_of_precious_metals.png" alt="Image">
+                    </li>
+                    <li class="splide__slide">
+                      <div class="info-block-1">
+                        <div class="info-block-1__header">
+                          <span class="info-block-1__title">Скупка ювелирных изделий с драгоценными камнями</span>
+                        </div>
+                        <div class="info-block-1__img">
+                          <img src="images/Purchase_of_precious_metals.png" alt="Image">
+                        </div>
+                        <p class="info-block-1__text">В нашу скупку можно продать элитные ювелирные украшения c
+                          бриллиантами и другими драгоценными камнями марок Bulgari, Cartier, Chopard, CarrerayCarrera и
+                          другие. Это может быть обручальное кольцо, уникальное колье, брошь, серьги или другое
+                          ювелирное
+                          изделие класса «Lux». Большинство таких украшений изготавливают из платины, белого или желтого
+                          золота высокой пробы или из высококачественного серебра 925 пробы.</p>
+                        <a class="btn button button--green info-block-1__button" href="#">Подробнее <span class="button__icon arrow-green"></span></a>
                       </div>
-                      <p class="info-block-1__text">Скупка золота и серебра это приоритетное направление нашей компании.
-                        У нас можно выгодно сдать золото. Цена за грамм напрямую зависит от пробы драгоценного металла.
-                        Мы принимаем золото лом от 375 до 999 пробы. Точные расценки полностью соответствуют
-                        действительности. Чем больше вес, тем дороже цена за грамм. При оценке золота лом, наш
-                        специалист при вас проверяет пробу и определяет точный вес.</p>
-                      <a class="btn button button--green info-block-1__button" href="#">Подробнее <span class="button__icon arrow-green"></span></a>
-                    </div>
-                  </div>
-                  <div class="swiper-slide mb-2">
-                    <div class="info-block-1">
-                      <div class="info-block-1__header">
-                        <span class="info-block-1__title">Скупка ювелирных изделий с драгоценными камнями</span>
+                    </li>
+                    <li class="splide__slide">
+                      <div class="info-block-1">
+                        <div class="info-block-1__header">
+                          <span class="info-block-1__title">Скупка швейцарских часов</span>
+                        </div>
+                        <div class="info-block-1__img">
+                          <img src="images/Purchase_of_precious_metals.png" alt="Image">
+                        </div>
+                        <p class="info-block-1__text">Мы принимаем оригинальные швейцарские часы марок Rolex, Brequet,
+                          Frank Muller по хорошим ценам. Подлинность и состояние часов оценивается на месте при вас. Для
+                          продажи необходимы документы на часы и паспорт их владельца. На оформлении сделки уйдет от 15
+                          –
+                          30 минут.</p>
+                        <a class="btn button button--green info-block-1__button" href="#">Подробнее <span class="button__icon arrow-green"></span></a>
                       </div>
-                      <div class="info-block-1__img">
-                        <img src="images/Purchase_of_precious_metals.png" alt="Image">
-                      </div>
-                      <p class="info-block-1__text">В нашу скупку можно продать элитные ювелирные украшения c
-                        бриллиантами и другими драгоценными камнями марок Bulgari, Cartier, Chopard, CarrerayCarrera и
-                        другие. Это может быть обручальное кольцо, уникальное колье, брошь, серьги или другое ювелирное
-                        изделие класса «Lux». Большинство таких украшений изготавливают из платины, белого или желтого
-                        золота высокой пробы или из высококачественного серебра 925 пробы.</p>
-                      <a class="btn button button--green info-block-1__button" href="#">Подробнее <span class="button__icon arrow-green"></span></a>
-                    </div>
-                  </div>
-                  <div class="swiper-slide mb-2">
-                    <div class="info-block-1">
-                      <div class="info-block-1__header">
-                        <span class="info-block-1__title">Скупка швейцарских часов</span>
-                      </div>
-                      <div class="info-block-1__img">
-                        <img src="images/Purchase_of_precious_metals.png" alt="Image">
-                      </div>
-                      <p class="info-block-1__text">Мы принимаем оригинальные швейцарские часы марок Rolex, Brequet,
-                        Frank Muller по хорошим ценам. Подлинность и состояние часов оценивается на месте при вас. Для
-                        продажи необходимы документы на часы и паспорт их владельца. На оформлении сделки уйдет от 15 –
-                        30 минут.</p>
-                      <a class="btn button button--green info-block-1__button" href="#">Подробнее <span class="button__icon arrow-green"></span></a>
-                    </div>
-                  </div>
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>
@@ -914,7 +939,7 @@
             <div class="col-12">
               <h2 class="h2 mb-40">Ответы на частые вопросы</h2>
             </div>
-            <div class="col-6">
+            <div class="col-xl-6">
               <div class="accordion accordion-answer" id="accordionExample">
                 <div class="card">
                   <div class="card-header" id="headingOne">
@@ -941,7 +966,7 @@
                 <div class="card">
                   <div class="card-header" id="headingTwo">
                     <h2 class="mb-0">
-                      <button class="btn collapsed btn-block btn-link text-left" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      <button class="btn btn-block btn-link text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                         Взимается ли какая то комиссия в вашей скупке?
 
                         <div class="card-header__btnBlock">
@@ -962,7 +987,7 @@
                 <div class="card">
                   <div class="card-header" id="headingThree">
                     <h2 class="mb-0">
-                      <button class="btn collapsed btn-block btn-link text-left" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      <button class="btn btn-block btn-link text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                         Вы принимаете изделия без паспорта?
 
                         <div class="card-header__btnBlock">
@@ -982,8 +1007,8 @@
                 </div>
               </div>
             </div>
-            <div class="col-6">
-              <div class="feedback-form">
+            <div class="col-xl-6">
+              <div class="feedback-form feedback-form--mt">
                 <div class="feedback-form__wrapper">
                   <span class="h3 feedback-form__title">Задать нам вопрос</span>
                   <span class="text-1 feedback-form__subtitle">Введите контактную информацию</span>
@@ -1005,8 +1030,14 @@
                       </div>
                       <div class="col-12">
                         <div class="block-requests feedback-form__mt">
-                          <span class="text-1 feedback-form__subtitle block-requests__text-1">Прикрепите несколько фото
-                            и отправьте Вопрос. Мы вам перезвоним</span>
+                          <div class="feedback-form__mob-block">
+                            <span class="text-1 feedback-form__subtitle block-requests__text-1">Прикрепите несколько
+                              фото
+                              и отправьте вопрос. Мы вам перезвоним</span>
+                            <a class="block-requests__clip" href="#" data-toggle="modal" data-target="#clipFileModal">
+                              <span class="clip-icon"></span>
+                            </a>
+                          </div>
                           <div class="block-requests__fileList show">
                             <div class="block-requests__fileList-item">
                               <span class="block-requests__fileList-num">1</span>
@@ -1098,7 +1129,7 @@
               <a class="btn button button--gold-outline section--review__btn section--review__btn-mob" href="#">Оставить отзыв о компании <span class="button__icon arrow-black"></span></a>
             </div>
             <div class="col-12">
-              <div class="swiper review-group">
+              <div class="review-group swiper">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide">
                     <div class="review">
@@ -1258,7 +1289,6 @@
           </div>
         </div>
       </section>
-
       <section class="section pb-0 section--contacts">
         <div class="map-container">
           <div id="wrapMap">
@@ -1530,6 +1560,7 @@
 <script>
 	$('#header-burger').click(function () {
 		$('#header-top-menu-mobil').toggleClass('open')
+		$('body').toggleClass('overflow-hidden')
 	})
 
 	$('#heading4').click(function () {
@@ -1594,7 +1625,7 @@
 		})
 	})
 
-	$('.main-scrolled').parent().addClass('test');
+	$('.main-scrolled').parent().addClass('test')
 </script>
 
 </body>

@@ -267,7 +267,9 @@
     align-items: center;
     border-radius: 5px;
     border: 1px solid var(--primary-color);
-    padding: 10px;
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
 
     &:hover,
     &.active {
@@ -473,6 +475,9 @@
   }
 }
 
+@media (max-width: 1199.98px) {
+}
+
 @media (max-width: 767.98px) {
   .h1 {
     font-size: 36px;
@@ -482,5 +487,11 @@
   .h2 {
     font-size: 28px;
     line-height: 140%; /* 39.2px */
+  }
+
+  .block-requests__btnGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
   }
 }
