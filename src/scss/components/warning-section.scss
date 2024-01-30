@@ -1,0 +1,134 @@
+.warning-section {
+  background: var(--white-color);
+  box-shadow: -2px -2px 4px 0px rgba(10, 50, 49, 0.15),
+    4px 4px 6px 0px rgba(10, 50, 49, 0.25);
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__wrapper {
+    border-radius: 5px;
+    border: 1px solid var(--red-color);
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    gap: 20px;
+  }
+
+  &__col {
+    width: 33%;
+  }
+
+  &__col-1 {
+    display: flex;
+  }
+
+  &__title {
+    color: var(--black-color);
+    font-family: 'Lora', serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 100%; /* 24px */
+    letter-spacing: 0.24px;
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  &__text {
+    color: var(--black-color);
+    font-family: 'Lora', serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 110%; /* 22px */
+    letter-spacing: 0.4px;
+  }
+
+  &__col-3 {
+    padding-top: 12px;
+  }
+
+  &__bigTitle {
+    color: var(--black-color);
+    font-family: 'Lora', serif;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%; /* 42px */
+    text-transform: uppercase;
+    margin-left: 5px;
+    display: block;
+  }
+}
+
+.section--warning {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+@media (min-width: 1200px) and (max-width: 1300px) {
+  .warning-section__wrapper {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .warning-section__bigTitle {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .warning-section__wrapper {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .warning-section__col {
+    width: 100%;
+  }
+
+  .warning-section__col-3 {
+    padding-top: 0;
+  }
+
+  .warning-section__col-1 {
+    margin-bottom: 15px;
+  }
+
+  .warning-section__bigTitle {
+    font-size: 28px;
+  }
+
+  .warning-section__icon {
+    width: 60px;
+    height: 60px;
+    min-width: 60px;
+  }
+
+  .warning-section__text {
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .section--warning {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .warning-section__wrapper {
+    padding: 10px;
+  }
+
+  .warning-section__title {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .warning-section__text {
+    font-size: 16px;
+    line-height: 120%; /* 19.2px */
+  }
+}

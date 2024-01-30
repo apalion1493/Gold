@@ -107,3 +107,142 @@
     }
   }
 }
+
+.review-rating-block {
+  background: var(--white-color);
+  box-shadow: -2px -2px 4px 0px rgba(10, 50, 49, 0.15),
+    4px 4px 6px 0px rgba(10, 50, 49, 0.25);
+  padding: 10px;
+  max-width: 395px;
+  width: 100%;
+
+  &__wrapper {
+    border-radius: 5px;
+    border: 1px solid var(--primary-color);
+    padding: 20px;
+  }
+
+  &__title {
+    color: var(--black-color);
+    font-family: 'Lora', serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%; /* 24px */
+    display: block;
+    margin-bottom: 3px;
+  }
+
+  &__subtitle {
+    color: var(--turquoise-color);
+    font-family: 'Hind Madurai', sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%; /* 12px */
+  }
+
+  &__elem {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    width: 100%;
+  }
+
+  &__elem-name {
+    color: var(--black-color);
+    font-family: 'Hind Madurai', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; /* 19.2px */
+    display: block;
+    margin-right: 10px;
+  }
+
+  &__elem-i1 {
+    display: flex;
+    align-items: center;
+  }
+
+  &__elem-percent {
+    color: var(--green-color);
+    font-family: 'Hind Madurai', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 80%; /* 12.8px */
+    display: flex;
+    align-items: center;
+    gap: 3px;
+  }
+
+  &__elem-i2 {
+    color: var(--secondary-color);
+    font-family: 'Lora', serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%; /* 12px */
+    letter-spacing: 0.24px;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    width: 100%;
+  }
+
+  @media (max-width: 767.98px) {
+    &__wrapper {
+      padding: 10px;
+    }
+
+    &__elem-name {
+      font-size: 14px;
+    }
+
+    &__list {
+      margin-bottom: 14px;
+    }
+  }
+}
+
+.section--quotation {
+  padding-top: 80px;
+  padding-bottom: 80px;
+
+  &__title {
+    margin-bottom: 35px;
+    display: block;
+  }
+
+  &__desc {
+    color: var(--black-color);
+    font-family: 'Hind Madurai', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; /* 19.2px */
+    margin-bottom: 35px;
+    display: block;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .section--quotation {
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    &__title {
+      margin-bottom: 10px;
+    }
+
+    &__desc {
+      margin-bottom: 12px;
+    }
+  }
+}

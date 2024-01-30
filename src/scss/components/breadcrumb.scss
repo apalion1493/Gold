@@ -1,0 +1,64 @@
+.breadcrumb {
+  background: initial;
+  padding: 0;
+  margin-bottom: 0;
+
+  .breadcrumb-item + .breadcrumb-item::before {
+    display: none;
+  }
+
+  .breadcrumb-item + .breadcrumb-item {
+    padding-left: 20px;
+  }
+
+  .breadcrumb-item {
+    font-family: 'Hind Madurai', sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%; /* 12px */
+    display: inline-flex;
+  }
+
+  .breadcrumb-item.active {
+    font-family: 'Hind Madurai', sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%; /* 12px */
+    color: var(--black-color);
+    position: relative;
+    padding-left: 40px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 20px;
+      background: url(../images/breadcrumb-arrow.svg) no-repeat center;
+      background-size: 100% auto;
+      width: 14px;
+      height: 10px;
+      display: block;
+    }
+
+    &:hover,
+    &:active {
+      color: var(--secondary-color);
+    }
+  }
+
+  a {
+    color: var(--secondary-color);
+
+    &:hover,
+    &:active {
+      color: var(--secondary-color);
+    }
+  }
+}
+
+.section--breadcrumb {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
