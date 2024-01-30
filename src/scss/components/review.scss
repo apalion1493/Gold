@@ -4,6 +4,7 @@
   align-items: flex-start;
   border-radius: 5px;
   padding: 20px;
+  height: 100%;
   background: var(--yellow-2-color);
   box-shadow: -2px -2px 4px 0px rgba(10, 50, 49, 0.15),
     4px 4px 6px 0px rgba(10, 50, 49, 0.25);
@@ -28,9 +29,21 @@
 
 .review-group {
   margin-top: 30px;
+  margin-left: -10px;
+  margin-right: -10px;
 
-  .swiper-pagination {
-    display: none;
+  .splide__track {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+
+  .splide__slide {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .splide__pagination {
+    bottom: -30px;
   }
 }
 
@@ -54,10 +67,25 @@
   &__btn {
     color: var(--color-black);
     margin-top: auto;
+    box-shadow: 2px 2px 8px 0px rgba(232, 190, 56, 0.5),
+      -2px -2px 8px 0px rgba(232, 190, 56, 0.5);
   }
 
   &__btn-mob {
     display: none;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .review {
+    width: 260px;
+  }
+
+  .review-group {
+    margin-bottom: 30px;
+    .splide__track {
+      overflow: visible;
+    }
   }
 }
 

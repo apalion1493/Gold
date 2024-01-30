@@ -7,23 +7,29 @@
     #fff 71.91%,
     rgba(255, 255, 255, 0) 99.87%
   );
+  padding: 20px;
+  margin: -20px;
 
   &__title {
     margin-bottom: 25px;
   }
 }
 
+@media (max-width: 1199.98px) {
+  .hero-block {
+    background: linear-gradient(90deg, #fff 80%, rgba(255, 255, 255, 0) 100%);
+
+    &__text {
+      max-width: 80%;
+    }
+  }
+}
+
 @media (max-width: 767.98px) {
   .hero-block {
-    background: initial;
-
+    background: linear-gradient(90deg, #fff 40%, rgba(255, 255, 255, 0) 99.87%);
     &__title {
       margin-bottom: 10px;
-      background: radial-gradient(
-        405.09% 52.5% at 23.33% 50%,
-        rgba(255, 255, 255, 0.8) 43.67%,
-        rgba(255, 255, 255, 0) 100%
-      );
     }
 
     &__text {

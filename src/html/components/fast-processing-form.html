@@ -9,8 +9,14 @@
 			<div class="form-group">
 				<input type="text" placeholder='Номер телефона*' class="form-control" id="exampleInputPassword2">
 			</div>
-			<span class='fast-processing-form__name mt-3 text-4'>Прикрепите несколько фото и отправьте заявку. Мы вам
-				перезвоним</span>
+			<div class="feedback-form__mob-block">
+				<span class='fast-processing-form__name mt-3 text-4'>Прикрепите несколько фото и отправьте заявку. Мы вам
+					перезвоним</span>
+				<a class='block-requests__clip d-flex d-md-none' href="#" data-toggle="modal" data-target="#clipFileModal">
+					<span class='clip-icon-black'></span>
+				</a>
+			</div>
+
 			<div class='block-requests__fileList show'>
 				<div class='block-requests__fileList-item'>
 					<span class='block-requests__fileList-num'>1</span>
@@ -32,7 +38,7 @@
 				</div>
 			</div>
 			<div class='fast-processing-form__button-group'>
-				<a class='block-requests__clip' href="#" data-toggle="modal" data-target="#clipFileModal">
+				<a class='block-requests__clip d-none d-md-flex' href="#" data-toggle="modal" data-target="#clipFileModal">
 					<span class='clip-icon-black'></span>
 				</a>
 				@@include('link.html', {

@@ -31,6 +31,22 @@
     .form-group {
       margin-bottom: 10px;
     }
+
+    input {
+      background: var(--grey-1-color);
+      border: none;
+      padding: 11px 10px;
+      color: var(--secondary-color);
+      font-family: 'Hind Madurai', sans-serif;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 120%; /* 19.2px */
+
+      &:focus {
+        box-shadow: none;
+      }
+    }
   }
 
   &__link {
@@ -50,6 +66,59 @@
 
     .button {
       flex: 1;
+    }
+  }
+
+  @media (max-width: 767.98px) {
+    &__button-group {
+      flex-direction: column;
+      align-items: flex-start;
+
+      .button {
+        min-height: 40px !important;
+        max-height: 40px !important;
+        width: 100%;
+      }
+    }
+
+    &__wrapper {
+      padding: 10px 5px;
+    }
+
+    &__title {
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 110%; /* 19.8px */
+      letter-spacing: 0.36px;
+      margin-bottom: 20px;
+    }
+
+    &__name {
+      font-size: 14px;
+      margin-bottom: 10px;
+      line-height: 120%; /* 16.8px */
+    }
+  }
+}
+
+@media (max-width: 767.98px) {
+  .feedback-form__mob-block {
+    .fast-processing-form__name {
+      font-size: 12px;
+      line-height: 100%; /* 12px */
+      letter-spacing: 0.24px;
+    }
+  }
+
+  .fast-processing-form__body input {
+    border: 1px solid var(--secondary-color);
+    background: initial;
+    font-size: 14px;
+
+    &:focus {
+      border: 1px solid var(--secondary-color);
+      box-shadow: none;
+      background: initial;
     }
   }
 }

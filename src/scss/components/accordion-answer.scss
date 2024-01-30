@@ -16,6 +16,7 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
+      gap: 15px;
 
       &.collapsed {
         .card-header__btnBlock-plus {
@@ -70,5 +71,30 @@
 
   .card-body {
     padding: 15px 20px 20px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .accordion-answer {
+    gap: 10px;
+
+    .card-body {
+      padding: 10px;
+    }
+
+    p.text-1 {
+      font-size: 14px;
+      line-height: 120%; /* 16.8px */
+    }
+
+    .card-header {
+      padding: 5px 10px 10px;
+    }
+
+    .btn {
+      font-size: 18px;
+      line-height: 110%; /* 19.8px */
+      letter-spacing: 0.36px;
+    }
   }
 }

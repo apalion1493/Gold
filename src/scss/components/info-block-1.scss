@@ -53,6 +53,7 @@
 .information-about-services {
   margin-left: -10px;
   margin-right: -10px;
+  margin-bottom: 25px;
 
   .splide__slide {
     margin-top: 10px;
@@ -62,5 +63,36 @@
   .splide__track {
     padding-left: 10px !important;
     padding-right: 10px !important;
+  }
+
+  .splide__pagination {
+    bottom: -25px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .info-block-1 {
+    max-width: 70vw;
+    min-width: 220px;
+
+    &__title {
+      font-size: 24px;
+    }
+
+    &__button {
+      min-width: 220px;
+    }
+  }
+
+  .information-about-services {
+    .splide__track {
+      overflow: inherit;
+    }
+  }
+}
+
+@media (max-width: 575.98px) {
+  .info-block-1 {
+    max-width: 82vw;
   }
 }

@@ -14,10 +14,15 @@
   .splide__track {
     padding-left: 10px !important;
     padding-right: 10px !important;
+    overflow: visible;
   }
 
   .splide__arrows {
     display: none;
+  }
+
+  .splide__pagination {
+    bottom: -30px;
   }
 
   &__item {
@@ -76,5 +81,18 @@
   &__img {
     object-fit: cover;
     max-width: 100%;
+  }
+
+  @media (max-width: 991.98px) {
+    & {
+      margin-bottom: 30px;
+    }
+  }
+
+  @media (max-width: 767.98px) {
+    &__item {
+      width: 183px;
+      padding: 10px;
+    }
   }
 }

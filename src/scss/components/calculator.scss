@@ -278,5 +278,29 @@
     &__estimation {
       flex-direction: column;
     }
+
+    &__grid-table-btn {
+      padding: 5px 4px;
+      flex-basis: 110px;
+    }
+
+    &__estimation-input {
+      border-radius: 5px;
+      border: 1px solid var(--secondary-color);
+      max-width: 100px;
+    }
+
+    &__estimation-price-block {
+      border-radius: 5px;
+      border: 1px solid var(--secondary-color);
+      padding: 10px;
+    }
+  }
+}
+
+@media (max-width: 575.98px) {
+  .calculator__estimation-input,
+  .calculator__estimation-price {
+    margin-left: auto;
   }
 }

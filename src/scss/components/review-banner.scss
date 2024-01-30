@@ -98,4 +98,12 @@
       margin-right: auto;
     }
   }
+
+  @media (max-width: 767.98px) {
+    &__row-2 {
+      flex-direction: column;
+      display: flex;
+      gap: 7px;
+    }
+  }
 }

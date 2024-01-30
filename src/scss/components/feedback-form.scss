@@ -26,6 +26,10 @@
     margin-bottom: 15px;
   }
 
+  &__mob-block {
+    margin-bottom: 15px;
+  }
+
   &__mt {
     margin-top: 10px;
   }
@@ -89,6 +93,17 @@
       text-transform: none;
       font-size: 12px;
       margin-bottom: 0;
+    }
+
+    &__form input,
+    &__form textarea {
+      font-size: 14px;
+      line-height: 120%; /* 16.8px */
+    }
+
+    &__title {
+      margin-bottom: 20px;
+      font-size: 20px;
     }
   }
 }
