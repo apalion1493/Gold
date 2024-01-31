@@ -10231,6 +10231,16 @@ a.text-dark:hover, a.text-dark:focus {
   color: var(--red-color);
 }
 
+.box-shadow {
+  border-radius: 5px;
+  background: lightgray;
+  box-shadow: -2px -2px 4px 0px rgba(10, 50, 49, 0.15), 4px 4px 6px 0px rgba(10, 50, 49, 0.25);
+  overflow: hidden;
+}
+.box-shadow img {
+  object-fit: cover;
+}
+
 .invalid-feedback {
   font-family: "Hind Madurai", sans-serif;
   font-size: 12px;
@@ -13740,6 +13750,14 @@ header.header .header--mob {
     font-size: 18px;
     line-height: 110%; /* 19.8px */
     letter-spacing: 0.36px;
+  }
+  .table-component__title {
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 39.2px */
+    text-transform: uppercase;
+    margin-bottom: 25px;
   }
 }
 .ty-block {
