@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/head.html', {
+'title': 'Контакты'
+})
+
+<body>
+	<div class="wrapper main-wrapper hidden">
+		@@include('html/header.html')
+
+		<main class="page">
+			<section class='section mob-announcement d-none'>
+				<div class="container">
+					<div class="row">
+						<div class="col-12">
+							<div class='header__media justify-content-center'>
+								<div class='header__info-banner'>
+									<span class='header__info-banner-title'>Внимание</span>
+									<p>Изменения графика работы в праздничные дни <br> <span
+											class='header__info-banner-colorText'>31.12.2023:
+											11:00 - 14:30, 01 - 07.01.2024: НЕ РАБОТАЕМ</span>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class='section section--breadcrumb'>
+				<div class="container">
+					<div class="row">
+						<div class="col-12">
+							<nav aria-label="breadcrumb">
+								<ol class="breadcrumb">
+									<li class="breadcrumb-item"><a href="#">Главная</a></li>
+									<li class="breadcrumb-item active" aria-current="page">Контакты</li>
+								</ol>
+							</nav>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class='section section--contacts py-0'>
+				<div class='map-container'>
+					<div id="wrapMap">
+						<iframe class='find-us__map' style="pointer-events: none"
+							src="https://yandex.com/map-widget/v1/?um=constructor%3A784f30343fe3ba79e1b59dc74f1d5ca2b5f17621c04406d3a383781ed908932d&amp;source=constructor"
+							width="100%" height="671" frameborder="0"></iframe>
+					</div>
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-8 col-md-12">
+								<div class='contacts-block'>
+									<div class='contacts-block__wrapper'>
+										<span class='contacts-block__title h2'>Контакты</span>
+										<div class='contacts-block__body'>
+											<div class="row">
+												<div class="col-md-6">
+													<div class='contacts-block__col'>
+														<div class='contacts-block__box'>
+															<span class="contacts-block__box-title h5">Телефон</span>
+															<div class='contacts-block__box-body'>
+																<div class='contacts-block__box-ph'>
+																	<a class='text-4' href="#">8 (903) 7-904-905</a>
+																	<a class='text-4' href="#">8 (495) 7-904-905</a>
+																</div>
+																<div class='contacts-block__box-sm'>
+																	<span class='contacts-block__box-sm-link'>
+																		<i class='gold-icon-phone'></i>
+																	</span>
+																	<span class='contacts-block__box-sm-link'>
+																		<i class='gold-icon-tg'></i>
+																	</span>
+																</div>
+															</div>
+														</div>
+														<div class='contacts-block__box'>
+															<span class="contacts-block__box-title h5">Время работы:</span>
+															<div class='contacts-block__box-body'>
+																<p class="text-1">
+																	Пн-Пт: 11:00 - 18:30 <br>
+																	Сб: 11:00 - 16:00 <br>
+																	Вс: по записи
+																</p>
+															</div>
+														</div>
+														<div class='contacts-block__box'>
+															<span class="contacts-block__box-title h5">Email</span>
+															<div class='contacts-block__box-body'>
+																<a href='#' class="text-1">
+																	mosgosskupka.ru@yandex.ru
+																</a>
+															</div>
+														</div>
+														@@include('html/components/link.html', {
+														'title': 'Подробнее',
+														'color': 'gold-outline contacts-block__box-btn',
+														'arrow': 'arrow-gold',
+														'url': '#',
+														})
+													</div>
+												</div>
+												<div class="col-md-6">
+													<div class="contacts-block__col">
+														<div class="contacts-block__box mb-0">
+															<span class="contacts-block__box-title h5">Адрес</span>
+															<div class="contacts-block__box-body-2">
+																<div>
+																	<a href="#">м. Октябрьская кольцевая</a>
+																	<span><i class='walking-human-icon'></i>200 м</span>
+																</div>
+																<p>119049, г. Москва, ул. Ленинский пр-т, д. 2а офис 915, 9 этаж</p>
+																<div class='contacts-block__box-body-1'>
+																	<div class='contacts-block__box-el'>
+																		<div class='contacts-block__box-el-img'>
+																			<i class='map-gold-icon'></i>
+																		</div>
+																		<a class='contacts-block__box-el-tx' href="#">Пошаговая инструкция как <br> пройти в
+																			офис</a>
+																	</div>
+																	<div class='contacts-block__box-el'>
+																		<div class='contacts-block__box-el-img'>
+																			<i class='rub-yellow-icon'></i>
+																		</div>
+																		<a class='contacts-block__box-el-tx' href="#">Схема проезда на <br> парковку</a>
+																	</div>
+																	<div class='contacts-block__box-el'>
+																		<div class='contacts-block__box-el-img'>
+																			<i class='way-yellow-icon'></i>
+																		</div>
+																		<a class='contacts-block__box-el-tx' href="#">Построить маршрут <br> на Яндекс.
+																			Картах</a>
+																	</div>
+																	<div class='contacts-block__box-el'>
+																		<div class='contacts-block__box-el-img'>
+																			<i class='taxi-yellow-icon'></i>
+																		</div>
+																		<a class='contacts-block__box-el-tx' href="#">Вызвать такси</a>
+																	</div>
+																</div>
+																@@include('html/components/link.html', {
+																'title': 'Подробнее',
+																'color': 'gold-outline contacts-block__box-btn-mob',
+																'arrow': 'arrow-gold',
+																'url': '#',
+																})
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<img class='contacts-mob-map' src="images/yand-map-mob.png" alt="Yandex">
+				</div>
+
+			</section>
+
+			<section class="section section--steps section--80">
+				<div class="container">
+					<div class="row">
+						<div class="col-12">
+							<div class='contacts-title'>
+								<div class='contacts-title__icon'>
+									<i class='map-gold-icon'></i>
+								</div>
+								<h2 class="contacts-title__name">Пошаговая инструкция как пройти в офис</h2>
+							</div>
+						</div>
+					</div>
+					<div class="row row--r20">
+						<div class="col-xl-4 col-md-6">
+							<div class='step-box'>
+								<div class='step-box__wrapper'>
+									<div class='step-box__blockImg'>
+										<img class='step-box__img' src="images/step-1.png" alt="Step 1">
+									</div>
+									<div class='step-box__body'>
+										<div class='step-box__c1'>
+											<span>1</span>
+											<i class='step-box__ar-b-g arrow-gold-bottom'></i>
+										</div>
+										<p class='step-box__text'>Станция метро Октяборьская, выход в город на Калужскую площадь, на
+											Лененский проспект.</p>
+										<i class='ml-auto step-box__ar-r-b arrow-black'></i>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-xl-4 col-md-6">
+							<div class='step-box'>
+								<div class='step-box__wrapper'>
+									<div class='step-box__blockImg'>
+										<img class='step-box__img' src="images/step-2.png" alt="Step 2">
+									</div>
+									<div class='step-box__body'>
+										<div class='step-box__c1'>
+											<span>2</span>
+											<i class='step-box__ar-b-g arrow-gold-bottom'></i>
+										</div>
+										<p class='step-box__text'>Выход из метро Октябрьская направо.</p>
+										<i class='ml-auto step-box__ar-r-b arrow-black'></i>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-xl-4 col-md-6">
+							<div class='step-box'>
+								<div class='step-box__wrapper'>
+									<div class='step-box__blockImg'>
+										<img class='step-box__img' src="images/step-3.png" alt="Step 3">
+									</div>
+									<div class='step-box__body'>
+										<div class='step-box__c1'>
+											<span>3</span>
+											<i class='step-box__ar-b-g arrow-gold-bottom'></i>
+										</div>
+										<p class='step-box__text'>Далее до конца здания прямо.</p>
+										<i class='ml-auto step-box__ar-r-b arrow-black'></i>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-xl-4 col-md-6">
+							<div class='step-box'>
+								<div class='step-box__wrapper'>
+									<div class='step-box__blockImg'>
+										<img class='step-box__img' src="images/step-4.png" alt="Step 4">
+									</div>
+									<div class='step-box__body'>
+										<div class='step-box__c1'>
+											<span>4</span>
+											<i class='step-box__ar-b-g arrow-gold-bottom'></i>
+										</div>
+										<p class='step-box__text'>Вход на территорию офисного здания (Вход в офис находится с торца здания,
+											где расположен выход из метро).</p>
+										<i class='ml-auto step-box__ar-r-b arrow-black'></i>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-xl-4 col-md-6">
+							<div class='step-box'>
+								<div class='step-box__wrapper'>
+									<div class='step-box__blockImg'>
+										<img class='step-box__img' src="images/step-5.png" alt="Step 5">
+									</div>
+									<div class='step-box__body'>
+										<div class='step-box__c1'>
+											<span>5</span>
+											<i class='step-box__ar-b-g arrow-gold-bottom'></i>
+										</div>
+										<p class='step-box__text'>Вход в офисное здание института МиСИС.
+										</p>
+										<i class='ml-auto step-box__ar-r-b arrow-black'></i>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-xl-4 col-md-6">
+							<div class='step-box'>
+								<div class='step-box__wrapper'>
+									<div class='step-box__blockImg'>
+										<img class='step-box__img' src="images/step-6.png" alt="Step 6">
+									</div>
+									<div class='step-box__body'>
+										<div class='step-box__c1'>
+											<span>6</span>
+											<i class='step-box__ar-b-g arrow-gold-bottom d-none'></i>
+										</div>
+										<p class='step-box__text'>Проходите в черные стеклянные двери, и поднимаетесь в 915 офис.</p>
+										<i class='ml-auto step-box__ar-r-b arrow-black'></i>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="container">
+					<div class="row">
+						<div class="col-12">
+							<div class='warning-section warning-section--mt-40'>
+								<div class='warning-section__wrapper'>
+									<div class='warning-section__col warning-section__col-1'>
+										<span class='warning-sign-icon warning-section__icon'></span>
+										<p class='warning-section__bigTitle'>Внимание!</p>
+									</div>
+									<div class='warning-section__col warning-section__col-2'>
+										<span class='warning-section__title'>Обязательно возьмите паспорт</span>
+										<p class='warning-section__text'>Как только вошли с левой стороны относительно входа расположены
+											сотрудники охраны, которые выпишут Вам пропуск, для этого необходимо сказать, что мы в офис 915.
+										</p>
+									</div>
+									<div class='warning-section__col warning-section__col-3'>
+										<p class='warning-section__text font-weight-bold'>Обращаем Ваше внимание на то, что пропуск
+											выписывается только по предъявлению документа удостоверяющего личность.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class='section section--80 section--grey-1 contacts-scheme'>
+				<div class="container">
+					<div class="row">
+						<div class="col-12">
+							<div class='contacts-title'>
+								<div class='contacts-title__icon'>
+									<i class='rub-yellow-icon'></i>
+								</div>
+								<h2 class="contacts-title__name">Схема проезда на парковку</h2>
+							</div>
+						</div>
+						<div class="col-xl-4">
+							<div class='contacts-scheme__wrapper'>
+								<ul class='contacts-scheme__list'>
+									<li class='contacts-scheme__item'>
+										<span class='contacts-scheme__num'>1</span>
+										<p class='contacts-scheme__text'>Съезд с Крымского вала на Ленинский проспект.</p>
+									</li>
+									<li class='contacts-scheme__item'>
+										<span class='contacts-scheme__num'>2</span>
+										<p class='contacts-scheme__text'>Третий поворот на право перед гостиницей Варшава.</p>
+									</li>
+									<li class='contacts-scheme__item'>
+										<span class='contacts-scheme__num'>3</span>
+										<p class='contacts-scheme__text'>Первый поворот на лево, проезжаем через шлагбаум на парковку.</p>
+									</li>
+								</ul>
+								<div class='contacts-scheme__info d-none d-xl-flex'>
+									<div class='contacts-scheme__info-wrapper'>
+										<div class='contacts-scheme__info-head'>
+											<i class='warning-sign-icon'></i>
+											<span>Внимание!</span>
+										</div>
+										<p class='contacts-scheme__info-text'>Обязательно за 30 мин до приезда закажите пропуск на стоянку.
+											Сообщите нам гос номер и марку
+											авто.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-xl-8">
+							<div class='contacts-scheme__map'>
+								<picture>
+									<source media='(min-width: 768px)' srcset='images/contact-map.jpg'>
+									<source media='(min-width: 320px)' srcset='images/contact-map-min.jpg'>
+									<img class='contacts-scheme__map-img' src="images/contact-map.jpg" alt="Map">
+									</img>
+								</picture>
+
+							</div>
+							<div class='contacts-scheme__info mt-3 d-flex d-xl-none'>
+								<div class='contacts-scheme__info-wrapper'>
+									<div class='contacts-scheme__info-head'>
+										<i class='warning-sign-icon'></i>
+										<span>Внимание!</span>
+									</div>
+									<p class='contacts-scheme__info-text'>Обязательно за 30 мин до приезда закажите пропуск на стоянку.
+										Сообщите нам гос номер и марку
+										авто.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<div class="modal fade download-files-modal" id="clipFileModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+			aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-content">
+					<div class="modal-body">
+						<div class="download-files-modal__wrapper">
+							<ul class='download-files-modal__list'>
+								<li class='download-files-modal__item'>
+									<a class='download-files-modal__elem' href="#">
+										<span class='download-files-modal__icon'>
+											<i class='file-icon'></i>
+										</span>
+										<span class='download-files-modal__link'>Открыть файл</span>
+									</a>
+								</li>
+								<li class='download-files-modal__item'>
+									<a class='download-files-modal__elem' href="#">
+										<span class='download-files-modal__icon'>
+											<i class='file-icon'></i>
+										</span>
+										<span class='download-files-modal__link'>Камера</span>
+									</a>
+								</li>
+								<li class='download-files-modal__item'>
+									<a class='download-files-modal__elem' href="#">
+										<span class='download-files-modal__icon'>
+											<i class='file-icon'></i>
+										</span>
+										<span class='download-files-modal__link'>Галерея фотографий</span>
+									</a>
+								</li>
+							</ul>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+		@@include('html/footer.html')
+	</div>
+
+	@@include('html/script.html')
+
+</body>
+
+</html>
