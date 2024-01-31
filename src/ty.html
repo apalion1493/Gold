@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/head.html', {
+'title': 'Спасибо за обращение в нашу компанию!'
+})
+
+<body>
+	<div class="wrapper main-wrapper hidden">
+		@@include('html/header.html')
+
+		<main class="page">
+			<section class='section mob-announcement d-none'>
+				<div class="container">
+					<div class="row">
+						<div class="col-12">
+							<div class='header__media justify-content-center'>
+								<div class='header__info-banner'>
+									<span class='header__info-banner-title'>Внимание</span>
+									<p>Изменения графика работы в праздничные дни <br> <span
+											class='header__info-banner-colorText'>31.12.2023:
+											11:00 - 14:30, 01 - 07.01.2024: НЕ РАБОТАЕМ</span>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class='section section--breadcrumb'>
+				<div class="container">
+					<div class="row">
+						<div class="col-12">
+							<nav aria-label="breadcrumb">
+								<ol class="breadcrumb">
+									<li class="breadcrumb-item"><a href="#">Главная</a></li>
+									<li class="breadcrumb-item active" aria-current="page">Спасибо</li>
+								</ol>
+							</nav>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class='section section--ty'>
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-6">
+							<div class='ty-block'>
+								<h1 class="h2 ty-block__title">Спасибо за обращение в нашу компанию!</h1>
+								<span class='ty-block__subtitle'>Мы скоро свяжемся с вами!</span>
+								@@include('html/components/link.html', {
+								'title': 'На главную',
+								'color': 'gold-outline ty-block__btn',
+								'arrow': 'arrow-gold',
+								'url': '#',
+								})
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class='ty-block__imgWrap'>
+								<img class='ty-block__image' src="images/man-ty.png" alt="Man">
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		@@include('html/footer.html')
+	</div>
+
+	@@include('html/script.html')
+
+</body>
+
+</html>
