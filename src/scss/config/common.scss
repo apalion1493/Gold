@@ -262,6 +262,24 @@
   }
 }
 
+.shadow-text {
+  &__title {
+    color: var(--black-color);
+    font-family: 'Lora', serif;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 100%; /* 32px */
+    letter-spacing: 0.32px;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    display: block;
+  }
+
+  &__p {
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+  }
+}
+
 .invalid-feedback {
   font-family: 'Hind Madurai', sans-serif;
   font-size: 12px;
@@ -648,6 +666,18 @@
 }
 
 @media (max-width: 1199.98px) {
+}
+
+@media (max-width: 991.98px) {
+  .shadow-text {
+    &__title {
+      margin-bottom: 15px;
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 100%; /* 24px */
+      letter-spacing: 0.24px;
+    }
+  }
 }
 
 @media (max-width: 767.98px) {

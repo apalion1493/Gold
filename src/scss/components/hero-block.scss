@@ -10,6 +10,14 @@
   padding: 20px;
   margin: -20px;
 
+  &--bg1 {
+    background: radial-gradient(
+      248.04% 87.54% at 31.57% 60%,
+      rgba(255, 255, 255, 0.9) 72.52%,
+      rgba(255, 255, 255, 0) 100%
+    );
+  }
+
   &__title.h1 {
     margin-bottom: 25px;
   }
