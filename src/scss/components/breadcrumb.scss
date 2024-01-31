@@ -62,3 +62,10 @@
   padding-top: 20px;
   padding-bottom: 20px;
 }
+
+@media (max-width: 991.98px) {
+  .section--breadcrumb {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}

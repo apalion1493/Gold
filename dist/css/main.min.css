@@ -10231,7 +10231,6 @@ a.text-dark:hover, a.text-dark:focus {
   margin-bottom: 5px;
 }
 .block-requests__btnGroup .button {
-  white-space: nowrap;
   padding: 5px;
 }
 .block-requests__text-1 {
@@ -10545,6 +10544,11 @@ a.text-dark:hover, a.text-dark:focus {
   padding-bottom: 60px;
 }
 
+.section--60 {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
 @media (max-width: 1400px) {
   .section-block--4 {
     padding: 30px 10px;
@@ -10562,6 +10566,10 @@ a.text-dark:hover, a.text-dark:focus {
 }
 @media (max-width: 991.98px) {
   .section {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .section--ty {
     padding-top: 30px;
     padding-bottom: 30px;
   }
@@ -13055,6 +13063,12 @@ header.header .header--mob {
   padding-bottom: 20px;
 }
 
+@media (max-width: 991.98px) {
+  .section--breadcrumb {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
 .quotation-block {
   background: var(--white-color);
   box-shadow: -2px -2px 4px 0px rgba(10, 50, 49, 0.15), 4px 4px 6px 0px rgba(10, 50, 49, 0.25);

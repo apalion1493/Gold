@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/head.html', {
+'title': '404'
+})
+
+<body>
+	<div class="wrapper main-wrapper hidden">
+		@@include('html/header.html')
+
+		<main class="page">
+			<section class='section mob-announcement d-none'>
+				<div class="container">
+					<div class="row">
+						<div class="col-12">
+							<div class='header__media justify-content-center'>
+								<div class='header__info-banner'>
+									<span class='header__info-banner-title'>Внимание</span>
+									<p>Изменения графика работы в праздничные дни <br> <span
+											class='header__info-banner-colorText'>31.12.2023:
+											11:00 - 14:30, 01 - 07.01.2024: НЕ РАБОТАЕМ</span>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class='section section--breadcrumb'>
+				<div class="container">
+					<div class="row">
+						<div class="col-12">
+							<nav aria-label="breadcrumb">
+								<ol class="breadcrumb">
+									<li class="breadcrumb-item"><a href="#">Главная</a></li>
+									<li class="breadcrumb-item active" aria-current="page">404</li>
+								</ol>
+							</nav>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="section section--60">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-6">
+							<div class='ty-block'>
+								<h1 class="h2 ty-block__title">Такой страницы не существует</h1>
+								<span class='ty-block__subtitle'>Ошибка 404</span>
+								@@include('html/components/link.html', {
+								'title': 'На главную',
+								'color': 'gold-outline ty-block__btn',
+								'arrow': 'arrow-gold',
+								'url': '#',
+								})
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class='feedback-form feedback-form--mt'>
+								<div class='feedback-form__wrapper'>
+									<span class='feedback-form__title h3'>Свяжитесь с нами</span>
+									<span class='feedback-form__subtitle text-1'>Введите контактную информацию</span>
+									<form class='feedback-form__form' action="">
+										<div class="row">
+											<div class="col-md-6">
+												<div class="form-group">
+													<input type="text" class="form-control" placeholder="Имя*">
+												</div>
+												<div class="form-group">
+													<input type="text" class="form-control " placeholder="Номер телефона*">
+													<div id="validationServer03Feedback" class="invalid-feedback">
+														Проверьте правильность ввода информации
+													</div>
+												</div>
+											</div>
+											<div class="col-md-6">
+												<textarea class="form-control" id="validationTextarea" placeholder="Сообщение"
+													required></textarea>
+											</div>
+											<div class="col-12">
+												<div class='block-requests feedback-form__mt'>
+													<div class='feedback-form__mob-block'>
+														<span class='feedback-form__subtitle block-requests__text-1 text-1'>Прикрепите несколько
+															фото
+															и отправьте вопрос. Мы вам перезвоним</span>
+														<a class='block-requests__clip d-flex d-md-none' href="#" data-toggle="modal"
+															data-target="#clipFileModal">
+															<span class='clip-icon'></span>
+														</a>
+													</div>
+													<div class='block-requests__fileList'></div>
+													<div class='block-requests__btnGroup'>
+														<a class='block-requests__clip d-none d-md-flex' href="#" data-toggle="modal"
+															data-target="#clipFileModal">
+															<span class='clip-icon'></span>
+														</a>
+														@@include('html/components/link.html', {
+														'title': 'отправить сообщение',
+														'color': 'green calculator__footer-btn',
+														'arrow': 'arrow-green',
+														'url': '#',
+														})
+
+														@@include('html/components/link.html', {
+														'title': 'Онлайн сообщение',
+														'color': 'gold calculator__footer-btn',
+														'arrow': 'green-phone',
+														'url': '#',
+														})
+													</div>
+													<a class='feedback-form__link block-requests__link link-2' href="#">Нажимая кнопку «Отправить
+														заявку»
+														я даю свое согласие
+														на
+														обработку персональных
+														данных</a>
+												</div>
+											</div>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class='section section--grey-1 section-block--2'>
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-6">
+							<h2 class="h2">Наши услуги</h2>
+						</div>
+						<div class="col-lg-6">
+							<p class='text-lg-right mb-0 h1-min section-block--2__desc'>Компания «МосГосСкупка» осуществляет скупку
+								бриллиантов по дорогой
+								цене. Если вы хотите выгодно продать
+								свои драгоценные камни, мы рады предложить вам лучшие условия и сервис обслуживания.</p>
+						</div>
+						<div class="col-12">
+							<div class='buying-row splide' role="group" aria-label="Splide Basic HTML Example">
+								<div class="splide__track">
+									<ul class="splide__list">
+										<li class="splide__slide">
+											<div class='buying-row__item'>
+												<div class='buying-row__item-border'>
+													<a class='buying-row__link' href="#">
+														<img class='buying-row__img' loading="lazy" src='images/img-1.jpg' alt="">
+														<span class='buying-row__title'>Скупка золота</span>
+													</a>
+												</div>
+											</div>
+										</li>
+										<li class="splide__slide">
+											<div class='buying-row__item'>
+												<div class='buying-row__item-border'>
+													<a class='buying-row__link' href="#">
+														<img class='buying-row__img' loading="lazy" src='images/img-2.jpg' alt="">
+														<span class='buying-row__title'>Скупка ювелирных украшений</span>
+													</a>
+												</div>
+											</div>
+										</li>
+										<li class="splide__slide">
+											<div class='buying-row__item'>
+												<div class='buying-row__item-border'>
+													<a class='buying-row__link' href="#">
+														<img class='buying-row__img' loading="lazy" src='images/img-3.png' alt="">
+														<span class='buying-row__title'>Скупка бриллиантов</span>
+													</a>
+												</div>
+											</div>
+										</li>
+										<li class="splide__slide">
+											<div class='buying-row__item'>
+												<div class='buying-row__item-border'>
+													<a class='buying-row__link' href="#">
+														<img class='buying-row__img' loading="lazy" src='images/img-4.jpg' alt="">
+														<span class='buying-row__title'>Скупка золотых слитков</span>
+													</a>
+												</div>
+											</div>
+										</li>
+										<li class="splide__slide">
+											<div class='buying-row__item'>
+												<div class='buying-row__item-border'>
+													<a class='buying-row__link' href="#">
+														<img class='buying-row__img' loading="lazy" src='images/img-5.jpg' alt="">
+														<span class='buying-row__title'>Скупка золотых монет</span>
+													</a>
+												</div>
+											</div>
+										</li>
+										<li class="splide__slide">
+											<div class='buying-row__item'>
+												<div class='buying-row__item-border'>
+													<a class='buying-row__link' href="#">
+														<img class='buying-row__img' loading="lazy" src='images/img-6.jpg' alt="">
+														<span class='buying-row__title'>Скупка часов</span>
+													</a>
+												</div>
+											</div>
+										</li>
+										<li class="splide__slide">
+											<div class='buying-row__item'>
+												<div class='buying-row__item-border'>
+													<a class='buying-row__link' href="#">
+														<img class='buying-row__img' loading="lazy" src='images/img-7.jpg' alt="">
+														<span class='buying-row__title'>Скупка серебра</span>
+													</a>
+												</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+			</section>
+		</main>
+
+		<div class="modal fade download-files-modal" id="clipFileModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+			aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-content">
+					<div class="modal-body">
+						<div class="download-files-modal__wrapper">
+							<ul class='download-files-modal__list'>
+								<li class='download-files-modal__item'>
+									<a class='download-files-modal__elem' href="#">
+										<span class='download-files-modal__icon'>
+											<i class='file-icon'></i>
+										</span>
+										<span class='download-files-modal__link'>Открыть файл</span>
+									</a>
+								</li>
+								<li class='download-files-modal__item'>
+									<a class='download-files-modal__elem' href="#">
+										<span class='download-files-modal__icon'>
+											<i class='file-icon'></i>
+										</span>
+										<span class='download-files-modal__link'>Камера</span>
+									</a>
+								</li>
+								<li class='download-files-modal__item'>
+									<a class='download-files-modal__elem' href="#">
+										<span class='download-files-modal__icon'>
+											<i class='file-icon'></i>
+										</span>
+										<span class='download-files-modal__link'>Галерея фотографий</span>
+									</a>
+								</li>
+							</ul>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+		@@include('html/footer.html')
+	</div>
+
+	@@include('html/script.html')
+
+</body>
+
+</html>

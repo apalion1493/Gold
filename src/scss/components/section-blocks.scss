@@ -110,6 +110,11 @@
   padding-bottom: 60px;
 }
 
+.section--60 {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
 @media (max-width: 1400px) {
   .section-block--4 {
     padding: 30px 10px;
@@ -132,6 +137,11 @@
 
 @media (max-width: 991.98px) {
   .section {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .section--ty {
     padding-top: 30px;
     padding-bottom: 30px;
   }
