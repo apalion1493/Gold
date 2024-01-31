@@ -28,7 +28,8 @@
   &__img {
     box-shadow: -2px -2px 4px 0px rgba(10, 50, 49, 0.15),
       4px 4px 6px 0px rgba(10, 50, 49, 0.25);
-    object-fit: cover;
+    object-fit: contain;
+    background: var(--white-color);
     max-width: 100%;
   }
 
