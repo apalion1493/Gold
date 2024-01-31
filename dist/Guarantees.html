@@ -1,0 +1,828 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <style>
+    .loaded {
+      opacity: 1
+    }
+  </style>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Guarantees</title>
+
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@400;500;700&family=Lora:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/splidejs/4.1.4/css/splide.min.css" integrity="sha512-KhFXpe+VJEu5HYbJyKQs9VvwGB+jQepqb4ZnlhUF/jQGxYJcjdxOTf6cr445hOc791FFLs18DKVpfrQnONOB1g==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link rel="stylesheet" href="css/main.min.css">
+
+</head>
+
+<body>
+	<div class="hidden main-wrapper wrapper">
+		<header class="header">
+	<div class="header__dt">
+		<div class="header__top">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<div class="header__top-wrapper">
+							<ul class="header__menu">
+								<li class="active header__menu-item">
+									<a href="#">Главная</a>
+								</li>
+								<li class="header__menu-item">
+									<a href="#">О нас</a>
+								</li>
+								<li class="header__menu-item">
+									<a href="#">Информация</a>
+								</li>
+								<li class="header__menu-item">
+									<a href="#">Информация</a>
+								</li>
+							</ul>
+							<div class="header__top-block">
+								<div class="header__top-iconGroup">
+									<a class="header__top-icon" href="#">
+										<span class="gold-icon-phone"></span>
+									</a>
+									<a class="header__top-icon" href="#">
+										<span class="gold-icon-tg"></span>
+									</a>
+								</div>
+								<div class="header__top-phoneGroup">
+									<a href="tel:89037904905">8 (903) 7-904-905</a>
+									<a href="tel:84957904905">8 (495) 7-904-905</a>
+								</div>
+								<a class="btn button button--gold-outline header__button" href="#">Заказать звонок <span class="arrow-gold button__icon"></span></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<div class="header__middle">
+						<a class="header__logo" href="#">
+							<span class="main-icon"></span>
+						</a>
+						<div class="header__media">
+							<div class="header__info-banner">
+								<span class="header__info-banner-title">Внимание</span>
+								<p>Изменения графика работы в праздничные дни 31.12.2023: <span class="color-danger">11:00 -
+										14:30</span>,
+									01 - 07.01.2024:
+									<span class="text-uppercase color-danger">НЕ РАБОТАЕМ</span>
+								</p>
+							</div>
+							<div class="header__mediaBlock">
+								<div class="header__media-icon">
+									<i class="clock-icon"></i>
+								</div>
+								<div class="header__mediaBlock-body">
+									<span class="header__mediaBlock-title">Время работы</span>
+									<p>Пн-Пт: 11:00 - 18:30 <br> Сб: 11:00 - 16:00 <br> Вс: по записи</p>
+								</div>
+							</div>
+							<div class="header__mediaBlock">
+								<div class="header__media-icon">
+									<i class="location-icon"></i>
+								</div>
+								<div class="header__mediaBlock-body align-self-start">
+									<span class="header__mediaBlock-title">Адрес</span>
+									<p>Москва, ул. Ленинский пр-т, <br> д. 2а, оф. 915, 9 эт.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="header__list">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<div class="header__list-wrapper">
+							<a class="header__list-link active" href="#">Скупка золота</a>
+							<a class="header__list-link" href="#">Скупка ювелирных украшений</a>
+							<a class="header__list-link" href="#">Скупка бриллиантов</a>
+							<a class="header__list-link" href="#">Скупка золотых слитков</a>
+							<a class="header__list-link" href="#">Скупка золотых монет</a>
+							<a class="header__list-link" href="#">Скупка часов</a>
+							<a class="header__list-link" href="#">Скупка серебра</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="d-none header--mob header__mb" id="accordionHeader">
+		<img class="header__mb-line" src="images/lines.svg" alt="">
+		<div class="header__mb-content">
+			<div class="collapse" data-parent="#accordionHeader" aria-labelledby="heading1" id="collapseExample1">
+				<div class="card card-body">
+					<div class="container">
+						<div class="row">
+							<div class="col-12">
+								<div class="header-mb__address">
+									<div class="header-mb__address-icon">
+										<i class="location-icon"></i>
+									</div>
+									<div class="header-mb__address-body">
+										<p class="header-mb__address-body-t1">
+											<span class="header-mb__address-body-t1-s1">м. Октябрьская кольцевая</span>
+											<i class="walking-human-white-icon"></i>
+											<span class="header-mb__address-body-t1-s2">200 м</span>
+										</p>
+										<p class="header-mb__address-body-t2">Москва, ул. Ленинский пр-т, <br> д. 2а, оф. 915, 9 эт.</p>
+									</div>
+								</div>
+								<div class="header-mb__way">
+									<div class="header-mb__way-item">
+										<div class="header-mb__way-icon">
+											<i class="map-gold-icon"></i>
+										</div>
+										<a href="#">Пошаговая инструкция как пройти в офис</a>
+									</div>
+									<div class="header-mb__way-item">
+										<div class="header-mb__way-icon">
+											<i class="rub-yellow-icon"></i>
+										</div>
+										<a href="#">Схема проезда на парковку</a>
+									</div>
+									<div class="header-mb__way-item">
+										<div class="header-mb__way-icon">
+											<i class="way-yellow-icon"></i>
+										</div>
+										<a href="#">Построить маршрут на Яндекс. Картах</a>
+									</div>
+									<div class="header-mb__way-item">
+										<div class="header-mb__way-icon">
+											<i class="taxi-yellow-icon"></i>
+										</div>
+										<a href="#">Вызвать такси</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="collapse" data-parent="#accordionHeader" aria-labelledby="heading2" id="collapseExample2">
+				<div class="card card-body">
+					<div class="container">
+						<div class="row">
+							<div class="col-12">
+								<div class="header__mb-priceList">
+									<a class="active" href="#">Цена Скупки золота</a>
+									<a href="#">Цена Скупка ювелирных украшений</a>
+									<a href="#">Цена Скупки бриллиантов</a>
+									<a href="#">цена Скупки золотых слитков</a>
+									<a href="#">Цена Скупки золотых монет</a>
+									<a href="#">Цена Скупки часов</a>
+									<a href="#">Цена Скупки серебра</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="collapse" data-parent="#accordionHeader" aria-labelledby="heading3" id="collapseExample3">
+				<div class="card card-body">
+					<div class="container">
+						<div class="row">
+							<div class="col-12">
+								<div>
+									<div class="header-mb__phons justify-content-center mb-3">
+										<a class="header-mb__phons-link" href="#">8 (903) 7-904-905</a>
+										<a class="header-mb__phons-link" href="#">8 (495) 7-904-905</a>
+									</div>
+									<div class="header-mb__footer">
+										<div class="header-mb__footer-icons">
+											<div class="header-mb__footer-iconWrapper">
+												<i class="wp-icon"></i>
+											</div>
+											<div class="header-mb__footer-iconWrapper">
+												<i class="tg-icon"></i>
+											</div>
+											<div class="header-mb__footer-iconWrapper">
+												<i class="clock-icon"></i>
+											</div>
+										</div>
+										<p class="header-mb__footer-text">Пн-Пт: 11:00 - 18:30 <br> Сб: 11:00 - 16:00 <br> Вс: по записи</p>
+									</div>
+									<a class="btn button button--gold-outline header__button header-mb__btn" href="#">Позвонить <span class="arrow-gold button__icon"></span></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="collapse" data-parent="#accordionHeader" aria-labelledby="heading4" id="collapseExample4">
+			</div>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<div class="header__mb-btnGroup">
+						<button class="collapsed header__mb-btn" id="heading1" type="button" data-toggle="collapse" data-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample1">
+							<span class="header__mb-btn-icon">
+								<i class="header__mb-btn-icon-gold location-gold-icon"></i>
+								<i class="header__mb-btn-icon-white location-white-icon"></i>
+							</span>
+							<span class="header__mb-btn-text">адрес
+								<i class="arrow-white header__mb-btn-arrow-white"></i>
+								<i class="arrow-gold-top header__mb-btn-arrow-gold"></i>
+							</span>
+						</button>
+						<button class="collapsed header__mb-btn" id="heading2" type="button" data-toggle="collapse" data-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample2">
+							<span class="header__mb-btn-icon">
+								<i class="header__mb-btn-icon-gold location-gold-icon"></i>
+								<i class="header__mb-btn-icon-white location-white-icon"></i>
+							</span>
+							<span class="header__mb-btn-text">цены
+								<i class="arrow-white header__mb-btn-arrow-white"></i>
+								<i class="arrow-gold-top header__mb-btn-arrow-gold"></i>
+							</span>
+						</button>
+						<button class="collapsed header__mb-btn" id="heading3" type="button" data-toggle="collapse" data-target="#collapseExample3" aria-expanded="false" aria-controls="collapseExample3">
+							<span class="header__mb-btn-icon">
+								<i class="header__mb-btn-icon-gold location-gold-icon"></i>
+								<i class="header__mb-btn-icon-white location-white-icon"></i>
+							</span>
+							<span class="header__mb-btn-text">звонок
+								<i class="arrow-white header__mb-btn-arrow-white"></i>
+								<i class="arrow-gold-top header__mb-btn-arrow-gold"></i>
+							</span>
+						</button>
+						<button class="header__mb-btn header__mb-btn-burger" id="heading4" type="button" data-toggle="collapse" data-target="#collapseExample4" aria-expanded="false" aria-controls="collapseExample4">
+							<span class="header__mb-btn-icon">
+								<i class="header__mb-btn-icon-white location-white-icon"></i>
+							</span>
+							<span class="header__mb-btn-text">цены</span>
+						</button>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="header--mob header__mb-tp" id="header-top-menu-mobil">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<div class="header__mb-topBlock">
+						<a href="#">
+							<span class="header__mb-topBlock-icon main-icon-white"></span>
+						</a>
+						<a id="header-burger" data-toggle="collapse" href="#collapseExample5" role="button" aria-expanded="false" class="collapsed header__burger-top" aria-controls="collapseExample4">
+							<span class="header-burger-close-icon"></span>
+							<span class="header-burger-icon"></span></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<div class="collapse" id="collapseExample5">
+						<div class="card card-body header-mb__card">
+							<div class="header-mb__body">
+								<div class="header-mb__menu1">
+									<a class="active header-mb__menu1-link text-7" href="#">Главная</a>
+									<a class="text-7 header-mb__menu1-link" href="#">О нас</a>
+									<a class="text-7 header-mb__menu1-link" href="#">Информация</a>
+									<a class="text-7 header-mb__menu1-link" href="#">Контакты</a>
+								</div>
+								<div class="header-mb__menu2">
+									<a class="header-mb__menu2-link active" href="#">Скупка золота</a>
+									<a class="header-mb__menu2-link" href="#">Скупка ювелирных украшений</a>
+									<a class="header-mb__menu2-link" href="#">Скупка бриллиантов</a>
+									<a class="header-mb__menu2-link" href="#">Скупка золотых слитков</a>
+									<a class="header-mb__menu2-link" href="#">Скупка золотых монет</a>
+									<a class="header-mb__menu2-link" href="#">Скупка часов</a>
+									<a class="header-mb__menu2-link" href="#">Скупка серебра</a>
+								</div>
+								<div class="header-mb__address">
+									<div class="header-mb__address-icon">
+										<i class="location-icon"></i>
+									</div>
+									<div class="header-mb__address-body">
+										<p class="header-mb__address-body-t1">
+											<span class="header-mb__address-body-t1-s1">м. Октябрьская кольцевая</span>
+											<i class="walking-human-white-icon"></i>
+											<span class="header-mb__address-body-t1-s2">200 м</span>
+										</p>
+										<p class="header-mb__address-body-t2">Москва, ул. Ленинский пр-т, <br> д. 2а, оф. 915, 9 эт.</p>
+									</div>
+								</div>
+								<div class="header-mb__way">
+									<div class="header-mb__way-item">
+										<div class="header-mb__way-icon">
+											<i class="map-gold-icon"></i>
+										</div>
+										<a href="#">Пошаговая инструкция как пройти в офис</a>
+									</div>
+									<div class="header-mb__way-item">
+										<div class="header-mb__way-icon">
+											<i class="rub-yellow-icon"></i>
+										</div>
+										<a href="#">Схема проезда на парковку</a>
+									</div>
+									<div class="header-mb__way-item">
+										<div class="header-mb__way-icon">
+											<i class="way-yellow-icon"></i>
+										</div>
+										<a href="#">Построить маршрут на Яндекс. Картах</a>
+									</div>
+									<div class="header-mb__way-item">
+										<div class="header-mb__way-icon">
+											<i class="taxi-yellow-icon"></i>
+										</div>
+										<a href="#">Вызвать такси</a>
+									</div>
+								</div>
+								<div class="header-mb__phons">
+									<a class="header-mb__phons-link" href="#">8 (903) 7-904-905</a>
+									<a class="header-mb__phons-link" href="#">8 (495) 7-904-905</a>
+								</div>
+								<div class="header-mb__footer">
+									<div class="header-mb__footer-icons">
+										<div class="header-mb__footer-iconWrapper">
+											<i class="wp-icon"></i>
+										</div>
+										<div class="header-mb__footer-iconWrapper">
+											<i class="tg-icon"></i>
+										</div>
+										<div class="header-mb__footer-iconWrapper">
+											<i class="clock-icon"></i>
+										</div>
+									</div>
+									<p class="header-mb__footer-text">Пн-Пт: 11:00 - 18:30 <br> Сб: 11:00 - 16:00 <br> Вс: по записи</p>
+								</div>
+								<a class="btn button button--gold-outline header__button header-mb__btn" href="#">Позвонить <span class="arrow-gold button__icon"></span></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+
+		<main class="page">
+			<section class="d-none mob-announcement section">
+				<div class="container">
+					<div class="row">
+						<div class="col-12">
+							<div class="header__media justify-content-center">
+								<div class="header__info-banner">
+									<span class="header__info-banner-title">Внимание</span>
+									<p>Изменения графика работы в праздничные дни <br> <span class="header__info-banner-colorText">31.12.2023:
+											11:00 - 14:30, 01 - 07.01.2024: НЕ РАБОТАЕМ</span>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="section section--breadcrumb">
+				<div class="container">
+					<div class="row">
+						<div class="col-12">
+							<nav aria-label="breadcrumb">
+								<ol class="breadcrumb">
+									<li class="breadcrumb-item"><a href="#">Главная</a></li>
+									<li class="active breadcrumb-item" aria-current="page">Гарантии</li>
+								</ol>
+							</nav>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="section section--60">
+				<div class="container">
+					<div class="row">
+						<div class="col-12">
+							<div class="guarantees-block">
+								<h1 class="guarantees-block__title h2">Гарантии компании «МосГосСкупка»</h1>
+								<span class="guarantees-block__subtitle">Обращаясь к нам, вы можете рассчитывать на следующие
+									гарантии:</span>
+							</div>
+						</div>
+					</div>
+					<div class="row row--r20">
+						<div class="col-xl-6">
+							<div class="block-info">
+								<div class="block-info__head">
+									<i class="block-info__icon coins-icon"></i>
+									<span class="block-info__title">Честная, объективная оценка</span>
+								</div>
+								<div class="block-info__body">
+									<p class="block-info__text">Оценкой ценностей у нас занимаются высококвалифицированные специалисты.
+										Качество драгоценных камней,
+										пробу золота и серебра определяют эксперты геммологи. Работоспособность телефонов, планшетов и
+										других
+										устройств оценивается человеком, хорошо понимающим в компьютерной технике. Осмотр швейцарских
+										часов
+										осуществляется с применением специальных измерительных приборов, позволяющих определить пробег
+										часов
+										и
+										точность хода.</p>
+									<span class="block-info__subtitle">Что это означает для вас? </span>
+									<p class="block-info__text">Вы можете не сомневаться, что назначенная цена будет полностью
+										соответствовать реальной стоимости
+										изделия.</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-xl-6">
+							<div class="block-info">
+								<div class="block-info__head">
+									<i class="block-info__icon money-growth-icon"></i>
+									<span class="block-info__title">Нет скрытой комиссии</span>
+								</div>
+								<div class="block-info__body">
+									<p class="block-info__text">В отличие от недобросовестных скупщиков, у нас названная цена не
+										уменьшается после оформления документов.</p>
+									<span class="block-info__subtitle">Что это означает для вас? </span>
+									<p class="block-info__text">Клиентам деньги выдаются наличными, переводятся на счет или на карту в
+										полном объеме.</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-xl-6">
+							<div class="block-info">
+								<div class="block-info__head">
+									<i class="block-info__icon police-icon"></i>
+									<span class="block-info__title">Безопасность в офисе</span>
+								</div>
+								<div class="block-info__body">
+									<p class="block-info__text">Офис скупки находится под круглосуточной охраной.</p>
+									<span class="block-info__subtitle">Что это означает для вас? </span>
+									<p class="block-info__text">Процесс выкупа ценностей (оценка, оформление документов и выдача денег)
+										производится в отдельном помещении на ваших глазах и без присутствия людей, не участвующих в
+										заключении сделки.</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-xl-6">
+							<div class="block-info">
+								<div class="block-info__head">
+									<i class="block-info__icon handshake-icon"></i>
+									<span class="block-info__title">Многолетний опыт работы на рынке данных услуг</span>
+								</div>
+								<div class="block-info__body">
+									<p class="block-info__text">Мы уже более 10 лет осуществляем скупку ценных изделий и зарекомендовали
+										себя как надежная компания, предоставляющая своим клиентам самые выгодные условия заключения
+										сделок
+										и удобный сервис.</p>
+									<span class="block-info__subtitle">Что это означает для вас? </span>
+									<p class="block-info__text">Решив обратиться в «МосГосСкупку» у вас есть гарантия, что мы никуда не
+										исчезнем, так как существование фирмы полностью законно.</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-xl-6">
+							<div class="block-info">
+								<div class="block-info__head">
+									<i class="block-info__icon sale-box-icon"></i>
+									<span class="block-info__title">Конфиденциальность</span>
+								</div>
+								<div class="block-info__body">
+									<p class="block-info__text">Все данные полученные от клиентов: паспортные данные, вид ценностей и их
+										стоимость, порядок оплаты и тому подобное сохраняется в тайне и не передается третьим лицам ни при
+										каких условиях.</p>
+									<span class="block-info__subtitle">Что это означает для вас? </span>
+									<p class="block-info__text">Вы можете не волноваться, что сведения, которые вы предоставляете для
+										оформления акта скупки будут использованы против вас. В то же время, все оформляемые документы
+										обладают юридической силой и защищают ваше право на владение деньгами, полученными взамен на
+										украшение, технику или другое изделие.</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-xl-6">
+							<div class="block-info">
+								<div class="block-info__head">
+									<i class="block-info__icon business-analytics-icon"></i>
+									<span class="block-info__title">Более 3000 сделок по покупке драг металлов и часов</span>
+								</div>
+								<div class="block-info__body">
+									<p class="block-info__text">Большое количество оформленных сделок, показывают, что нам доверяют и
+										обращаются снова и снова.
+									</p>
+									<span class="block-info__subtitle">Что это означает для вас? </span>
+									<p class="block-info__text">адежность нашей компании подтверждают не только наши высказывания, но и
+										многочисленные отзывы довольных клиентов.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<div class="download-files-modal fade modal" id="clipFileModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-content">
+					<div class="modal-body">
+						<div class="download-files-modal__wrapper">
+							<ul class="download-files-modal__list">
+								<li class="download-files-modal__item">
+									<a class="download-files-modal__elem" href="#">
+										<span class="download-files-modal__icon">
+											<i class="file-icon"></i>
+										</span>
+										<span class="download-files-modal__link">Открыть файл</span>
+									</a>
+								</li>
+								<li class="download-files-modal__item">
+									<a class="download-files-modal__elem" href="#">
+										<span class="download-files-modal__icon">
+											<i class="file-icon"></i>
+										</span>
+										<span class="download-files-modal__link">Камера</span>
+									</a>
+								</li>
+								<li class="download-files-modal__item">
+									<a class="download-files-modal__elem" href="#">
+										<span class="download-files-modal__icon">
+											<i class="file-icon"></i>
+										</span>
+										<span class="download-files-modal__link">Галерея фотографий</span>
+									</a>
+								</li>
+							</ul>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<footer class="footer">
+  <div class="container footer__border">
+    <div class="row">
+      <div class="col-xl-3 col-lg-12">
+        <div class="d-flex flex-column h-100">
+          <img class="mb-3 footer__logo mb-xl-0" src="images/Main-logo-white.svg" alt="Logo">
+          <p class="mt-auto text-3 d-none d-xl-block footer__copy mb-0">© 2005 – 2024</p>
+        </div>
+      </div>
+      <div class="col-xl-3 col-md-6">
+        <div class="footer__column">
+          <span class="footer__column-title">Меню</span>
+          <ul class="footer__column-list">
+            <li class="footer__column-item">
+              <a href="#">Главная</a>
+            </li>
+            <li class="footer__column-item">
+              <a href="#">О нас</a>
+            </li>
+            <li class="footer__column-item">
+              <a href="#">Информация</a>
+            </li>
+            <li class="footer__column-item">
+              <a href="#">Контакты</a>
+            </li>
+            <li class="footer__column-item">
+              <a href="#">Гарантии</a>
+            </li>
+            <li class="footer__column-item">
+              <a href="#">Отзывы</a>
+            </li>
+            <li class="footer__column-item">
+              <a href="#">Оставить отзыв о компании</a>
+            </li>
+          </ul>
+          <a class="mt-auto d-none d-xl-block footer__column-f1 text-7" href="#">Политика конфиденциальности</a>
+        </div>
+      </div>
+      <div class="col-xl-3 col-md-6">
+        <div class="footer__column">
+          <span class="footer__column-title">Скупка</span>
+          <ul class="footer__column-list">
+            <li class="footer__column-item">
+              <a class="text-uppercase" href="#">золота</a>
+            </li>
+            <li class="footer__column-item">
+              <a class="text-uppercase" href="#">ювелирных украшений</a>
+            </li>
+            <li class="footer__column-item">
+              <a class="text-uppercase" href="#">бриллиантов</a>
+            </li>
+            <li class="footer__column-item">
+              <a class="text-uppercase" href="#">золотых слитков</a>
+            </li>
+            <li class="footer__column-item">
+              <a class="text-uppercase" href="#">золотых монет</a>
+            </li>
+            <li class="footer__column-item">
+              <a class="text-uppercase" href="#">часов</a>
+            </li>
+            <li class="footer__column-item">
+              <a class="text-uppercase" href="#">серебра</a>
+            </li>
+          </ul>
+          <span class="mt-auto text-3 d-none d-xl-block footer__column-f2">Информация на сайте не являются публичной
+            офертой.</span>
+        </div>
+      </div>
+      <div class="col-xl-3 col-lg-6">
+        <div class="footer__column">
+          <span class="footer__column-title">Контакты</span>
+          <div class="d-flex footer__column-row">
+            <span class="footer__column-subtitle">Телефон</span>
+            <div class="d-flex flex-column">
+              <a class="footer__column-phoneLink" href="#">8 (495) 7-904-905</a>
+              <a class="footer__column-phoneLink" href="#">8 (495) 7-904-905</a>
+            </div>
+          </div>
+          <div class="footer__column-row">
+            <span class="footer__column-subtitle">Адрес</span>
+            <div class="d-flex flex-column">
+              <p class="footer__column-address-color text-4">м. Октябрьская кольцевая</p>
+              <span class="footer__column-address">119049, г. Москва, ул. Ленинский пр-т, <br>д. 2а, офис 915, 9
+                этаж</span>
+            </div>
+          </div>
+          <div class="footer__column-row">
+            <span class="footer__column-subtitle">Время работы</span>
+            <div class="d-flex flex-column">
+              <p class="footer__column-text">Пн-Пт: 11:00 - 18:30</p>
+              <p class="footer__column-text">Сб: 11:00 - 16:00</p>
+              <p class="footer__column-text">Вс: по записи</p>
+            </div>
+          </div>
+          <div class="mt-auto footer__column-row footer__column-row-b mb-0">
+            <div class="footer__column-rb">
+              <span class="footer__column-icon">
+                <span class="gold-icon-phone"></span>
+              </span>
+              <span class="footer__column-icon">
+                <span class="gold-icon-tg"></span>
+              </span>
+            </div>
+            <a class="btn button button--gold-outline footer__button" href="#">Заказать звонок <span class="arrow-gold button__icon"></span></a>
+            <div class="d-flex flex-column d-xl-none footer__column-dop-info-m">
+              <span class="mt-auto text-3 footer__column-f2">Информация на сайте не являются публичной офертой.</span>
+              <a class="mt-auto footer__column-f1 text-7" href="#">Политика конфиденциальности</a>
+              <p class="mt-auto text-3 footer__copy mb-0">© 2005 – 2024</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+	</div>
+
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+<script src="js/main.min.js" defer="defer"></script>
+
+<script>
+	$('#header-burger').click(function () {
+		$('#header-top-menu-mobil').toggleClass('open')
+		$('body').toggleClass('overflow-hidden')
+	})
+
+	$('#heading4').click(function () {
+		$("#header-burger").click()
+	})
+
+
+	$(document).ready(function () {
+
+		let scrollPrev = 0
+		$(window).scroll(function () {
+
+			let topMenuMob = $('#header-top-menu-mobil'),
+				accordionHeaderMenu = $('#accordionHeader'),
+				scroll = $(window).scrollTop()
+
+			if (scroll > 100) {
+				topMenuMob.addClass('hidden')
+				accordionHeaderMenu.removeClass('d-none')
+			}
+			else {
+				topMenuMob.removeClass('hidden')
+				accordionHeaderMenu.addClass('d-none')
+			}
+
+			if (scroll > 100 && scroll > scrollPrev) {
+				accordionHeaderMenu.addClass('partial')
+			} else {
+				accordionHeaderMenu.removeClass('partial')
+			}
+
+			scrollPrev = scroll
+
+		})
+
+
+		let prevScrollpos = $(window).scrollTop()
+
+		window.addEventListener('scroll', function () {
+			const currentScrollPos = window.pageYOffset
+			const main = document.querySelector('.main-wrapper')
+
+			if (currentScrollPos === 0) {
+				// Верхняя часть страницы
+				main.classList.remove('main-scrolled', 'main-scrolled-up')
+			} else if (prevScrollpos < currentScrollPos) {
+				// Прокрутка вниз
+				main.classList.add('main-scrolled')
+			} else {
+				// Прокрутка вверх
+				main.classList.remove('main-scrolled')
+			}
+
+			if (currentScrollPos === 0) {
+				main.classList.remove('main-scrolled-up')
+			} else if (currentScrollPos < prevScrollpos) {
+				// Прокрутка вверх
+				main.classList.add('main-scrolled-up')
+			}
+
+			prevScrollpos = currentScrollPos
+		})
+	})
+
+	$('.main-scrolled').parent().addClass('test')
+
+	new Splide('.buying-row', {
+		perPage: 7,
+		gap: 20,
+		arrows: false,
+		breakpoints: {
+			1440: {
+				perPage: 6,
+			},
+			1200: {
+				perPage: 4,
+			},
+			991: {
+				perPage: 3,
+			},
+			768: {
+				perPage: 1,
+				focus: 'center',
+				autoWidth: true,
+			},
+		},
+	}).mount()
+
+	new Splide('.information-about-services', {
+		perPage: 3,
+		gap: 20,
+		arrows: false,
+		breakpoints: {
+			1200: {
+				perPage: 2,
+			},
+			991: {
+				perPage: 1,
+				focus: 'center',
+				autoWidth: true,
+			},
+			576: {
+				gap: 15,
+			},
+		},
+	}).mount()
+
+	new Splide('.review-group', {
+		perPage: 4,
+		type: 'loop',
+		gap: 20,
+		pagination: false,
+		breakpoints: {
+			1500: {
+				perPage: 4,
+				arrows: false,
+				pagination: true,
+			},
+			1200: {
+				perPage: 3,
+			},
+			991: {
+				perPage: 1,
+				autoWidth: true,
+			},
+			576: {
+				gap: 15,
+			},
+		},
+	}).mount();
+</script>
+
+</body>
+
+</html>
