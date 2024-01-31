@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/head.html', {
+'title': 'Отзывы'
+})
+
+<body>
+	<div class="wrapper main-wrapper hidden">
+		@@include('html/header.html')
+
+		<main class="page">
+			<section class='section mob-announcement d-none'>
+				<div class="container">
+					<div class="row">
+						<div class="col-12">
+							<div class='header__media justify-content-center'>
+								<div class='header__info-banner'>
+									<span class='header__info-banner-title'>Внимание</span>
+									<p>Изменения графика работы в праздничные дни <br> <span
+											class='header__info-banner-colorText'>31.12.2023:
+											11:00 - 14:30, 01 - 07.01.2024: НЕ РАБОТАЕМ</span>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class='section section--breadcrumb'>
+				<div class="container">
+					<div class="row">
+						<div class="col-12">
+							<nav aria-label="breadcrumb">
+								<ol class="breadcrumb">
+									<li class="breadcrumb-item"><a href="#">Главная</a></li>
+									<li class="breadcrumb-item active" aria-current="page">Отзывы</li>
+								</ol>
+							</nav>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="section section-block--hero section-block--hero-n-img section-block--1">
+				<div class="container">
+					<div class="row">
+						<div class="col-xl-6">
+							<div class='hero-block'>
+								<h1 class='h2 hero-block__title'>Отзывы клиентов МосГосСкупка</h1>
+								<p class='text-4 hero-block__text'>Компания МосГосСкупка дорожит своей репутацией надежного и честного
+									партнера. Нам важно мнением клиентов о сотрудничестве с нашей компанией. В этом разделе можно
+									прочитать существующие отзывы о скупке золота, ювелирных украшений, швейцарских часов и другие. Что бы
+									оставить свой отзыв, напишите его нам на почту mosgosskupka.ru@yandex.ru и после модерации он появится
+									на сайте.</p>
+								@@include('html/components/link.html', {
+								'title': 'оставить отзыв о компании',
+								'color': 'green',
+								'arrow': 'arrow-green',
+								'url': '#',
+								})
+							</div>
+						</div>
+						<div class="col-xl-6">
+							<div class="review-rating-block mt-4 mt-xl-0 ml-xl-auto mx-auto">
+								<div class="review-rating-block__wrapper">
+									<span class="review-rating-block__title">МосГосСкупка</span>
+									<p class="review-rating-block__subtitle">Скупка золота и ювелирных изделий</p>
+									<div class="review-banner__body">
+										<div class="mb-3 review-banner__row">
+											<div class="mr-3 review-banner__rating">
+												<span class="review-banner__rating-num">4,7</span>
+											</div>
+											<div class="star-group">
+												<div class="star-group__item">
+													<i class="star-icon"></i>
+												</div>
+												<div class="star-group__item">
+													<i class="star-icon"></i>
+												</div>
+												<div class="star-group__item">
+													<i class="star-icon"></i>
+												</div>
+												<div class="star-group__item">
+													<i class="star-icon"></i>
+												</div>
+												<div class="star-group__item">
+													<i class="star-icon"></i>
+												</div>
+											</div>
+											<span class="text-7 review-banner__t1">39 отзывов</span>
+										</div>
+										<div class="review-rating-block__list">
+											<div class="review-banner__row-new review-rating-block__elem">
+												<div class="review-rating-block__elem-i1">
+													<span class="review-rating-block__elem-name">Расположение</span>
+													<span class="review-rating-block__elem-percent">
+														<i class="like-green-icon"></i>
+														100%
+													</span>
+												</div>
+												<span class="review-rating-block__elem-i2">11 отзывов</span>
+											</div>
+											<div class="review-banner__row-new review-rating-block__elem">
+												<div class="review-rating-block__elem-i1">
+													<span class="review-rating-block__elem-name">Время ожидания</span>
+													<span class="review-rating-block__elem-percent">
+														<i class="like-green-icon"></i>
+														100%
+													</span>
+												</div>
+												<span class="review-rating-block__elem-i2">15 отзывов</span>
+											</div>
+											<div class="review-banner__row-new review-rating-block__elem">
+												<div class="review-rating-block__elem-i1">
+													<span class="review-rating-block__elem-name">Персонал</span>
+													<span class="review-rating-block__elem-percent">
+														<i class="like-green-icon"></i>
+														89%
+													</span>
+												</div>
+												<span class="review-rating-block__elem-i2">22 отзывов</span>
+											</div>
+											<div class="review-banner__row-new review-rating-block__elem">
+												<div class="review-rating-block__elem-i1">
+													<span class="review-rating-block__elem-name">Обслуживание</span>
+													<span class="review-rating-block__elem-percent">
+														<i class="like-green-icon"></i>
+														85%
+													</span>
+												</div>
+												<span class="review-rating-block__elem-i2">34 отзывов</span>
+											</div>
+										</div>
+
+										<div class="review-banner__row mt-1 review-banner__row-2">
+											<p class="review-banner__t2 mr-auto">Проверены Яндексом</p>
+											<a class="ml-0 ml-md-3 review-banner__link" href="#">Читать все отзывы</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="section section--review section--review-b60">
+				<div class="container">
+					<div class="row">
+						<div class="col-12">
+							<h2 class="h2 section--review__title mb-0">Отзывы о нас</h2>
+						</div>
+						<div class="col-12">
+							<div class='review-group splide'>
+								<div class="splide__track">
+									<ul class="splide__list">
+										<li class='splide__slide'>
+											<div class='review'>
+												<span class='review__title h4-min'>Константин Глызин</span>
+												<div class='review__rating star-group'>
+													<div class='star-group__item'>
+														<i class='star-icon'></i>
+													</div>
+													<div class='star-group__item'>
+														<i class='star-icon'></i>
+													</div>
+													<div class='star-group__item'>
+														<i class='star-icon'></i>
+													</div>
+													<div class='star-group__item'>
+														<i class='star-icon'></i>
+													</div>
+													<div class='star-group__item'>
+														<i class='star-icon'></i>
+													</div>
+												</div>
+												<time class='review__time text-3'>21.07.2019</time>
+												<p class='review__desc text-1 mb-0'>У меня остался неполный серебряный сервиз. В скупке приняли
+													серебро по весу
+													как лом. Цена оказалась
+													в соответствии с расценками, указанными на сайте. Все быстро, удобно. Я был приятно удивлен.
+													Рекомендую.</p>
+											</div>
+										</li>
+										<li class='splide__slide'>
+											<div class='review'>
+												<span class='review__title h4-min'>Константин Глызин</span>
+												<div class='review__rating star-group'>
+													<div class='star-group__item'>
+														<i class='star-icon'></i>
+													</div>
+													<div class='star-group__item'>
+														<i class='star-icon'></i>
+													</div>
+													<div class='star-group__item'>
+														<i class='star-icon'></i>
+													</div>
+													<div class='star-group__item'>
+														<i class='star-icon'></i>
+													</div>
+													<div class='star-group__item'>
+														<i class='star-icon'></i>
+													</div>
+												</div>
+												<time class='review__time text-3'>21.07.2019</time>
+												<p class='review__desc text-1 mb-0'>У меня остался неполный серебряный сервиз. В скупке приняли
+													серебро по весу
+													как лом. Цена оказалась
+													в соответствии с расценками, указанными на сайте. Все быстро, удобно. Я был приятно удивлен.
+													Рекомендую.</p>
+											</div>
+										</li>
+										<li class='splide__slide'>
+											<div class='review'>
+												<span class='review__title h4-min'>Константин Глызин</span>
+												<div class='review__rating star-group'>
+													<div class='star-group__item'>
+														<i class='star-icon'></i>
+													</div>
+													<div class='star-group__item'>
+														<i class='star-icon'></i>
+													</div>
+													<div class='star-group__item'>
+														<i class='star-icon'></i>
+													</div>
+													<div class='star-group__item'>
+														<i class='star-icon'></i>
+													</div>
+													<div class='star-group__item'>
+														<i class='star-icon'></i>
+													</div>
+												</div>
+												<time class='review__time text-3'>21.07.2019</time>
+												<p class='review__desc text-1 mb-0'>У меня остался неполный серебряный сервиз. В скупке приняли
+													серебро по весу
+													как лом. Цена оказалась
+													в соответствии с расценками, указанными на сайте. Все быстро, удобно. Я был приятно удивлен.
+													Рекомендую.</p>
+											</div>
+										</li>
+										<li class='splide__slide'>
+											<div class='review'>
+												<span class='review__title h4-min'>Константин Глызин</span>
+												<div class='review__rating star-group'>
+													<div class='star-group__item'>
+														<i class='star-icon'></i>
+													</div>
+													<div class='star-group__item'>
+														<i class='star-icon'></i>
+													</div>
+													<div class='star-group__item'>
+														<i class='star-icon'></i>
+													</div>
+													<div class='star-group__item'>
+														<i class='star-icon'></i>
+													</div>
+													<div class='star-group__item'>
+														<i class='star-icon'></i>
+													</div>
+												</div>
+												<time class='review__time text-3'>21.07.2019</time>
+												<p class='review__desc text-1 mb-0'>У меня остался неполный серебряный сервиз. В скупке приняли
+													серебро по весу
+													как лом. Цена оказалась
+													в соответствии с расценками, указанными на сайте. Все быстро, удобно. Я был приятно удивлен.
+													Рекомендую.</p>
+											</div>
+										</li>
+										<li class='splide__slide'>
+											<div class='review'>
+												<span class='review__title h4-min'>Константин Глызин</span>
+												<div class='review__rating star-group'>
+													<div class='star-group__item'>
+														<i class='star-icon'></i>
+													</div>
+													<div class='star-group__item'>
+														<i class='star-icon'></i>
+													</div>
+													<div class='star-group__item'>
+														<i class='star-icon'></i>
+													</div>
+													<div class='star-group__item'>
+														<i class='star-icon'></i>
+													</div>
+													<div class='star-group__item'>
+														<i class='star-icon'></i>
+													</div>
+												</div>
+												<time class='review__time text-3'>21.07.2019</time>
+												<p class='review__desc text-1 mb-0'>У меня остался неполный серебряный сервиз. </p>
+											</div>
+										</li>
+										<li class='splide__slide'>
+											<div class='review'>
+												<span class='review__title h4-min'>Константин Глызин</span>
+												<div class='review__rating star-group'>
+													<div class='star-group__item'>
+														<i class='star-icon'></i>
+													</div>
+													<div class='star-group__item'>
+														<i class='star-icon'></i>
+													</div>
+													<div class='star-group__item'>
+														<i class='star-icon'></i>
+													</div>
+													<div class='star-group__item'>
+														<i class='star-icon'></i>
+													</div>
+													<div class='star-group__item'>
+														<i class='star-icon'></i>
+													</div>
+												</div>
+												<time class='review__time text-3'>21.07.2019</time>
+												<p class='review__desc text-1 mb-0'>У меня остался неполный серебряный сервиз. </p>
+											</div>
+										</li>
+										<li class='splide__slide'>
+											<div class='review'>
+												<span class='review__title h4-min'>Константин Глызин</span>
+												<div class='review__rating star-group'>
+													<div class='star-group__item'>
+														<i class='star-icon'></i>
+													</div>
+													<div class='star-group__item'>
+														<i class='star-icon'></i>
+													</div>
+													<div class='star-group__item'>
+														<i class='star-icon'></i>
+													</div>
+													<div class='star-group__item'>
+														<i class='star-icon'></i>
+													</div>
+													<div class='star-group__item'>
+														<i class='star-icon'></i>
+													</div>
+												</div>
+												<time class='review__time text-3'>21.07.2019</time>
+												<p class='review__desc text-1 mb-0'>У меня остался неполный серебряный сервиз. </p>
+											</div>
+										</li>
+										<li class='splide__slide'>
+											<div class='review'>
+												<span class='review__title h4-min'>Константин Глызин</span>
+												<div class='review__rating star-group'>
+													<div class='star-group__item'>
+														<i class='star-icon'></i>
+													</div>
+													<div class='star-group__item'>
+														<i class='star-icon'></i>
+													</div>
+													<div class='star-group__item'>
+														<i class='star-icon'></i>
+													</div>
+													<div class='star-group__item'>
+														<i class='star-icon'></i>
+													</div>
+													<div class='star-group__item'>
+														<i class='star-icon'></i>
+													</div>
+												</div>
+												<time class='review__time text-3'>21.07.2019</time>
+												<p class='review__desc text-1 mb-0'>У меня остался неполный серебряный сервиз. </p>
+											</div>
+										</li>
+										<li class='splide__slide'>
+											<div class='review'>
+												<span class='review__title h4-min'>Константин Глызин</span>
+												<div class='review__rating star-group'>
+													<div class='star-group__item'>
+														<i class='star-icon'></i>
+													</div>
+													<div class='star-group__item'>
+														<i class='star-icon'></i>
+													</div>
+													<div class='star-group__item'>
+														<i class='star-icon'></i>
+													</div>
+													<div class='star-group__item'>
+														<i class='star-icon'></i>
+													</div>
+													<div class='star-group__item'>
+														<i class='star-icon'></i>
+													</div>
+												</div>
+												<time class='review__time text-3'>21.07.2019</time>
+												<p class='review__desc text-1 mb-0'>У меня остался неполный серебряный сервиз. </p>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<div class="modal fade download-files-modal" id="clipFileModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+			aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-content">
+					<div class="modal-body">
+						<div class="download-files-modal__wrapper">
+							<ul class='download-files-modal__list'>
+								<li class='download-files-modal__item'>
+									<a class='download-files-modal__elem' href="#">
+										<span class='download-files-modal__icon'>
+											<i class='file-icon'></i>
+										</span>
+										<span class='download-files-modal__link'>Открыть файл</span>
+									</a>
+								</li>
+								<li class='download-files-modal__item'>
+									<a class='download-files-modal__elem' href="#">
+										<span class='download-files-modal__icon'>
+											<i class='file-icon'></i>
+										</span>
+										<span class='download-files-modal__link'>Камера</span>
+									</a>
+								</li>
+								<li class='download-files-modal__item'>
+									<a class='download-files-modal__elem' href="#">
+										<span class='download-files-modal__icon'>
+											<i class='file-icon'></i>
+										</span>
+										<span class='download-files-modal__link'>Галерея фотографий</span>
+									</a>
+								</li>
+							</ul>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+		@@include('html/footer.html')
+	</div>
+
+	<script src="
+	https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
+	"></script>
+	<script>
+		new Splide('.review-group', {
+			perPage: 4,
+			type: 'loop',
+			gap: 20,
+			pagination: false,
+			breakpoints: {
+				1500: {
+					perPage: 4,
+					arrows: false,
+					pagination: true,
+				},
+				1200: {
+					perPage: 3,
+				},
+				991: {
+					perPage: 1,
+					autoWidth: true,
+				},
+				576: {
+					gap: 15,
+				},
+			},
+		}).mount();
+
+	</script>
+	@@include('html/script.html')
+
+</body>
+
+</html>

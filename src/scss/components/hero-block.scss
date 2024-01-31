@@ -10,8 +10,16 @@
   padding: 20px;
   margin: -20px;
 
-  &__title {
+  &__title.h1 {
     margin-bottom: 25px;
+  }
+
+  &__title.h2 {
+    margin-bottom: 20px;
+  }
+
+  &__text {
+    margin-bottom: 20px;
   }
 }
 
@@ -23,11 +31,19 @@
       max-width: 80%;
     }
   }
+
+  .section-block--hero-n-img .hero-block {
+    &__text {
+      max-width: 100%;
+    }
+  }
 }
 
 @media (max-width: 767.98px) {
   .hero-block {
     background: linear-gradient(90deg, #fff 40%, rgba(255, 255, 255, 0) 99.87%);
+    &__title.h1,
+    &__title.h2,
     &__title {
       margin-bottom: 10px;
     }

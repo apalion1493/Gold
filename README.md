@@ -10,3 +10,4 @@ https://apalion1493.github.io/Gold/dist/404.html <br>
 https://apalion1493.github.io/Gold/dist/Privacy-Policy.html <br>
 https://apalion1493.github.io/Gold/dist/Guarantees.html <br>
 https://apalion1493.github.io/Gold/dist/contacts.html <br>
+https://apalion1493.github.io/Gold/dist/Reviews.html <br>

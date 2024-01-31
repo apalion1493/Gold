@@ -10753,6 +10753,10 @@ a.text-dark:hover, a.text-dark:focus {
   padding-bottom: 60px;
 }
 
+.section--review-b60 {
+  padding-bottom: 66px;
+}
+
 @media (max-width: 1400px) {
   .section-block--4 {
     padding: 30px 10px;
@@ -10771,6 +10775,9 @@ a.text-dark:hover, a.text-dark:focus {
 @media (max-width: 991.98px) {
   .section {
     padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .section--review-b60 {
     padding-bottom: 30px;
   }
   .section--ty {
@@ -11721,8 +11728,14 @@ a.text-dark:hover, a.text-dark:focus {
   padding: 20px;
   margin: -20px;
 }
-.hero-block__title {
+.hero-block__title.h1 {
   margin-bottom: 25px;
+}
+.hero-block__title.h2 {
+  margin-bottom: 20px;
+}
+.hero-block__text {
+  margin-bottom: 20px;
 }
 
 @media (max-width: 1199.98px) {
@@ -11732,12 +11745,15 @@ a.text-dark:hover, a.text-dark:focus {
   .hero-block__text {
     max-width: 80%;
   }
+  .section-block--hero-n-img .hero-block__text {
+    max-width: 100%;
+  }
 }
 @media (max-width: 767.98px) {
   .hero-block {
     background: linear-gradient(90deg, #fff 40%, rgba(255, 255, 255, 0) 99.87%);
   }
-  .hero-block__title {
+  .hero-block__title.h1, .hero-block__title.h2, .hero-block__title {
     margin-bottom: 10px;
   }
   .hero-block__text {
