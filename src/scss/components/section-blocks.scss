@@ -106,6 +106,16 @@
     height: 460px;
     z-index: -1;
   }
+
+  &--hero-img5 {
+    position: absolute;
+    top: -75px;
+    right: -100px;
+    object-fit: cover;
+    width: 1278px;
+    height: 466px;
+    z-index: -1;
+  }
 }
 
 .swiper {
@@ -137,6 +147,14 @@
   display: flex;
   align-items: flex-end;
   justify-content: flex-end;
+}
+
+.section--gold {
+  background: var(--yellow-2-color);
+
+  .section-block__wrapper {
+    border-color: var(--turquoise-color);
+  }
 }
 
 .section--ty {
@@ -252,6 +270,14 @@
     height: 138px;
     right: 0;
     top: -30px;
+  }
+
+  .section-block--hero-img5 {
+    top: -30px;
+    width: 463px;
+    height: 174px;
+    right: auto;
+    left: 0;
   }
 
   .section-block--4 .section-block__wrapper {

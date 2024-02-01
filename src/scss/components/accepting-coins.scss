@@ -1,0 +1,152 @@
+.accepting-coins {
+  &__tab-content {
+    border-radius: 5px;
+    background: var(--white-color);
+    box-shadow: -2px -2px 4px 0px rgba(10, 50, 49, 0.15),
+      4px 4px 6px 0px rgba(10, 50, 49, 0.25);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .accordion-answer {
+    gap: 0;
+  }
+
+  .accordion-answer .card {
+    border: 0 !important;
+    overflow: visible !important;
+    background: initial;
+  }
+
+  .card-body {
+    padding: 0;
+    padding-bottom: 15px;
+  }
+
+  .card-header {
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+
+    button {
+      color: var(--black-color);
+      font-family: 'Lora', serif;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 140%; /* 33.6px */
+      text-transform: uppercase;
+
+      &:not(.collapsed) {
+        font-weight: 600;
+      }
+    }
+  }
+
+  &__img {
+    margin-right: 10px;
+    min-width: 200px;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  &__text {
+    margin-bottom: 0;
+  }
+
+  &__tabs {
+    margin-top: 40px;
+  }
+
+  &__pills {
+    gap: 15px;
+    align-items: flex-start;
+    margin-top: 40px;
+
+    .nav-link {
+      background: initial;
+      border: none;
+      box-shadow: none;
+      outline: none;
+      color: var(--black-color);
+      font-family: 'Lora', serif;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 140%; /* 33.6px */
+      text-transform: uppercase;
+      text-align: left;
+      padding: 0;
+      border-radius: 0;
+      background: initial;
+      border: none;
+      box-shadow: none;
+      outline: none;
+
+      &.active {
+        background: initial;
+        color: var(--black-color);
+        font-weight: 600;
+        border-bottom: 1px solid var(--black-color);
+      }
+
+      &:hover {
+        background: initial;
+        box-shadow: none;
+        outline: none;
+      }
+    }
+  }
+
+  &__footer {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-top: 40px;
+  }
+
+  &__btn {
+    min-width: 300px;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .accepting-coins__img {
+    width: 100px;
+    height: 100px;
+    min-width: 100px;
+  }
+
+  .accepting-coins__footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .accepting-coins__footer {
+    flex-direction: column-reverse;
+    margin-top: 5px;
+  }
+
+  .accepting-coins__tab-content {
+    padding: 10px;
+    gap: 0;
+  }
+
+  .accepting-coins__title {
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    margin-bottom: 10px;
+    display: block;
+  }
+
+  .accepting-coins__subtitle {
+    margin-bottom: 20px;
+  }
+}
