@@ -10729,6 +10729,9 @@ a.text-dark:hover, a.text-dark:focus {
   padding-top: 80px;
   padding-bottom: 80px;
 }
+.section-block--pt80 {
+  padding-top: 80px;
+}
 .section-block--hero {
   position: relative;
   overflow: hidden;
@@ -10763,6 +10766,15 @@ a.text-dark:hover, a.text-dark:focus {
   object-fit: cover;
   width: 1600px;
   height: 540px;
+  z-index: -1;
+}
+.section-block--hero-img4 {
+  position: absolute;
+  top: -75px;
+  right: 260px;
+  object-fit: cover;
+  width: 431px;
+  height: 460px;
   z-index: -1;
 }
 
@@ -10814,6 +10826,9 @@ a.text-dark:hover, a.text-dark:focus {
   }
 }
 @media (max-width: 1199.98px) {
+  .section-block--hero-img4 {
+    right: 0;
+  }
   .section--calculator img {
     padding-bottom: 10px;
   }
@@ -10834,6 +10849,9 @@ a.text-dark:hover, a.text-dark:focus {
   .section--60 {
     padding-top: 60px;
     padding-bottom: 60px;
+  }
+  .section--pt80 {
+    padding-top: 80px;
   }
   .section--review-b60 {
     padding-bottom: 30px;
@@ -10872,6 +10890,12 @@ a.text-dark:hover, a.text-dark:focus {
     z-index: -1;
   }
   .section-block--hero-img3 {
+    width: 320px;
+    height: 138px;
+    right: 0;
+    top: -30px;
+  }
+  .section-block--hero-img4 {
     width: 320px;
     height: 138px;
     right: 0;
@@ -11795,6 +11819,9 @@ a.text-dark:hover, a.text-dark:focus {
 .hero-block--bg1 {
   background: radial-gradient(248.04% 87.54% at 31.57% 60%, rgba(255, 255, 255, 0.9) 72.52%, rgba(255, 255, 255, 0) 100%);
 }
+.hero-block--bg2 {
+  background: linear-gradient(90deg, #fff 60%, rgba(255, 255, 255, 0) 99.87%);
+}
 .hero-block__title.h1 {
   margin-bottom: 25px;
 }
@@ -11814,6 +11841,9 @@ a.text-dark:hover, a.text-dark:focus {
   }
   .section-block--hero-n-img .hero-block__text {
     max-width: 100%;
+  }
+  .hero-block--bg2 {
+    background: linear-gradient(90deg, #fff 60%, rgba(255, 255, 255, 0) 99.87%);
   }
 }
 @media (max-width: 767.98px) {
@@ -13564,6 +13594,9 @@ header.header .header--mob {
 .expert-comment__block {
   display: flex;
 }
+.expert-comment--grey {
+  background: var(--grey-1-color);
+}
 .expert-comment__icon {
   font-family: Lora;
   font-size: 100px;
@@ -13623,6 +13656,10 @@ header.header .header--mob {
   width: 200px;
   height: 200px;
   object-fit: cover;
+}
+
+.expert-comment--grey .expert-comment__icon {
+  color: var(--grey-1-color);
 }
 
 .section--expert-comment {

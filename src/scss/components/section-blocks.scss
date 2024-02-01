@@ -52,6 +52,10 @@
     padding-bottom: 80px;
   }
 
+  &--pt80 {
+    padding-top: 80px;
+  }
+
   &--hero {
     position: relative;
     overflow: hidden;
@@ -90,6 +94,16 @@
     object-fit: cover;
     width: 1600px;
     height: 540px;
+    z-index: -1;
+  }
+
+  &--hero-img4 {
+    position: absolute;
+    top: -75px;
+    right: 260px;
+    object-fit: cover;
+    width: 431px;
+    height: 460px;
     z-index: -1;
   }
 }
@@ -146,6 +160,10 @@
 }
 
 @media (max-width: 1199.98px) {
+  .section-block--hero-img4 {
+    right: 0;
+  }
+
   .section--calculator {
     img {
       padding-bottom: 10px;
@@ -171,6 +189,10 @@
     &--60 {
       padding-top: 60px;
       padding-bottom: 60px;
+    }
+
+    &--pt80 {
+      padding-top: 80px;
     }
   }
 
@@ -219,6 +241,13 @@
   }
 
   .section-block--hero-img3 {
+    width: 320px;
+    height: 138px;
+    right: 0;
+    top: -30px;
+  }
+
+  .section-block--hero-img4 {
     width: 320px;
     height: 138px;
     right: 0;

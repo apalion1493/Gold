@@ -18,6 +18,10 @@
     );
   }
 
+  &--bg2 {
+    background: linear-gradient(90deg, #fff 60%, rgba(255, 255, 255, 0) 99.87%);
+  }
+
   &__title.h1 {
     margin-bottom: 25px;
   }
@@ -44,6 +48,10 @@
     &__text {
       max-width: 100%;
     }
+  }
+
+  .hero-block--bg2 {
+    background: linear-gradient(90deg, #fff 60%, rgba(255, 255, 255, 0) 99.87%);
   }
 }
 
