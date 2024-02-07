@@ -671,14 +671,14 @@
 						<div class="col-9">
 							<h2 class="h2 mb-4">Как формируются цены на скупку золотых изделий</h2>
 						</div>
-						<div class="col-3 d-flex align-items-center justify-content-end">
+						<div class="col-3 d-flex align-items-end justify-content-end">
 							<div class="slide-info">
 								<span class="current-slide current-slide--3"></span>/
 								<span class="total-slides total-slides--3"></span>
 							</div>
 						</div>
 						<div class="col-12">
-							<div class='wares-slider splide'>
+							<div class='wares-slider wares-slider--text splide'>
 								<div class="splide__track">
 									<ul class="splide__list">
 										<li class="splide__slide">
@@ -723,8 +723,8 @@
 											<div class='wares-slider__block'>
 												<a href='#' class="wares-slider__block-head">
 													<span>Кольца</span>
-													<img class='wares-slider__block-img-big' src="images/wares-4.png" alt="">
-													<img class='wares-slider__block-img-small' src="images/wares-4-min.png" alt="">
+													<img class='wares-slider__block-img-big' src="images/wares-3.png" alt="">
+													<img class='wares-slider__block-img-small' src="images/wares-3-min.png" alt="">
 												</a>
 												<div class='wares-slider__block-body'>
 													<p>Вы можете продать нам любые золотые кольца: обручальные, помолвочные, печатки, перстни и
@@ -1115,7 +1115,14 @@
 				type: 'loop',
 				pagination: false,
 				lazyLoad: 'sequential',
-				gap: 20
+				gap: 20,
+				breakpoints: {
+					992: {
+						pagination: true,
+						arrows: false
+					}
+				}
+
 
 			}).mount()
 
@@ -1151,6 +1158,7 @@
 			updateSlideInfo2()
 			updateSlideInfo3()
 		})
+
 		new Splide('.buying-examples-slider', {
 			perPage: 3,
 			type: 'loop',
@@ -1175,6 +1183,7 @@
 				},
 			},
 		}).mount();
+
 	</script>
 	@@include('html/script.html')
 

@@ -17,3 +17,4 @@ https://apalion1493.github.io/Gold/dist/Buying-watches-2.html <br>
 https://apalion1493.github.io/Gold/dist/Buying-coins.html <br>
 https://apalion1493.github.io/Gold/dist/About-Us.html <br>
 https://apalion1493.github.io/Gold/dist/Buying-gold.html <br>
+https://apalion1493.github.io/Gold/dist/Buying-585-gold.html <br>
