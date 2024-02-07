@@ -16,7 +16,7 @@
   }
 
   &--blue-2 {
-    background: var(--blue-2-color);
+    background: var(--blue-3-color);
   }
 }
 
@@ -205,6 +205,16 @@
   line-height: 100%; /* 10px */
 }
 
+.text-9 {
+  color: var(--dark-green-color);
+  font-family: 'Lora', serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  letter-spacing: 0.02em;
+}
+
 .link-1 {
   color: var(--dark-green-color);
   font-family: 'Hind Madurai', sans-serif;
@@ -246,6 +256,18 @@
   margin-bottom: 40px;
 }
 
+.slide-info {
+  span {
+    color: var(--black-color);
+    font-family: 'Lora', serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%; /* 24px */
+    letter-spacing: 0.4px;
+  }
+}
+
 .color-danger {
   color: var(--red-color);
 }
@@ -276,6 +298,34 @@
   max-width: 1500px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.grey-block-wrapper {
+  border-radius: 5px;
+  background: var(--grey-1-color);
+  box-shadow: -2px -2px 4px 0px rgba(10, 50, 49, 0.15),
+    4px 4px 6px 0px rgba(10, 50, 49, 0.25);
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.gold-valuation-process {
+  &__list {
+    max-width: 455px;
+    margin-bottom: 0;
+  }
+
+  &__img {
+    img {
+      max-width: 100%;
+      width: 100%;
+    }
+  }
 }
 
 .box-shadow {
@@ -704,6 +754,12 @@
 }
 
 @media (max-width: 991.98px) {
+  .gold-valuation-process {
+    &__img {
+      margin-top: 15px;
+    }
+  }
+
   .shadow-text {
     &__title {
       margin-bottom: 15px;
@@ -720,6 +776,24 @@
 }
 
 @media (max-width: 767.98px) {
+  .gold-valuation-process {
+    &__list {
+      max-width: 100%;
+      margin-bottom: 0;
+    }
+
+    &__img {
+      max-width: 100%;
+      width: 100%;
+      margin-top: 10px;
+
+      img {
+        max-width: 100%;
+        width: 100%;
+      }
+    }
+  }
+
   .contacts-scheme__info-head {
     i {
       width: 60px;
@@ -778,6 +852,17 @@
     display: flex;
     flex-direction: column;
     gap: 7px;
+  }
+
+  .h5-min {
+    font-size: 18px;
+    line-height: 110%;
+    letter-spacing: 0.02em;
+  }
+
+  .text-4 {
+    font-size: 16px;
+    line-height: 120%;
   }
 }
 

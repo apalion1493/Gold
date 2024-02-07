@@ -1,0 +1,135 @@
+.wares-slider {
+  margin-left: -10px;
+  margin-right: -10px;
+
+  .splide__track {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+    overflow: visible;
+  }
+
+  .splide__arrow {
+    top: -53px;
+  }
+
+  .splide__arrow--next {
+    right: 0;
+  }
+
+  .splide__arrow--prev {
+    left: auto;
+    right: 160px;
+  }
+
+  &__block {
+    background: var(--white-color);
+    box-shadow: 4px 4px 8px 0px rgba(10, 50, 49, 0.25),
+      -4px -4px 8px 0px rgba(10, 50, 49, 0.25);
+    padding: 10px;
+    width: 455px;
+    height: 277px;
+  }
+
+  &__block-head {
+    border-radius: 5px;
+    border: 1px solid var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    overflow: hidden;
+    padding: 20px;
+    padding-bottom: 10px;
+
+    &:hover {
+      color: #000;
+      text-decoration: none;
+    }
+
+    span {
+      color: #000;
+      font-family: 'Lora', serif;
+      font-size: 32px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 100%; /* 32px */
+      letter-spacing: 0.32px;
+      display: block;
+      margin-bottom: 15px;
+    }
+
+    img {
+      max-width: 100%;
+      object-fit: contain;
+      align-self: center;
+    }
+  }
+
+  &__block-body {
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    transition: 0.2s;
+    overflow: hidden;
+    margin-top: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    p {
+      color: var(--black-color);
+      font-family: 'Hind Madurai', sans-serif;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 120%;
+    }
+
+    .btn {
+      align-self: flex-end;
+      min-width: 290px;
+    }
+  }
+}
+
+.wares-slider__block-img-small {
+  display: block;
+}
+
+.wares-slider__block-img-big {
+  display: none;
+}
+
+.wares-slider__block.active {
+  width: 690px;
+  height: auto;
+
+  .wares-slider__block-head {
+    padding-bottom: 20px;
+  }
+
+  .wares-slider__block-img-small {
+    display: none;
+  }
+
+  .wares-slider__block-img-big {
+    display: block;
+  }
+
+  .wares-slider__block-body {
+    display: flex;
+  }
+}
+
+// .wares-slider .is-active .wares-slider__block {
+//   width: 690px;
+// }
+
+// .wares-slider .is-active .wares-slider__block-body {
+//   height: 120px;
+//   transition: 0.2s;
+// }
+
+.wares-list-section {
+  .slide-info {
+    margin-right: 75px;
+  }
+}

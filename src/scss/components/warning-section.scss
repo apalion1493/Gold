@@ -38,12 +38,11 @@
 
   &__text {
     color: var(--black-color);
-    font-family: 'Lora', serif;
-    font-size: 20px;
+    font-family: 'Hind Madurai', sans-serif;
+    font-size: 18px;
     font-style: normal;
     font-weight: 400;
-    line-height: 110%; /* 22px */
-    letter-spacing: 0.4px;
+    line-height: 120%;
   }
 
   &__col-3 {
@@ -129,7 +128,8 @@
 
   .warning-section__text {
     font-size: 16px;
-    line-height: 120%; /* 19.2px */
+    font-weight: 400;
+    line-height: 120%;
   }
 }
 

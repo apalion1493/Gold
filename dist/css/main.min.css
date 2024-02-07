@@ -9998,7 +9998,7 @@ a.text-dark:hover, a.text-dark:focus {
   background: var(--grey-1-color);
 }
 .section--blue-2 {
-  background: var(--blue-2-color);
+  background: var(--blue-3-color);
 }
 
 .h1 {
@@ -10186,6 +10186,16 @@ a.text-dark:hover, a.text-dark:focus {
   line-height: 100%; /* 10px */
 }
 
+.text-9 {
+  color: var(--dark-green-color);
+  font-family: "Lora", serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  letter-spacing: 0.02em;
+}
+
 .link-1 {
   color: var(--dark-green-color);
   font-family: "Hind Madurai", sans-serif;
@@ -10227,6 +10237,16 @@ a.text-dark:hover, a.text-dark:focus {
   margin-bottom: 40px;
 }
 
+.slide-info span {
+  color: var(--black-color);
+  font-family: "Lora", serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%; /* 24px */
+  letter-spacing: 0.4px;
+}
+
 .color-danger {
   color: var(--red-color);
 }
@@ -10255,6 +10275,28 @@ a.text-dark:hover, a.text-dark:focus {
   max-width: 1500px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.grey-block-wrapper {
+  border-radius: 5px;
+  background: var(--grey-1-color);
+  box-shadow: -2px -2px 4px 0px rgba(10, 50, 49, 0.15), 4px 4px 6px 0px rgba(10, 50, 49, 0.25);
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.gold-valuation-process__list {
+  max-width: 455px;
+  margin-bottom: 0;
+}
+.gold-valuation-process__img img {
+  max-width: 100%;
+  width: 100%;
 }
 
 .box-shadow {
@@ -10621,6 +10663,9 @@ a.text-dark:hover, a.text-dark:focus {
   }
 }
 @media (max-width: 991.98px) {
+  .gold-valuation-process__img {
+    margin-top: 15px;
+  }
   .shadow-text__title {
     margin-bottom: 15px;
     font-size: 24px;
@@ -10633,6 +10678,19 @@ a.text-dark:hover, a.text-dark:focus {
   }
 }
 @media (max-width: 767.98px) {
+  .gold-valuation-process__list {
+    max-width: 100%;
+    margin-bottom: 0;
+  }
+  .gold-valuation-process__img {
+    max-width: 100%;
+    width: 100%;
+    margin-top: 10px;
+  }
+  .gold-valuation-process__img img {
+    max-width: 100%;
+    width: 100%;
+  }
   .contacts-scheme__info-head i {
     width: 60px;
     min-width: 60px;
@@ -10678,6 +10736,15 @@ a.text-dark:hover, a.text-dark:focus {
     display: flex;
     flex-direction: column;
     gap: 7px;
+  }
+  .h5-min {
+    font-size: 18px;
+    line-height: 110%;
+    letter-spacing: 0.02em;
+  }
+  .text-4 {
+    font-size: 16px;
+    line-height: 120%;
   }
 }
 .splide__pagination {
@@ -10830,6 +10897,15 @@ a.text-dark:hover, a.text-dark:focus {
   height: 794px;
   z-index: -1;
 }
+.section-block--hero-img7 {
+  position: absolute;
+  top: -60px;
+  right: -100px;
+  object-fit: cover;
+  width: 1600px;
+  height: 500px;
+  z-index: -1;
+}
 
 .swiper {
   padding-left: 5px;
@@ -10926,6 +11002,12 @@ a.text-dark:hover, a.text-dark:focus {
   .section--inf-ab-serv {
     padding: 30px 0;
   }
+  .section-block--hero-img7 {
+    top: -60px;
+    right: -135px;
+    width: 992px;
+    height: 500px;
+  }
 }
 @media (max-width: 767.98px) {
   .section-block--4 {
@@ -10969,6 +11051,12 @@ a.text-dark:hover, a.text-dark:focus {
     left: 0;
   }
   .section-block--hero-img6 {
+    top: -30px;
+    width: 100%;
+    height: 120px;
+    right: 0;
+  }
+  .section-block--hero-img7 {
     top: -30px;
     width: 100%;
     height: 120px;
@@ -11931,6 +12019,7 @@ a.text-dark:hover, a.text-dark:focus {
   }
   .hero-block__text {
     font-size: 16px;
+    max-width: 100%;
   }
 }
 .contacts-block {
@@ -12167,6 +12256,53 @@ a.text-dark:hover, a.text-dark:focus {
     display: block;
   }
 }
+.buying-examples-slider {
+  margin-top: 30px;
+}
+.buying-examples-slider .review {
+  overflow: hidden;
+}
+.buying-examples-slider .review img {
+  object-fit: cover;
+  max-width: 100%;
+  margin-bottom: 15px;
+}
+.buying-examples-slider .splide__track {
+  overflow: visible;
+}
+.buying-examples-slider .splide__slide {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.buying-examples-slider .splide__pagination {
+  bottom: -30px;
+}
+.buying-examples-slider .review__title {
+  margin-bottom: 15px;
+}
+@media (max-width: 1500px) {
+  .buying-examples-slider .splide__arrow--next {
+    right: 0;
+  }
+  .buying-examples-slider .splide__arrow--prev {
+    left: 0;
+  }
+}
+@media (max-width: 991.98px) {
+  .buying-examples-slider .review {
+    width: 454px;
+    padding: 20px 10px;
+  }
+  .buying-examples-slider .review__title {
+    font-size: 18px;
+  }
+}
+@media (max-width: 575.98px) {
+  .buying-examples-slider .review {
+    width: 260px !important;
+  }
+}
+
 .review-banner {
   padding: 10px;
   background: var(--white-color);
@@ -13577,12 +13713,11 @@ header.header .header--mob {
 }
 .warning-section__text {
   color: var(--black-color);
-  font-family: "Lora", serif;
-  font-size: 20px;
+  font-family: "Hind Madurai", sans-serif;
+  font-size: 18px;
   font-style: normal;
   font-weight: 400;
-  line-height: 110%; /* 22px */
-  letter-spacing: 0.4px;
+  line-height: 120%;
 }
 .warning-section__col-3 {
   padding-top: 12px;
@@ -13653,7 +13788,8 @@ header.header .header--mob {
   }
   .warning-section__text {
     font-size: 16px;
-    line-height: 120%; /* 19.2px */
+    font-weight: 400;
+    line-height: 120%;
   }
 }
 .warning-section--mt-40 {
@@ -14358,5 +14494,316 @@ header.header .header--mob {
 }
 .requisites-block__row p {
   margin-bottom: 0;
+}
+
+.visual-block {
+  background: var(--blue-3-color);
+  box-shadow: -2px -2px 4px 0px rgba(10, 50, 49, 0.15), 4px 4px 6px 0px rgba(10, 50, 49, 0.25);
+  padding: 20px;
+  padding-bottom: 35px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.visual-block__title {
+  color: var(--black-color);
+  font-family: "Lora", serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%; /* 32px */
+  letter-spacing: 0.32px;
+  margin-bottom: 20px;
+  display: block;
+}
+.visual-block__text {
+  margin-bottom: 15px;
+}
+.visual-block .slide-info {
+  margin-left: 95px;
+}
+
+.visual-slider {
+  margin-top: auto;
+  margin-bottom: 33px;
+}
+.visual-slider .splide__arrow {
+  bottom: -75px;
+  top: auto;
+  transform: initial;
+}
+.visual-slider .splide__arrow--prev {
+  left: 0;
+}
+.visual-slider .splide__arrow--next {
+  right: auto;
+  left: 160px;
+}
+.visual-slider__item {
+  height: 100%;
+}
+.visual-slider__item img {
+  object-fit: cover;
+  max-width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 575.98px) {
+  .visual-block {
+    padding: 20px 10px;
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+  .visual-block__title {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 100%; /* 18px */
+    letter-spacing: 0.18px;
+    margin-bottom: 15px;
+  }
+  .visual-block__text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 120%;
+  }
+  .visual-block .splide__pagination {
+    bottom: -31px;
+  }
+  .visual-block .slide-info {
+    display: none;
+  }
+  .visual-slider__item {
+    height: auto;
+  }
+  .visual-slider__item img {
+    height: auto;
+    width: 260px;
+  }
+}
+.wares-slider {
+  margin-left: -10px;
+  margin-right: -10px;
+}
+.wares-slider .splide__track {
+  padding-left: 10px !important;
+  padding-right: 10px !important;
+  overflow: visible;
+}
+.wares-slider .splide__arrow {
+  top: -53px;
+}
+.wares-slider .splide__arrow--next {
+  right: 0;
+}
+.wares-slider .splide__arrow--prev {
+  left: auto;
+  right: 160px;
+}
+.wares-slider__block {
+  background: var(--white-color);
+  box-shadow: 4px 4px 8px 0px rgba(10, 50, 49, 0.25), -4px -4px 8px 0px rgba(10, 50, 49, 0.25);
+  padding: 10px;
+  width: 455px;
+  height: 277px;
+}
+.wares-slider__block-head {
+  border-radius: 5px;
+  border: 1px solid var(--primary-color);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  overflow: hidden;
+  padding: 20px;
+  padding-bottom: 10px;
+}
+.wares-slider__block-head:hover {
+  color: #000;
+  text-decoration: none;
+}
+.wares-slider__block-head span {
+  color: #000;
+  font-family: "Lora", serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%; /* 32px */
+  letter-spacing: 0.32px;
+  display: block;
+  margin-bottom: 15px;
+}
+.wares-slider__block-head img {
+  max-width: 100%;
+  object-fit: contain;
+  align-self: center;
+}
+.wares-slider__block-body {
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  transition: 0.2s;
+  overflow: hidden;
+  margin-top: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.wares-slider__block-body p {
+  color: var(--black-color);
+  font-family: "Hind Madurai", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+}
+.wares-slider__block-body .btn {
+  align-self: flex-end;
+  min-width: 290px;
+}
+
+.wares-slider__block-img-small {
+  display: block;
+}
+
+.wares-slider__block-img-big {
+  display: none;
+}
+
+.wares-slider__block.active {
+  width: 690px;
+  height: auto;
+}
+.wares-slider__block.active .wares-slider__block-head {
+  padding-bottom: 20px;
+}
+.wares-slider__block.active .wares-slider__block-img-small {
+  display: none;
+}
+.wares-slider__block.active .wares-slider__block-img-big {
+  display: block;
+}
+.wares-slider__block.active .wares-slider__block-body {
+  display: flex;
+}
+
+.wares-list-section .slide-info {
+  margin-right: 75px;
+}
+
+.expert-block {
+  padding: 10px;
+  background: var(--white-color);
+  box-shadow: -2px -2px 4px 0px rgba(10, 50, 49, 0.15), 4px 4px 6px 0px rgba(10, 50, 49, 0.25);
+}
+.expert-block__wrapper {
+  border-radius: 3px;
+  border: 1px solid var(--primary-color);
+  padding: 20px;
+}
+.expert-block__head {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.expert-block__col {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.expert-block__list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.expert-block__item {
+  display: flex;
+  flex-direction: column;
+}
+.expert-block__item-head {
+  display: flex;
+  align-items: baseline;
+  margin-bottom: 10px;
+  margin-right: 12px;
+}
+.expert-block__item-head span {
+  text-transform: uppercase;
+}
+.expert-block__item-body {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.expert-block__item-body p {
+  margin-bottom: 0;
+}
+.expert-block__item-icon {
+  width: 40px;
+  height: 40px;
+  border: 1px solid var(--primary-color);
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 12px;
+}
+.expert-block__comment {
+  padding: 0px 10px;
+  background: var(--yellow-2-color);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+}
+.expert-block__text {
+  margin-bottom: 0;
+}
+.expert-block__k {
+  font-family: "Lora", serif;
+  font-size: 100px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: 2px;
+  color: var(--yellow-2-color);
+  text-shadow: 1px 0 1px var(--black-color), 0 1px 1px var(--black-color), -1px 0 1px var(--black-color), 0 -1px 1px var(--black-color);
+  margin-right: 8px;
+  display: block;
+}
+@media (max-width: 767.98px) {
+  .expert-block__comment {
+    margin-bottom: 15px;
+  }
+  .expert-block__col {
+    gap: 15px;
+  }
+  .expert-block__logo {
+    width: 166px;
+    height: 32px;
+  }
+  .expert-block__name {
+    font-size: 18px;
+  }
+  .expert-block__head {
+    gap: 15px;
+  }
+  .expert-block__wrapper {
+    padding: 10px;
+  }
+  .expert-block__text {
+    font-size: 12px;
+    line-height: 100%;
+    letter-spacing: 0.02em;
+  }
+  .expert-block__k {
+    font-size: 80px;
+    line-height: 80%;
+  }
+  .expert-block__comment {
+    padding: 10px;
+  }
+  .expert-block__article-col .article-section__item p {
+    font-family: "Hind Madurai", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 120%;
+  }
 }
 /*# sourceMappingURL=main.min.css.map */
