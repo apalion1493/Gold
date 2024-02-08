@@ -14852,4 +14852,147 @@ header.header .header--mob {
     line-height: 120%;
   }
 }
+
+.brand-list-big {
+  margin-left: -10px;
+  margin-right: -10px;
+}
+.brand-list-big .splide__arrow:disabled {
+  opacity: 0;
+  z-index: -100;
+}
+.brand-list-big .splide__track {
+  padding-left: 10px !important;
+  padding-right: 10px !important;
+}
+.brand-list-big .splide__slide {
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+.brand-list-big .splide__slide:last-child {
+  margin-right: 0 !important;
+}
+.brand-list-big__item {
+  box-shadow: -2px -2px 4px 0px rgba(10, 50, 49, 0.15), 4px 4px 6px 0px rgba(10, 50, 49, 0.25);
+  /* Белый */
+  background: var(--white-color);
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 256px;
+}
+.brand-list-big__wrapper {
+  border: 1px solid var(--turquoise-color);
+  border-radius: 5px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  height: 100%;
+  max-width: 100%;
+}
+.brand-list-big__item-icon {
+  margin-top: auto;
+  margin-bottom: auto;
+  max-width: 100%;
+  object-fit: cover;
+}
+.brand-list-big__item-line {
+  border: 1px solid var(--black-color);
+  width: 250px;
+  max-width: 100%;
+  margin-bottom: 20px;
+  margin-top: auto;
+}
+.brand-list-big__item-text {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.brand-list-small {
+  margin-left: -10px;
+  margin-right: -10px;
+}
+.brand-list-small .splide__arrow:disabled {
+  opacity: 0;
+  z-index: -100;
+}
+.brand-list-small .splide__track {
+  padding-left: 10px !important;
+  padding-right: 10px !important;
+}
+.brand-list-small .splide__slide {
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+.brand-list-small .splide__slide:last-child {
+  margin-right: 0 !important;
+}
+.brand-list-small .splide__slide__row {
+  justify-content: center;
+}
+.brand-list-small__item {
+  box-shadow: -2px -2px 4px 0px rgba(10, 50, 49, 0.15), 4px 4px 6px 0px rgba(10, 50, 49, 0.25);
+  /* Белый */
+  background: var(--white-color);
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 76px;
+}
+.brand-list-small__wrapper {
+  border: 1px solid var(--turquoise-color);
+  border-radius: 5px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  height: 100%;
+  max-width: 100%;
+}
+.brand-list-small__item-text {
+  text-transform: uppercase;
+  text-align: center;
+}
+.brand-list-small__title {
+  text-align: center;
+}
+
+@media (max-width: 991.98px) {
+  .brand-list-big,
+  .brand-list-small {
+    padding-bottom: 40px;
+  }
+  .brand-list-big .splide__track {
+    overflow: visible;
+  }
+  .brand-list-small .splide__track {
+    overflow: visible;
+  }
+  .brand-list-small__title {
+    font-family: "Hind Madurai", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: left;
+    text-transform: uppercase;
+  }
+}
+@media (max-width: 575.98px) {
+  .brand-list-big__item {
+    width: 260px;
+    height: 226px;
+  }
+  .brand-list-small__item {
+    width: 260px;
+    height: 76px;
+  }
+}
 /*# sourceMappingURL=main.min.css.map */

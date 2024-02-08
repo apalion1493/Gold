@@ -10,6 +10,8 @@
 // import AOS from 'aos'
 // import Swiper, { Navigation, Pagination } from 'swiper';
 
+import { Splide } from '@splidejs/splide';
+import { Grid } from '@splidejs/splide-extension-grid';
 import BaseHelpers from './helpers/BaseHelpers';
 import BurgerMenu from './modules/BurgerMenu';
 import PopupManager from './modules/PopupManager';
@@ -119,3 +121,65 @@ function formatBytes(bytes, decimals = 2) {
 $('#header-burger').click(function () {
   $('#header-top-menu-mobil').toggleClass('test');
 });
+
+new Splide('#splide-brand-list-big', {
+  pagination: false,
+  perMove: 1,
+  gap: 20,
+  snap: false,
+  grid: {
+    rows: 3,
+    cols: 4,
+    gap: {
+      row: '16px',
+      col: '20px',
+    },
+  },
+  breakpoints: {
+    992: {
+      autoWidth: true,
+      arrows: false,
+      pagination: true,
+      perMove: 1,
+      grid: {
+        rows: 2,
+        cols: 1,
+        gap: {
+          row: '6px',
+          col: '10px',
+        },
+      },
+    },
+  },
+}).mount({ Grid });
+
+new Splide('#splide-brand-list-small', {
+  pagination: false,
+  perMove: 1,
+  gap: 20,
+  snap: false,
+  grid: {
+    rows: 5,
+    cols: 4,
+    gap: {
+      row: '16px',
+      col: '20px',
+    },
+  },
+  breakpoints: {
+    992: {
+      autoWidth: true,
+      arrows: false,
+      pagination: true,
+      perMove: 1,
+      grid: {
+        rows: 3,
+        cols: 1,
+        gap: {
+          row: '6px',
+          col: '10px',
+        },
+      },
+    },
+  },
+}).mount({ Grid });

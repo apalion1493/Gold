@@ -1,0 +1,167 @@
+.brand-list-big {
+  margin-left: -10px;
+  margin-right: -10px;
+
+  .splide__arrow:disabled {
+    opacity: 0;
+    z-index: -100;
+  }
+
+  .splide__track {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+
+  .splide__slide {
+    margin-top: 4px;
+    margin-bottom: 4px;
+
+    &:last-child {
+      margin-right: 0 !important;
+    }
+  }
+
+  &__item {
+    box-shadow: -2px -2px 4px 0px rgba(10, 50, 49, 0.15),
+      4px 4px 6px 0px rgba(10, 50, 49, 0.25);
+    /* Белый */
+    background: var(--white-color);
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 256px;
+  }
+
+  &__wrapper {
+    border: 1px solid var(--turquoise-color);
+    border-radius: 5px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    height: 100%;
+    max-width: 100%;
+  }
+
+  &__item-icon {
+    margin-top: auto;
+    margin-bottom: auto;
+    max-width: 100%;
+    object-fit: cover;
+  }
+
+  &__item-line {
+    border: 1px solid var(--black-color);
+    width: 250px;
+    max-width: 100%;
+    margin-bottom: 20px;
+    margin-top: auto;
+  }
+
+  &__item-text {
+    text-transform: uppercase;
+    text-align: center;
+  }
+}
+
+.brand-list-small {
+  margin-left: -10px;
+  margin-right: -10px;
+
+  .splide__arrow:disabled {
+    opacity: 0;
+    z-index: -100;
+  }
+
+  .splide__track {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+
+  .splide__slide {
+    margin-top: 4px;
+    margin-bottom: 4px;
+
+    &:last-child {
+      margin-right: 0 !important;
+    }
+  }
+
+  .splide__slide__row {
+    justify-content: center;
+  }
+
+  &__item {
+    box-shadow: -2px -2px 4px 0px rgba(10, 50, 49, 0.15),
+      4px 4px 6px 0px rgba(10, 50, 49, 0.25);
+    /* Белый */
+    background: var(--white-color);
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 76px;
+  }
+
+  &__wrapper {
+    border: 1px solid var(--turquoise-color);
+    border-radius: 5px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    height: 100%;
+    max-width: 100%;
+  }
+
+  &__item-text {
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  &__title {
+    text-align: center;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .brand-list-big,
+  .brand-list-small {
+    padding-bottom: 40px;
+  }
+
+  .brand-list-big .splide__track {
+    overflow: visible;
+  }
+
+  .brand-list-small .splide__track {
+    overflow: visible;
+  }
+
+  .brand-list-small__title {
+    font-family: 'Hind Madurai', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: left;
+    text-transform: uppercase;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .brand-list-big__item {
+    width: 260px;
+    height: 226px;
+  }
+
+  .brand-list-small__item {
+    width: 260px;
+    height: 76px;
+  }
+}
