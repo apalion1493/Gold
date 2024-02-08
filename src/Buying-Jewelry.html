@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html lang="ru">
 @@include('html/head.html', {
-'title': 'СКУПКА ЧАСОВ'
+'title': 'СКУПКА ЮВЕЛИРНЫХ ИЗДЕЛИЙ'
 })
 
 <body>
 	<div class="wrapper main-wrapper hidden">
 		@@include('html/header.html')
-
 		<main class="page">
 			<section class='section mob-announcement'>
 				<div class="container">
@@ -29,19 +28,19 @@
 			<section class="section section-block--hero section-block--1">
 				<div class="container">
 					<picture>
-						<source media='(min-width: 768px)' srcset='images/hero-image-7.png'>
-						<source media='(min-width: 320px)' srcset='images/hero-image-7-min.png'>
-						<img class='section-block--hero-img7' src='images/hero-image-7.png'>
+						<source media='(min-width: 768px)' srcset='images/lombard-brendovyh-ukrashenii-1.png'>
+						<source media='(min-width: 320px)' srcset='images/lombard-brendovyh-ukrashenii-1-min.png'>
+						<img class='section-block--hero-img7' src='images/lombard-brendovyh-ukrashenii-1.png'>
 						</img>
 					</picture>
 					<div class="row">
 						<div class="col-xl-6">
 							<div class='hero-block'>
-								<h1 class='h1 hero-block__title'>СКУПКА ЧАСОВ</h1>
-								<p class='h3-min hero-block__text'>Компания «МосГосСкупка» осуществляет скупку часов по высоким ценам. У
-									нас можно продать часы Rolex, Breguet, Zenith, Audemars Piguet и др. Оценка подлинности изделия
-									производится на месте. Сделка оформляется в течение 20 минут, и Вы получаете на руки указанную в
-									документах сумму.</p>
+								<h1 class='h1 hero-block__title'>СКУПКА ЮВЕЛИРНЫХ ИЗДЕЛИЙ</h1>
+								<p class='text-4 hero-block__text'>«МосГосСкупка» осуществляет скупку брендовых ювелирных изделий по
+									высокой цене за 1 грамм. У нас вы можете продать золотые и серебряные украшения с драгоценными камнями
+									и без них. Сама сделка оформляется непосредственно в офисе в течение 15 – 30 минут. Деньги и
+									документальное подтверждение продажи выдается на руки сразу.</p>
 								@@include('html/components/link.html', {
 								'title': 'Онлайн оценка',
 								'color': 'gold',
@@ -63,7 +62,7 @@
 							<nav aria-label="breadcrumb">
 								<ol class="breadcrumb">
 									<li class="breadcrumb-item"><a href="#">Главная</a></li>
-									<li class="breadcrumb-item active" aria-current="page">Скупка часов</li>
+									<li class="breadcrumb-item active" aria-current="page">Скупка ювелирных изделий</li>
 								</ol>
 							</nav>
 						</div>
@@ -75,21 +74,27 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-lg-6">
-							<h2 class="h2">Бренды швейцарских часов</h2>
+							<h2 class="h2 mb-40">Бренды ювелирных украшений</h2>
 						</div>
 						<div class="col-lg-6">
-							<div>
-								<p class='text-1'>Швейцарские часы всегда считались эталоном качества. Многие из них являются настоящими
-									шедеврами
-									часового искусства. В нашем офисе можно продать швейцарские часы следующих марок: Audemars Piguet,
-									Breitling.Cartier, Patek Philippe, Rolex, Ulisse Nardin, Breguet, Franck Muller, Hublot, Zenith,
-									Vacheron Constantin.</p>
+							<div class='h-100 d-flex align-items-end '>
+								<p class='text-1 mb-40'>Мы принимаем драгоценности, обладающие определенной ценностью в кругах ценителей
+									ювелирного искусства.</p>
 							</div>
 						</div>
 						<div class="col-12">
 							<div class='splide brand-list-big' id='splide-brand-list-big'>
 								<div class="splide__track">
 									<ul class="splide__list">
+										<li class="splide__slide">
+											<div class="brand-list-big__item">
+												<div class="brand-list-big__wrapper">
+													<img class='brand-list-big__item-icon' src="images/Tiffany-Co-logo.png" alt="TIFFANY">
+													<div class='brand-list-big__item-line'></div>
+													<span class='brand-list-big__item-text text-1'>TIFFANY</span>
+												</div>
+											</div>
+										</li>
 										<li class="splide__slide">
 											<div class="brand-list-big__item">
 												<div class="brand-list-big__wrapper">
@@ -102,100 +107,91 @@
 										<li class="splide__slide">
 											<div class="brand-list-big__item">
 												<div class="brand-list-big__wrapper">
-													<img class='brand-list-big__item-icon' src="images/rolex-logo.svg" alt="Rolex">
+													<img class='brand-list-big__item-icon' src="images/VERSACE.png" alt="VERSACE">
 													<div class='brand-list-big__item-line'></div>
-													<span class='brand-list-big__item-text text-1'>Rolex</span>
+													<span class='brand-list-big__item-text text-1'>VERSACE</span>
 												</div>
 											</div>
 										</li>
 										<li class="splide__slide">
 											<div class="brand-list-big__item">
 												<div class="brand-list-big__wrapper">
-													<img class='brand-list-big__item-icon' src="images/Zenith_Watch.png" alt="Zenith">
+													<img class='brand-list-big__item-icon' src="images/Damiani-logo-big.png" alt="DAMIANI">
 													<div class='brand-list-big__item-line'></div>
-													<span class='brand-list-big__item-text text-1'>Zenith</span>
+													<span class='brand-list-big__item-text text-1'>DAMIANI</span>
 												</div>
 											</div>
 										</li>
 										<li class="splide__slide">
 											<div class="brand-list-big__item">
 												<div class="brand-list-big__wrapper">
-													<img class='brand-list-big__item-icon' src="images/PATEK-PHILIPPE.png" alt="PATEK PHILIPPE">
+													<img class='brand-list-big__item-icon' src="images/Piaget_logo.png" alt="PIAGET">
 													<div class='brand-list-big__item-line'></div>
-													<span class='brand-list-big__item-text text-1'>PATEK PHILIPPE</span>
+													<span class='brand-list-big__item-text text-1'>PIAGET</span>
 												</div>
 											</div>
 										</li>
 										<li class="splide__slide">
 											<div class="brand-list-big__item">
 												<div class="brand-list-big__wrapper">
-													<img class='brand-list-big__item-icon' src="images/Rado-logo.png" alt="Rado">
+													<img class='brand-list-big__item-icon' src="images/CHANEL.png" alt="CHANEL">
 													<div class='brand-list-big__item-line'></div>
-													<span class='brand-list-big__item-text text-1'>Rado</span>
+													<span class='brand-list-big__item-text text-1'>CHANEL</span>
 												</div>
 											</div>
 										</li>
 										<li class="splide__slide">
 											<div class="brand-list-big__item">
 												<div class="brand-list-big__wrapper">
-													<img class='brand-list-big__item-icon' src="images/ulysse-nardin-logo.png"
-														alt="ULYSSE NARDIN">
+													<img class='brand-list-big__item-icon' src="images/CARRERA-CARRERA.png"
+														alt="CARRERA & CARRERA">
 													<div class='brand-list-big__item-line'></div>
-													<span class='brand-list-big__item-text text-1'>ULYSSE NARDIN</span>
+													<span class='brand-list-big__item-text text-1'>CARRERA & CARRERA</span>
 												</div>
 											</div>
 										</li>
 										<li class="splide__slide">
 											<div class="brand-list-big__item">
 												<div class="brand-list-big__wrapper">
-													<img class='brand-list-big__item-icon' src="images/RICHARD-MILLE.png" alt="RICHARD MILLE">
+													<img class='brand-list-big__item-icon' src="images/De-Grisogono-logo.png" alt="DE GRISOGONO">
 													<div class='brand-list-big__item-line'></div>
-													<span class='brand-list-big__item-text text-1'>RICHARD MILLE</span>
+													<span class='brand-list-big__item-text text-1'>DE GRISOGONO</span>
 												</div>
 											</div>
 										</li>
 										<li class="splide__slide">
 											<div class="brand-list-big__item">
 												<div class="brand-list-big__wrapper">
-													<img class='brand-list-big__item-icon' src="images/LONGINES.png" alt="LONGINES">
+													<img class='brand-list-big__item-icon' src="images/DIOR.png" alt="DIOR">
 													<div class='brand-list-big__item-line'></div>
-													<span class='brand-list-big__item-text text-1'>LONGINES</span>
+													<span class='brand-list-big__item-text text-1'>DIOR</span>
 												</div>
 											</div>
 										</li>
 										<li class="splide__slide">
 											<div class="brand-list-big__item">
 												<div class="brand-list-big__wrapper">
-													<img class='brand-list-big__item-icon' src="images/OMEGA-LOGO.png" alt="OMEGA">
+													<img class='brand-list-big__item-icon' src="images/HARRY-WINSTON.png" alt="HARRY WINSTON">
 													<div class='brand-list-big__item-line'></div>
-													<span class='brand-list-big__item-text text-1'>OMEGA</span>
+													<span class='brand-list-big__item-text text-1'>HARRY WINSTON</span>
 												</div>
 											</div>
 										</li>
 										<li class="splide__slide">
 											<div class="brand-list-big__item">
 												<div class="brand-list-big__wrapper">
-													<img class='brand-list-big__item-icon' src="images/Breitling_logo.png" alt="Breitling">
+													<img class='brand-list-big__item-icon' src="images/Graff.png" alt="Graff">
 													<div class='brand-list-big__item-line'></div>
-													<span class='brand-list-big__item-text text-1'>Breitling</span>
+													<span class='brand-list-big__item-text text-1'>Graff</span>
 												</div>
 											</div>
 										</li>
 										<li class="splide__slide">
 											<div class="brand-list-big__item">
 												<div class="brand-list-big__wrapper">
-													<img class='brand-list-big__item-icon' src="images/Hublot-Logo.png" alt="Hublot">
+													<img class='brand-list-big__item-icon' src="images/Gucci.png" alt="Gucci">
 													<div class='brand-list-big__item-line'></div>
-													<span class='brand-list-big__item-text text-1'>Hublot</span>
-												</div>
-											</div>
-										</li>
-										<li class="splide__slide">
-											<div class="brand-list-big__item">
-												<div class="brand-list-big__wrapper">
-													<img class='brand-list-big__item-icon' src="images/maurice-lacroix.png" alt="maurice lacroix">
-													<div class='brand-list-big__item-line'></div>
-													<span class='brand-list-big__item-text text-1'>maurice lacroix</span>
+													<span class='brand-list-big__item-text text-1'>Gucci</span>
 												</div>
 											</div>
 										</li>
@@ -217,35 +213,49 @@
 										<li class='splide__slide'>
 											<div class="brand-list-small__item">
 												<div class="brand-list-small__wrapper">
-													<span class='brand-list-small__item-text text-1'>Vacheron Constantin</span>
+													<span class='brand-list-small__item-text text-1'>Stephen Webste</span>
 												</div>
 											</div>
 										</li>
 										<li class='splide__slide'>
 											<div class="brand-list-small__item">
 												<div class="brand-list-small__wrapper">
-													<span class='brand-list-small__item-text text-1'>Bovet</span>
+													<span class='brand-list-small__item-text text-1'>Mikimoto</span>
 												</div>
 											</div>
 										</li>
 										<li class='splide__slide'>
 											<div class="brand-list-small__item">
 												<div class="brand-list-small__wrapper">
-													<span class='brand-list-small__item-text text-1'>Perrelet</span>
+													<span class='brand-list-small__item-text text-1'>H.Stern</span>
 												</div>
 											</div>
 										</li>
 										<li class='splide__slide'>
 											<div class="brand-list-small__item">
 												<div class="brand-list-small__wrapper">
-													<span class='brand-list-small__item-text text-1'>Jaeger-lecoultre</span>
+													<span class='brand-list-small__item-text text-1'>Van Cleef and Arpels</span>
 												</div>
 											</div>
 										</li>
 										<li class='splide__slide'>
 											<div class="brand-list-small__item">
 												<div class="brand-list-small__wrapper">
-													<span class='brand-list-small__item-text text-1'>Chanel</span>
+													<span class='brand-list-small__item-text text-1'>Baraka</span>
+												</div>
+											</div>
+										</li>
+										<li class='splide__slide'>
+											<div class="brand-list-small__item">
+												<div class="brand-list-small__wrapper">
+													<span class='brand-list-small__item-text text-1'>Pomellato</span>
+												</div>
+											</div>
+										</li>
+										<li class='splide__slide'>
+											<div class="brand-list-small__item">
+												<div class="brand-list-small__wrapper">
+													<span class='brand-list-small__item-text text-1'>Boucheron</span>
 												</div>
 											</div>
 										</li>
@@ -259,77 +269,84 @@
 										<li class='splide__slide'>
 											<div class="brand-list-small__item">
 												<div class="brand-list-small__wrapper">
-													<span class='brand-list-small__item-text text-1'>Tudor</span>
+													<span class='brand-list-small__item-text text-1'>Chopard</span>
 												</div>
 											</div>
 										</li>
 										<li class='splide__slide'>
 											<div class="brand-list-small__item">
 												<div class="brand-list-small__wrapper">
-													<span class='brand-list-small__item-text text-1'>Franck muller</span>
+													<span class='brand-list-small__item-text text-1'>Hermes</span>
 												</div>
 											</div>
 										</li>
 										<li class='splide__slide'>
 											<div class="brand-list-small__item">
 												<div class="brand-list-small__wrapper">
-													<span class='brand-list-small__item-text text-1'>Iwc</span>
+													<span class='brand-list-small__item-text text-1'>David Yurman</span>
 												</div>
 											</div>
 										</li>
 										<li class='splide__slide'>
 											<div class="brand-list-small__item">
 												<div class="brand-list-small__wrapper">
-													<span class='brand-list-small__item-text text-1'>Blancpain</span>
+													<span class='brand-list-small__item-text text-1'>Messika</span>
 												</div>
 											</div>
 										</li>
 										<li class='splide__slide'>
 											<div class="brand-list-small__item">
 												<div class="brand-list-small__wrapper">
-													<span class='brand-list-small__item-text text-1'>Dior</span>
+													<span class='brand-list-small__item-text text-1'>Misaki</span>
 												</div>
 											</div>
 										</li>
 										<li class='splide__slide'>
 											<div class="brand-list-small__item">
 												<div class="brand-list-small__wrapper">
-													<span class='brand-list-small__item-text text-1'>Tag Heuer</span>
+													<span class='brand-list-small__item-text text-1'>SOKOLOV</span>
 												</div>
 											</div>
 										</li>
 										<li class='splide__slide'>
 											<div class="brand-list-small__item">
 												<div class="brand-list-small__wrapper">
-													<span class='brand-list-small__item-text text-1'>Girard Perregaux</span>
+													<span class='brand-list-small__item-text text-1'>Blvgari</span>
 												</div>
 											</div>
 										</li>
 										<li class='splide__slide'>
 											<div class="brand-list-small__item">
 												<div class="brand-list-small__wrapper">
-													<span class='brand-list-small__item-text text-1'>Breguet</span>
+													<span class='brand-list-small__item-text text-1'>Escada</span>
 												</div>
 											</div>
 										</li>
 										<li class='splide__slide'>
 											<div class="brand-list-small__item">
 												<div class="brand-list-small__wrapper">
-													<span class='brand-list-small__item-text text-1'>Nina Ricci</span>
+													<span class='brand-list-small__item-text text-1'>Garrard</span>
 												</div>
 											</div>
 										</li>
 										<li class='splide__slide'>
 											<div class="brand-list-small__item">
 												<div class="brand-list-small__wrapper">
-													<span class='brand-list-small__item-text text-1'>Audemars piguet</span>
+													<span class='brand-list-small__item-text text-1'>Magerit</span>
 												</div>
 											</div>
 										</li>
 										<li class='splide__slide'>
 											<div class="brand-list-small__item">
 												<div class="brand-list-small__wrapper">
-													<span class='brand-list-small__item-text text-1'>Panerai</span>
+													<span class='brand-list-small__item-text text-1'>Roberto Bravo</span>
+												</div>
+											</div>
+										</li>
+										<li class='splide__slide'>
+											<div class="brand-list-small__item">
+												<div class="brand-list-small__wrapper">
+													<span class='brand-list-small__item-text text-1'>Escada</span>
 												</div>
 											</div>
 										</li>
@@ -345,16 +362,16 @@
 					<div class="container">
 						<div class="row">
 							<div class="col-12">
-								<h2 class='h2 mb-4 mb-md-5'>Как мы работаем</h2>
+								<h2 class='h2 mb-4 mb-md-5'>Как происходит скупка ювелирных изделий</h2>
 							</div>
 							<div class="col-lg-6">
-								<p class='section-block__desc h3-min'>При Вас специалист не повредив ваше изделие, при помощи
-									специальных реактивов для проверки и определения пробы и металла, сделает анализ ваших изделий, так же
-									при помощи гомологического оборудования профессионально определит ценность изделий с драгоценными
-									камнями.</p>
+								<p class='section-block__desc h3-min'>У нас осуществляется скупка серебряных и золотых украшений только
+									элитных марок. А простые ювелирные изделия мы принимаем по цене «лом серебра» или будем выкупать как
+									«лом золота» за грамм – это слуга скупка золота. При этом оценивается проба драгоценного металла
+									(самая популярная 585 проба) и вес изделия.</p>
 							</div>
 							<div class="col-lg-6">
-								<img class='w-100' src="images/img-16.jpg" alt="Image">
+								<img class='w-100' src="images/DSC_6984.jpg" alt="Image">
 							</div>
 							<div class="col-12">
 								<div class='row mt-4 mt-md-5'>
@@ -445,31 +462,19 @@
 					<div class="row article-section__row">
 						<div class="col-lg-6">
 							<div class='article-section__wrapper'>
-								<span class='article-section__subtitle h3'>На каких условиях происходит выкуп часов</span>
-								<p class='article-section__text text-4'>Наша компания осуществляет выкуп швейцарских часов в Москве. Мы
-									покупаем только оригинальные изделия известных марок, поэтому от вас потребуется соблюсти три основных
-									важных условия:</p>
-								<ul class='article-section__list mb-0'>
-									<li class='article-section__item'>
-										<p class='article-section__text text-4'>Механизм и изделие в целом должно быть в хорошем рабочем
-											состоянии.</p>
-									</li>
-									<li class='article-section__item'>
-										<p class='article-section__text text-4'>Необходимо иметь в наличии документы.</p>
-									</li>
-									<li class='article-section__item'>
-										<p class='article-section__text text-4'>Они должны быть подлинными и соответствовать одному из
-											брендов.</p>
-									</li>
-								</ul>
-								<p class='article-section__text text-4'>Обращаясь к нам и соблюдая эти условия, мы гарантируем наивысшую
-									стоимость за ваше изделие. Так как в столице и в частности в нашей компании, часы оцениваются дороже,
-									нежели в области.</p>
+								<span class='article-section__subtitle h3'>На каких условиях происходит выкуп ювелирных украшений</span>
+								<p class='article-section__text text-4'>Ювелирные украшения класса «Люкс», как правило, изготавливаются
+									из золота, платины и серебра высокой пробы с украшениями из бриллиантов, изумрудов, сапфиров и других
+									драгоценных камней, их всегда можно дорого продавать. Мы осуществляем скупку на законных основаниях.
+									Это могут быть: кольца, подвески, цепочки, серьги, заколки, кулоны, броши, браслеты. Особенно высоко
+									ценятся украшения из новых коллекций.
+									Выгодно продавать украшения можно в нашем офисе в Москве, который располагается недалеко от м.
+									Октябрьская в центральной части города.</p>
 							</div>
 						</div>
 						<div class="col-lg-6">
 							<div class='d-flex'>
-								<img class='article-section__img' src="images/img-15.jpg" alt="Image">
+								<img class='article-section__img' src="images/article-img-3.png" alt="Image">
 							</div>
 						</div>
 					</div>
@@ -479,7 +484,7 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-12">
-							<div class='expert-comment expert-comment--grey'>
+							<div class='expert-comment'>
 								<div class="expert-comment__block order-1 order-lg-0">
 									<i class="expert-comment__icon covichki-icon">“</i>
 									<p class='expert-comment__text'>
@@ -571,289 +576,83 @@
 					</div>
 				</div>
 			</section>
-			<section class="section section--review">
+			<section class='section section--grey-1 section--80 article-section'>
 				<div class="container">
-					<div class="row">
-						<div class="col-md-6">
-							<div class='section--review__head'>
-								<h2 class="h2 section--review__title">Отзывы о нас</h2>
+					<div class="row article-section__row">
+						<div class="col-lg-6 order-2 order-lg-1">
+							<div class='d-flex h-100'>
+								<img class='article-section__img' src="images/article-img-1.png" alt="Image">
 							</div>
 						</div>
-						<div class="col-md-6">
-							<div class='review-banner'>
-								<div class='review-banner__wrapper'>
-									<span class='review-banner__logo main-icon'></span>
-									<div class='review-banner__body'>
-										<div class='review-banner__row'>
-											<div class='review-banner__rating mr-3'>
-												<span class='review-banner__rating-num'>4,7</span>
-											</div>
-											<div class='star-group'>
-												<div class='star-group__item'>
-													<i class='star-icon'></i>
-												</div>
-												<div class='star-group__item'>
-													<i class='star-icon'></i>
-												</div>
-												<div class='star-group__item'>
-													<i class='star-icon'></i>
-												</div>
-												<div class='star-group__item'>
-													<i class='star-icon'></i>
-												</div>
-												<div class='star-group__item'>
-													<i class='star-icon'></i>
-												</div>
-											</div>
-											<span class='review-banner__t1 text-7'>39 отзывов</span>
-										</div>
-										<div class='review-banner__row review-banner__row-2 mt-3'>
-											<p class='review-banner__t2'>Проверены Яндексом</p>
-											<a class='review-banner__link ml-0 ml-md-3' href="#">Читать все отзывы <i
-													class='ml-2 arrow-black'></i></a>
-										</div>
-									</div>
-								</div>
+						<div class="col-lg-6 order-1 order-lg-2">
+							<div class='article-section__wrapper'>
+								<span class='article-section__subtitle h3'>Какие украшения мы покупаем</span>
+								<ul class='article-section__list'>
+									<li class='article-section__item'>
+										<p class='article-section__text text-4'>Обручальные кольца с камнями, бриллиантами, из белого или
+											желтого золота.</p>
+									</li>
+									<li class='article-section__item'>
+										<p class='article-section__text text-4'>
+											Кольца для помолвки из белого золота и платины с большим бриллиантом.
+										</p>
+									</li>
+									<li class='article-section__item'>
+										<p class='article-section__text text-4'>
+											Различные золотые изделия, колье с драгоценными камнями.
+										</p>
+									</li>
+									<li class='article-section__item'>
+										<p class='article-section__text text-4'>
+											Золотые серьги со вставками из рубинов, изумрудов, оникса и т.д.
+										</p>
+									</li>
+									<li class='article-section__item'>
+										<p class='article-section__text text-4'>
+											Подвески, браслеты, запонки и другие украшения с камнями.
+										</p>
+									</li>
+								</ul>
+								<p class='article-section__text text-4'>
+									Можно сделать логичный вывод, чем больше в изделие драгоценных камней, и чем выше их качество, тем
+									дороже можно продать золотое украшение.
+								</p>
 							</div>
 						</div>
-						<div class="col-12">
-							<div class='review-group splide'>
-								<div class="splide__track">
-									<ul class="splide__list">
-										<li class='splide__slide'>
-											<div class='review'>
-												<span class='review__title h4-min'>Константин Глызин</span>
-												<div class='review__rating star-group'>
-													<div class='star-group__item'>
-														<i class='star-icon'></i>
-													</div>
-													<div class='star-group__item'>
-														<i class='star-icon'></i>
-													</div>
-													<div class='star-group__item'>
-														<i class='star-icon'></i>
-													</div>
-													<div class='star-group__item'>
-														<i class='star-icon'></i>
-													</div>
-													<div class='star-group__item'>
-														<i class='star-icon'></i>
-													</div>
-												</div>
-												<time class='review__time text-3'>21.07.2019</time>
-												<p class='review__desc text-1 mb-0'>У меня остался неполный серебряный сервиз. В скупке приняли
-													серебро по весу
-													как лом. Цена оказалась
-													в соответствии с расценками, указанными на сайте. Все быстро, удобно. Я был приятно удивлен.
-													Рекомендую.</p>
-											</div>
-										</li>
-										<li class='splide__slide'>
-											<div class='review'>
-												<span class='review__title h4-min'>Константин Глызин</span>
-												<div class='review__rating star-group'>
-													<div class='star-group__item'>
-														<i class='star-icon'></i>
-													</div>
-													<div class='star-group__item'>
-														<i class='star-icon'></i>
-													</div>
-													<div class='star-group__item'>
-														<i class='star-icon'></i>
-													</div>
-													<div class='star-group__item'>
-														<i class='star-icon'></i>
-													</div>
-													<div class='star-group__item'>
-														<i class='star-icon'></i>
-													</div>
-												</div>
-												<time class='review__time text-3'>21.07.2019</time>
-												<p class='review__desc text-1 mb-0'>У меня остался неполный серебряный сервиз. В скупке приняли
-													серебро по весу
-													как лом. Цена оказалась
-													в соответствии с расценками, указанными на сайте. Все быстро, удобно. Я был приятно удивлен.
-													Рекомендую.</p>
-											</div>
-										</li>
-										<li class='splide__slide'>
-											<div class='review'>
-												<span class='review__title h4-min'>Константин Глызин</span>
-												<div class='review__rating star-group'>
-													<div class='star-group__item'>
-														<i class='star-icon'></i>
-													</div>
-													<div class='star-group__item'>
-														<i class='star-icon'></i>
-													</div>
-													<div class='star-group__item'>
-														<i class='star-icon'></i>
-													</div>
-													<div class='star-group__item'>
-														<i class='star-icon'></i>
-													</div>
-													<div class='star-group__item'>
-														<i class='star-icon'></i>
-													</div>
-												</div>
-												<time class='review__time text-3'>21.07.2019</time>
-												<p class='review__desc text-1 mb-0'>У меня остался неполный серебряный сервиз. В скупке приняли
-													серебро по весу
-													как лом. Цена оказалась
-													в соответствии с расценками, указанными на сайте. Все быстро, удобно. Я был приятно удивлен.
-													Рекомендую.</p>
-											</div>
-										</li>
-										<li class='splide__slide'>
-											<div class='review'>
-												<span class='review__title h4-min'>Константин Глызин</span>
-												<div class='review__rating star-group'>
-													<div class='star-group__item'>
-														<i class='star-icon'></i>
-													</div>
-													<div class='star-group__item'>
-														<i class='star-icon'></i>
-													</div>
-													<div class='star-group__item'>
-														<i class='star-icon'></i>
-													</div>
-													<div class='star-group__item'>
-														<i class='star-icon'></i>
-													</div>
-													<div class='star-group__item'>
-														<i class='star-icon'></i>
-													</div>
-												</div>
-												<time class='review__time text-3'>21.07.2019</time>
-												<p class='review__desc text-1 mb-0'>У меня остался неполный серебряный сервиз. В скупке приняли
-													серебро по весу
-													как лом. Цена оказалась
-													в соответствии с расценками, указанными на сайте. Все быстро, удобно. Я был приятно удивлен.
-													Рекомендую.</p>
-											</div>
-										</li>
-										<li class='splide__slide'>
-											<div class='review'>
-												<span class='review__title h4-min'>Константин Глызин</span>
-												<div class='review__rating star-group'>
-													<div class='star-group__item'>
-														<i class='star-icon'></i>
-													</div>
-													<div class='star-group__item'>
-														<i class='star-icon'></i>
-													</div>
-													<div class='star-group__item'>
-														<i class='star-icon'></i>
-													</div>
-													<div class='star-group__item'>
-														<i class='star-icon'></i>
-													</div>
-													<div class='star-group__item'>
-														<i class='star-icon'></i>
-													</div>
-												</div>
-												<time class='review__time text-3'>21.07.2019</time>
-												<p class='review__desc text-1 mb-0'>У меня остался неполный серебряный сервиз. </p>
-											</div>
-										</li>
-										<li class='splide__slide'>
-											<div class='review'>
-												<span class='review__title h4-min'>Константин Глызин</span>
-												<div class='review__rating star-group'>
-													<div class='star-group__item'>
-														<i class='star-icon'></i>
-													</div>
-													<div class='star-group__item'>
-														<i class='star-icon'></i>
-													</div>
-													<div class='star-group__item'>
-														<i class='star-icon'></i>
-													</div>
-													<div class='star-group__item'>
-														<i class='star-icon'></i>
-													</div>
-													<div class='star-group__item'>
-														<i class='star-icon'></i>
-													</div>
-												</div>
-												<time class='review__time text-3'>21.07.2019</time>
-												<p class='review__desc text-1 mb-0'>У меня остался неполный серебряный сервиз. </p>
-											</div>
-										</li>
-										<li class='splide__slide'>
-											<div class='review'>
-												<span class='review__title h4-min'>Константин Глызин</span>
-												<div class='review__rating star-group'>
-													<div class='star-group__item'>
-														<i class='star-icon'></i>
-													</div>
-													<div class='star-group__item'>
-														<i class='star-icon'></i>
-													</div>
-													<div class='star-group__item'>
-														<i class='star-icon'></i>
-													</div>
-													<div class='star-group__item'>
-														<i class='star-icon'></i>
-													</div>
-													<div class='star-group__item'>
-														<i class='star-icon'></i>
-													</div>
-												</div>
-												<time class='review__time text-3'>21.07.2019</time>
-												<p class='review__desc text-1 mb-0'>У меня остался неполный серебряный сервиз. </p>
-											</div>
-										</li>
-										<li class='splide__slide'>
-											<div class='review'>
-												<span class='review__title h4-min'>Константин Глызин</span>
-												<div class='review__rating star-group'>
-													<div class='star-group__item'>
-														<i class='star-icon'></i>
-													</div>
-													<div class='star-group__item'>
-														<i class='star-icon'></i>
-													</div>
-													<div class='star-group__item'>
-														<i class='star-icon'></i>
-													</div>
-													<div class='star-group__item'>
-														<i class='star-icon'></i>
-													</div>
-													<div class='star-group__item'>
-														<i class='star-icon'></i>
-													</div>
-												</div>
-												<time class='review__time text-3'>21.07.2019</time>
-												<p class='review__desc text-1 mb-0'>У меня остался неполный серебряный сервиз. </p>
-											</div>
-										</li>
-										<li class='splide__slide'>
-											<div class='review'>
-												<span class='review__title h4-min'>Константин Глызин</span>
-												<div class='review__rating star-group'>
-													<div class='star-group__item'>
-														<i class='star-icon'></i>
-													</div>
-													<div class='star-group__item'>
-														<i class='star-icon'></i>
-													</div>
-													<div class='star-group__item'>
-														<i class='star-icon'></i>
-													</div>
-													<div class='star-group__item'>
-														<i class='star-icon'></i>
-													</div>
-													<div class='star-group__item'>
-														<i class='star-icon'></i>
-													</div>
-												</div>
-												<time class='review__time text-3'>21.07.2019</time>
-												<p class='review__desc text-1 mb-0'>У меня остался неполный серебряный сервиз. </p>
-											</div>
-										</li>
-									</ul>
-								</div>
+						<div class="col-lg-6 order-3 order-lg-3">
+							<div class='article-section__wrapper'>
+								<span class='article-section__subtitle h3'>Что влияет на стоимость?</span>
+								<ul class='article-section__list'>
+									<li class='article-section__item'>
+										<p class='article-section__text text-4'>Бренд и модель украшения.</p>
+									</li>
+									<li class='article-section__item'>
+										<p class='article-section__text text-4'>Художественная ценность изделия.</p>
+									</li>
+									<li class='article-section__item'>
+										<p class='article-section__text text-4'>Наличие или отсутствие драгоценных камней.</p>
+									</li>
+									<li class='article-section__item'>
+										<p class='article-section__text text-4'>Качество огранки, размер и вид драгоценных камней
+											(бриллианты, сапфиры, рубины, изумруды, аметисты и другие). Если это бриллианты, то обращают
+											внимание на его чистоту и цвет.</p>
+									</li>
+									<li class='article-section__item'>
+										<p class='article-section__text text-4'>Состояние изделия. Есть ли на поверхности большие царапины
+											или сколы.</p>
+									</li>
+									<li class='article-section__item'>
+										<p class='article-section__text text-4'>Наличие или отсутствие фирменной коробки и оригинальных
+											документов.</p>
+									</li>
+								</ul>
+								<p class='article-section__text text-4'>После оценки ювелирного изделия мы предложим честную стоимость
+									учитывая его художественную ценность.</p>
+							</div>
+						</div>
+						<div class="col-lg-6 order-4 order-lg-4">
+							<div class='d-flex h-100'>
+								<img class='article-section__img' src="images/article-img-2.png" alt="Image">
 							</div>
 						</div>
 					</div>
@@ -1009,47 +808,7 @@
 					</div>
 				</div>
 			</section>
-			<section class='section section--80 article-section'>
-				<div class="container">
-					<div class="row article-section__row">
-						<div class="col-lg-6 order-2 order-lg-1">
-							<div class='d-flex h-100'>
-								<img class='article-section__img' src="images/silver-watch-1.jpg" alt="Image">
-							</div>
-						</div>
-						<div class="col-lg-6 order-1 order-lg-2">
-							<div class='article-section__wrapper'>
-								<span class='article-section__subtitle h3'>Продать часы в МосГосСкупку</span>
-								<p class='article-section__text text-4'>Продажа дорогих часов может оказаться хлопотным делом. Есть
-									опасность связаться с мошенниками и потерять все или часть денег. Безопасно продать часы можно в нашем
-									офисе по адресу: г. Москва, Ленинский проспект д. 2а. Мы официально зарегистрированная компания и наш
-									офис находиться под круглосуточной охраной. Специалист по оценке часов осмотрит изделие, изучит
-									документы и оценит его стоимость. Если вас устраивает результат оценки, мы оформляем сделку на месте и
-									выдаем вам на руки наличные деньги и документальное подтверждение заключения сделки в нашей компании,
-									все максимально прозрачно. <br>
-									Среди наших преимуществ можно назвать:</p>
-								<ul class='article-section__list'>
-									<li class='article-section__item'>
-										<p class='article-section__text text-4'>Оперативность заключения сделок (весь процесс занимает всего
-											15-20 минут)</p>
-									</li>
-									<li class='article-section__item'>
-										<p class='article-section__text  text-4 '>Честная оценка состояния и подлинности часов</p>
-									</li>
-									<li class='article-section__item'>
-										<p class='article-section__text  text-4 '>Гарантия конфиденциальности</p>
-									</li>
-									<li class='article-section__item'>
-										<p class='article-section__text  text-4 '>При наличии вопросов, есть возможность
-											проконсультироваться
-											с профессионалами.</p>
-									</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
+
 			<section class='section section--contacts pb-0'>
 				<div class='map-container'>
 					<div id="wrapMap">

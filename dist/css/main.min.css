@@ -11016,6 +11016,9 @@ a.text-dark:hover, a.text-dark:focus {
   .section-block--4 .h2 {
     line-height: 140%;
   }
+  .section--pt80 {
+    padding-top: 30px;
+  }
   .section-block--hero-img2 {
     width: 320px;
     height: 138px;
