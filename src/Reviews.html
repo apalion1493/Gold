@@ -435,35 +435,6 @@
 		@@include('html/footer.html')
 	</div>
 
-	<script src="
-	https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
-	"></script>
-	<script>
-		new Splide('.review-group', {
-			perPage: 4,
-			type: 'loop',
-			gap: 20,
-			pagination: false,
-			breakpoints: {
-				1500: {
-					perPage: 4,
-					arrows: false,
-					pagination: true,
-				},
-				1200: {
-					perPage: 3,
-				},
-				991: {
-					perPage: 1,
-					autoWidth: true,
-				},
-				576: {
-					gap: 15,
-				},
-			},
-		}).mount();
-
-	</script>
 	@@include('html/script.html')
 
 </body>

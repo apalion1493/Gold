@@ -136,6 +136,16 @@
     height: 500px;
     z-index: -1;
   }
+
+  &--hero-img8 {
+    position: absolute;
+    top: -60px;
+    right: -100px;
+    object-fit: cover;
+    width: 968px;
+    height: 558px;
+    z-index: -1;
+  }
 }
 
 .swiper {
@@ -321,6 +331,13 @@
   }
 
   .section-block--hero-img7 {
+    top: -30px;
+    width: 100%;
+    height: 120px;
+    right: 0;
+  }
+
+  .section-block--hero-img8 {
     top: -30px;
     width: 100%;
     height: 120px;
