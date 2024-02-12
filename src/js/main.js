@@ -396,3 +396,47 @@ if (document.querySelector('.visual-slider-two')) {
     updateSlideInfo2();
   });
 }
+
+if (document.querySelector('#element-shape-list')) {
+  new Splide('#element-shape-list', {
+    pagination: false,
+    perMove: 1,
+    gap: 20,
+    snap: false,
+    grid: {
+      rows: 3,
+      cols: 3,
+      gap: {
+        row: '16px',
+        col: '20px',
+      },
+    },
+    breakpoints: {
+      1199: {
+        grid: {
+          rows: 4,
+          cols: 2,
+          gap: {
+            row: '16px',
+            col: '20px',
+          },
+        },
+      },
+      992: {
+        autoWidth: true,
+        arrows: false,
+        pagination: true,
+        perMove: 1,
+        gap: 10,
+        grid: {
+          rows: 2,
+          cols: 1,
+          gap: {
+            row: '6px',
+            col: '10px',
+          },
+        },
+      },
+    },
+  }).mount({ Grid });
+}

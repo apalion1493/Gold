@@ -10915,6 +10915,15 @@ a.text-dark:hover, a.text-dark:focus {
   height: 558px;
   z-index: -1;
 }
+.section-block--hero-img9 {
+  position: absolute;
+  top: -60px;
+  right: -100px;
+  object-fit: cover;
+  width: 1600px;
+  height: calc(100% + 110px);
+  z-index: -1;
+}
 
 .swiper {
   padding-left: 5px;
@@ -11075,6 +11084,12 @@ a.text-dark:hover, a.text-dark:focus {
     right: 0;
   }
   .section-block--hero-img8 {
+    top: -30px;
+    width: 100%;
+    height: 120px;
+    right: 0;
+  }
+  .section-block--hero-img9 {
     top: -30px;
     width: 100%;
     height: 120px;
@@ -14101,6 +14116,88 @@ header.header .header--mob {
     margin-bottom: 25px;
   }
 }
+.big-table {
+  border-collapse: separate;
+  border-spacing: 20px 15px;
+}
+.big-table thead th {
+  width: 25%;
+}
+.big-table th,
+.big-table td {
+  border-radius: 5px;
+  border: none;
+  text-align: center;
+  vertical-align: middle !important;
+  padding: 10px;
+}
+.big-table th {
+  background: var(--blue-3-color);
+}
+.big-table td {
+  background: var(--grey-1-color);
+}
+.big-table__text-2 {
+  display: block;
+  margin-bottom: 5px;
+}
+.big-table__text-3 {
+  display: block;
+  margin-bottom: 5px;
+}
+.big-table__text-4 {
+  margin-bottom: 0;
+  display: block;
+}
+
+@media (max-width: 991.98px) {
+  .big-table {
+    border-spacing: 6px;
+  }
+  .big-table__text-1, .big-table__text-2 {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 100%;
+    letter-spacing: 1%;
+  }
+  .big-table__text-3 {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: 0%;
+  }
+  .big-table__text-4, .big-table__text-5 {
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: 0%;
+    display: block;
+  }
+  .big-table tbody th {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: 0%;
+  }
+  .big-table tbody td {
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: 0%;
+  }
+  .big-table tbody td span {
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: 0%;
+  }
+}
+@media (max-width: 767.98px) {
+  .big-table th,
+  .big-table td {
+    padding: 5px;
+  }
+}
 .ty-block {
   display: flex;
   flex-direction: column;
@@ -15086,6 +15183,94 @@ header.header .header--mob {
   .brand-list-middle__item {
     width: 260px;
     min-height: 135px;
+  }
+}
+.element-shape-list {
+  margin-left: -10px;
+  margin-right: -10px;
+}
+.element-shape-list .splide__track {
+  padding-left: 10px !important;
+  padding-right: 10px !important;
+}
+.element-shape-list .splide__slide:last-child {
+  margin-right: 0 !important;
+}
+.element-shape-list .splide__slide {
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+.element-shape-list .splide__arrow:disabled {
+  opacity: 0;
+  z-index: -100;
+}
+.element-shape-list__item {
+  box-shadow: -2px -2px 4px 0px rgba(10, 50, 49, 0.15), 4px 4px 6px 0px rgba(10, 50, 49, 0.25);
+  background: var(--white-color);
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  min-height: 270px;
+}
+.element-shape-list__item-wrapper {
+  border: 1px solid var(--grey-2-color);
+  border-radius: 5px;
+  padding: 20px;
+  display: flex;
+  gap: 15px;
+  height: 100%;
+}
+.element-shape-list__item-col {
+  display: flex;
+  flex-direction: column;
+  min-width: 140px;
+}
+.element-shape-list__item-desc {
+  display: flex;
+  flex-direction: column;
+}
+.element-shape-list__item-title {
+  display: block;
+  margin-bottom: 23px;
+}
+.element-shape-list__item-text {
+  margin-bottom: 0;
+}
+.element-shape-list__item-img img {
+  max-width: 100%;
+  object-fit: contain;
+}
+
+@media (max-width: 991.98px) {
+  .element-shape-list {
+    padding-bottom: 30px;
+  }
+  .element-shape-list__item {
+    max-width: 260px;
+    min-height: 180px;
+  }
+  .element-shape-list__item-text {
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: 0%;
+  }
+  .element-shape-list__item-img img,
+  .element-shape-list__item-col {
+    min-width: 80px;
+    width: 80px;
+  }
+  .element-shape-list__item-title {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 100%;
+    letter-spacing: 1%;
+    margin-bottom: 10px;
+  }
+  .element-shape-list__item-wrapper {
+    padding: 10px;
   }
 }
 /*# sourceMappingURL=main.min.css.map */
