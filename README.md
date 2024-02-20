@@ -23,3 +23,4 @@ https://apalion1493.github.io/Gold/dist/Buying-Jewelry.html <br>
 https://apalion1493.github.io/Gold/dist/Buying-Tiffany.html <br>
 https://apalion1493.github.io/Gold/dist/Buying-diamonds.html <br>
 https://apalion1493.github.io/Gold/dist/Buying-bullion.html <br>
+https://apalion1493.github.io/Gold/dist/Article-2.html <br>

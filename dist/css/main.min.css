@@ -10229,6 +10229,10 @@ a.text-dark:hover, a.text-dark:focus {
   text-decoration-line: underline;
 }
 
+.box-shadow-none {
+  box-shadow: none !important;
+}
+
 .row--r20 {
   row-gap: 20px;
 }
