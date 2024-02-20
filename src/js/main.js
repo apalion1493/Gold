@@ -219,6 +219,10 @@ if (document.querySelector('.review-group')) {
   new Splide('.review-group', {
     perPage: 4,
     type: 'loop',
+    autoplay: true,
+    interval: 5000,
+    speed: 2000,
+    perMove: 1,
     gap: 20,
     pagination: false,
     breakpoints: {
