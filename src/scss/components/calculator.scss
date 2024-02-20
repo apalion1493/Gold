@@ -125,6 +125,7 @@
     text-transform: uppercase;
     margin-right: 10px;
     margin-bottom: 0;
+    font-size: 12px;
   }
 
   &__estimation-input {
@@ -143,12 +144,14 @@
 
   &__estimation-text-2 {
     margin-bottom: 0;
+    font-size: 12px;
   }
 
   &__estimation-text-3 {
     text-transform: uppercase;
     margin-right: 10px;
     margin-bottom: 30px;
+    font-size: 12px;
   }
 
   &__estimation-price {
@@ -216,6 +219,7 @@
 
   &__footer-btn {
     width: 100%;
+    font-size: 13px;
   }
 
   &__footer-link {
@@ -224,8 +228,18 @@
     color: var(--turquoise-color);
     text-decoration: underline;
 
+    .arrow-gold {
+      display: none;
+    }
+
     &:hover {
-      color: var(--turquoise-color);
+      .arrow-gold {
+        display: block;
+      }
+
+      .arrow-green {
+        display: none;
+      }
     }
   }
 

@@ -47,6 +47,8 @@
 /**
 * Подключение стилей отдельных блоков и секций
 */
+
+@import 'components/link-button';
 @import 'components/section-blocks';
 @import 'components/buying-row';
 @import 'components/media-block';
@@ -54,7 +56,6 @@
 @import 'components/step-block';
 @import 'components/info-block-1';
 @import 'components/footer';
-@import 'components/link-button';
 @import 'components/calculator';
 @import 'components/hero-block';
 @import 'components/contact';

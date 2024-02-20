@@ -18,7 +18,7 @@
   }
 
   &__logo {
-    max-width: 100%;
+    max-width: 250px;
   }
 
   &__body {
@@ -77,6 +77,20 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    .arrow-gold {
+      display: none;
+    }
+
+    &:hover {
+      .arrow-gold {
+        display: block;
+      }
+
+      .arrow-black {
+        display: none;
+      }
+    }
   }
 
   @media (max-width: 1199.98px) {

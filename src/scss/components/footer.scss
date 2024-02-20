@@ -128,14 +128,15 @@
     border-radius: 5px;
     border: 1px solid var(--primary-color);
 
-    // &:hover {
-    //   box-shadow: 2px 2px 8px 0px rgba(232, 190, 56, 0.5),
-    //     -2px -2px 8px 0px rgba(232, 190, 56, 0.5);
-    // }
+    &:hover {
+      box-shadow: 2px 2px 8px 0px rgba(232, 190, 56, 0.5),
+        -2px -2px 8px 0px rgba(232, 190, 56, 0.5);
+    }
   }
 
   &__button {
     background: initial !important;
+    font-size: 12px;
   }
 
   &__column-rb {

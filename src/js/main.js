@@ -65,23 +65,6 @@ new BurgerMenu().init();
 //   collapsedClass: 'open',
 // });
 
-let mapTitle = document.createElement('div');
-mapTitle.className = 'mapTitle';
-mapTitle.textContent = 'Для активации карты нажмите по ней';
-wrapMap.appendChild(mapTitle);
-wrapMap.onclick = function () {
-  this.children[0].removeAttribute('style');
-  mapTitle.parentElement.removeChild(mapTitle);
-};
-wrapMap.onmousemove = function (event) {
-  mapTitle.style.display = 'block';
-  if (event.offsetY > 10) mapTitle.style.top = event.offsetY + 20 + 'px';
-  if (event.offsetX > 10) mapTitle.style.left = event.offsetX + 20 + 'px';
-};
-wrapMap.onmouseleave = function () {
-  mapTitle.style.display = 'none';
-};
-
 function updateFileList() {
   // Получаем элемент input file
   let input = document.getElementById('fileInput');
@@ -194,10 +177,7 @@ if (document.querySelector('.buying-row')) {
     gap: 20,
     arrows: false,
     breakpoints: {
-      1440: {
-        perPage: 6,
-      },
-      1200: {
+      1201: {
         perPage: 4,
       },
       991: {
@@ -240,13 +220,10 @@ if (document.querySelector('.review-group')) {
     gap: 20,
     pagination: false,
     breakpoints: {
-      1500: {
-        perPage: 4,
+      1270: {
+        perPage: 3,
         arrows: false,
         pagination: true,
-      },
-      1200: {
-        perPage: 3,
       },
       991: {
         perPage: 1,
@@ -440,3 +417,20 @@ if (document.querySelector('#element-shape-list')) {
     },
   }).mount({ Grid });
 }
+
+let mapTitle = document.createElement('div');
+mapTitle.className = 'mapTitle';
+mapTitle.textContent = 'Для активации карты нажмите по ней';
+wrapMap.appendChild(mapTitle);
+wrapMap.onclick = function () {
+  this.children[0].removeAttribute('style');
+  mapTitle.parentElement.removeChild(mapTitle);
+};
+wrapMap.onmousemove = function (event) {
+  mapTitle.style.display = 'block';
+  if (event.offsetY > 10) mapTitle.style.top = event.offsetY + 20 + 'px';
+  if (event.offsetX > 10) mapTitle.style.left = event.offsetX + 20 + 'px';
+};
+wrapMap.onmouseleave = function () {
+  mapTitle.style.display = 'none';
+};

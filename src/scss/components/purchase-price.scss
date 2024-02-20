@@ -103,8 +103,18 @@
     text-decoration-line: underline;
     text-transform: lowercase;
 
+    .arrow-gold {
+      display: none;
+    }
+
     &:hover {
-      color: var(--black-color);
+      .arrow-gold {
+        display: block;
+      }
+
+      .arrow-black {
+        display: none;
+      }
     }
   }
 
