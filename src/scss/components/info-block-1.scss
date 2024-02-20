@@ -55,6 +55,11 @@
   margin-right: -10px;
   margin-bottom: 25px;
 
+  .splide__arrow:disabled {
+    opacity: 0;
+    z-index: -1;
+  }
+
   .splide__slide {
     margin-top: 10px;
     margin-bottom: 10px;

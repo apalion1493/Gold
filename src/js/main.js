@@ -196,10 +196,12 @@ if (document.querySelector('.information-about-services')) {
   new Splide('.information-about-services', {
     perPage: 3,
     gap: 20,
-    arrows: false,
+    pagination: false,
     breakpoints: {
       1200: {
         perPage: 2,
+        arrows: false,
+        pagination: true,
       },
       991: {
         perPage: 1,
