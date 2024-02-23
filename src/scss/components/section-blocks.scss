@@ -56,6 +56,10 @@
     padding-top: 80px;
   }
 
+  &--pb80 {
+    padding-bottom: 80px;
+  }
+
   &--hero {
     position: relative;
     overflow: hidden;
@@ -229,6 +233,20 @@
   padding-bottom: 66px;
 }
 
+.section-article-hero {
+  &__img-block {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      max-width: 100%;
+      object-fit: contain;
+    }
+  }
+}
+
 @media (max-width: 1400px) {
   .section-block--4 {
     padding: 30px 10px;
@@ -321,6 +339,10 @@
 
   .section--pt80 {
     padding-top: 30px;
+  }
+
+  .section--pb80 {
+    padding-bottom: 80px;
   }
 
   .section-block--hero-img2 {

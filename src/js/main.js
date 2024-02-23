@@ -424,6 +424,40 @@ if (document.querySelector('#element-shape-list')) {
   }).mount({ Grid });
 }
 
+if (document.querySelector('#categories-list')) {
+  new Splide('#categories-list', {
+    pagination: false,
+    perMove: 1,
+    gap: 20,
+    snap: false,
+    grid: {
+      rows: 2,
+      cols: 2,
+      gap: {
+        row: '20px',
+        col: '20px',
+      },
+    },
+    breakpoints: {
+      992: {
+        autoWidth: true,
+        arrows: false,
+        pagination: true,
+        perMove: 1,
+        gap: 10,
+        grid: {
+          rows: 1,
+          cols: 1,
+          gap: {
+            row: '0px',
+            col: '10px',
+          },
+        },
+      },
+    },
+  }).mount({ Grid });
+}
+
 let mapTitle = document.createElement('div');
 mapTitle.className = 'mapTitle';
 mapTitle.textContent = 'Для активации карты нажмите по ней';

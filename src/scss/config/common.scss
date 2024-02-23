@@ -215,6 +215,15 @@
   letter-spacing: 0.02em;
 }
 
+.text-10 {
+  color: var(--dark-green-color);
+  font-family: 'Lora', serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 120%;
+  letter-spacing: 0.02em;
+}
+
 .link-1 {
   color: var(--dark-green-color);
   font-family: 'Hind Madurai', sans-serif;
@@ -742,6 +751,38 @@
     height: 100%;
     max-width: 100%;
     object-fit: cover;
+  }
+}
+
+.article-topics {
+  background: var(--yellow-2-color);
+  box-shadow: 4px 4px 6px rgba(10, 50, 49, 0.25),
+    -2px -2px 4px rgba(10, 50, 49, 0.15);
+  padding: 10px;
+
+  &__wrapper {
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title {
+    display: block;
+  }
+
+  &__list {
+    padding-left: 20px;
+    margin-bottom: 0;
+  }
+
+  &__item {
+    list-style: auto;
+  }
+
+  &__link {
+    color: var(--black-color);
   }
 }
 
