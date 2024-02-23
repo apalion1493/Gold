@@ -778,7 +778,7 @@
   }
 
   &__item {
-    list-style: auto;
+    list-style: decimal;
   }
 
   &__link {
@@ -912,6 +912,28 @@
   .text-4 {
     font-size: 16px;
     line-height: 120%;
+  }
+
+  .article-topics__title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0.01em;
+    margin-bottom: 15px;
+  }
+
+  .article-topics__wrapper {
+    padding: 10px;
+  }
+
+  .article-topics__link {
+    font-size: 16px;
+  }
+
+  .table-container__title {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 100%;
   }
 }
 

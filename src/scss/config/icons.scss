@@ -151,7 +151,7 @@
 }
 
 .police-icon {
-  background: url(../images/police.svg) no-repeat center;
+  background: url(../images/police.png) no-repeat center;
   background-size: 100% auto;
   width: 50px;
   height: 50px;
@@ -183,7 +183,7 @@
 }
 
 .taxi-yellow-icon {
-  background: url(../images/taxi-yellow.svg) no-repeat center;
+  background: url(../images/taxi-yellow.png) no-repeat center;
   background-size: 100% auto;
   width: 30px;
   height: 30px;
@@ -199,7 +199,7 @@
 }
 
 .time-icon {
-  background: url(../images/time.svg) no-repeat center;
+  background: url(../images/time.png) no-repeat center;
   background-size: 100% auto;
   width: 50px;
   height: 50px;
@@ -367,6 +367,7 @@
   background-size: 100% auto;
   width: 15px;
   min-width: 15px;
+  max-width: 15px;
   height: 15px;
   display: inline-block;
 }
