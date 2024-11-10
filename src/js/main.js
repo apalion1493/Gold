@@ -112,7 +112,7 @@ if (document.querySelector('#splide-brand-list-big')) {
     gap: 20,
     snap: false,
     grid: {
-      rows: 3,
+      rows: 'auto',
       cols: 4,
       gap: {
         row: '16px',
@@ -145,7 +145,7 @@ if (document.querySelector('#splide-brand-list-small')) {
     gap: 20,
     snap: false,
     grid: {
-      rows: 5,
+      rows: 'auto',
       cols: 4,
       gap: {
         row: '16px',
@@ -159,7 +159,7 @@ if (document.querySelector('#splide-brand-list-small')) {
         pagination: true,
         perMove: 1,
         grid: {
-          rows: 3,
+          rows: 2,
           cols: 1,
           gap: {
             row: '6px',
