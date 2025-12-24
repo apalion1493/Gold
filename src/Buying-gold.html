@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" class="webp loaded">
 @@include('html/head.html', {
 'title': 'Скупка золота в Москве'
 })
@@ -40,7 +40,47 @@
 								<p class='h3-min hero-block__text'>МосГосСкупка скупает золото, драгоценности с камнями и без, а также
 									поломанные золотые украшения (лом) в этом случае учитывается только вес металла. Если ювелирное
 									украшение представляет ценность как изделие, его цена за грамм увеличивается.</p>
-								@@include('html/components/link.html', {
+								<div class="container block-reviews mb-4">
+                  <div class="row">
+                    <div class="block-reviews__elem col-4">
+                      <a class="block-reviews__link d-flex align-items-center" href="#testId1">
+                        <i class="streamline-ultimate_human-resources-rating-woman mr-2"></i>
+                        <span>Честные отзывы</span>
+                      </a>
+                    </div>
+                    <div class="block-reviews__elem col-4">
+                      <a class="block-reviews__link d-flex align-items-center" href="#">
+                        <i class="hugeicons_balance-scale mr-2"></i>
+                        <span>Честная цена</span>
+                      </a>
+                    </div>
+                    <div class="block-reviews__elem col-4">
+                      <a class="block-reviews__link d-flex align-items-center" href="#">
+                        <i class="arcticons_metro-moscow mr-2"></i>
+                        <span>В шаге от метро</span>
+                      </a>
+                    </div>
+                    <div class="block-reviews__elem col-4">
+                      <a class="block-reviews__link d-flex align-items-center" href="#">
+                        <i class="fluent_wallet-credit-card-24-regular mr-2"></i>
+                        <span>Наличные и на карту</span>
+                      </a>
+                    </div>
+                    <div class="block-reviews__elem col-4">
+                      <a class="block-reviews__link d-flex align-items-center" href="#">
+                        <i class="clarity_license-line mr-2"></i>
+                        <span>Лицензия <br> ГОСТ</span>
+                      </a>
+                    </div>
+                    <div class="block-reviews__elem col-4">
+                      <a class="block-reviews__link d-flex align-items-center" href="#">
+                        <i class="streamline-ultimate_cash-payment-bills mr-2"></i>
+                        <span>Деньги сразу</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                @@include('html/components/link-custom-1.html', {
 								'title': 'Онлайн оценка',
 								'color': 'gold',
 								'arrow': 'arrow-gold',
@@ -54,6 +94,137 @@
 					</div>
 				</div>
 			</section>
+      <section class="section">
+        <div class="container" id="testId1">
+          <div class="row">
+            <div class="col-12">
+              <h2 class="h2 mb-40">Список Нормативов и Правил Скупки Золота в РФ</h2>
+            </div>
+            <div class="col-6">
+              <div class="accordion accordion-answer accordion-answer--small" id="accordionExample">
+                <div class="card">
+                  <div class="card-header" id="headingOne">
+                    <h2 class="mb-0">
+                      <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse"
+                              data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Какие гарантии вы предоставляете?
+
+                        <div class='card-header__btnBlock'>
+                          <span class='card-header__btnBlock-plus icon-plus'></span>
+                          <span class='card-header__btnBlock-minus icon-minus'></span>
+                        </div>
+                      </button>
+                    </h2>
+                  </div>
+
+                  <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
+                       data-parent="#accordionExample">
+                    <div class="card-body">
+                      <p class='mb-0 text-1'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati,
+                        voluptatibus! Alias quod mollitia culpa quidem laborum necessitatibus deleniti, eligendi quas
+                        corporis ab consequatur labore ad tempora? Modi itaque ipsum fugit?</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingTwo">
+                    <h2 class="mb-0">
+                      <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse"
+                              data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Взимается ли какая то комиссия в вашей скупке?
+
+                        <div class='card-header__btnBlock'>
+                          <span class='card-header__btnBlock-plus icon-plus'></span>
+                          <span class='card-header__btnBlock-minus icon-minus'></span>
+                        </div>
+                      </button>
+                    </h2>
+                  </div>
+                  <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                    <div class="card-body">
+                      <p class='mb-0 text-1'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati,
+                        voluptatibus! Alias quod mollitia culpa quidem laborum necessitatibus deleniti, eligendi quas
+                        corporis ab consequatur labore ad tempora? Modi itaque ipsum fugit?</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingThree">
+                    <h2 class="mb-0">
+                      <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse"
+                              data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Вы принимаете изделия без паспорта?
+
+                        <div class='card-header__btnBlock'>
+                          <span class='card-header__btnBlock-plus icon-plus'></span>
+                          <span class='card-header__btnBlock-minus icon-minus'></span>
+                        </div>
+                      </button>
+                    </h2>
+                  </div>
+                  <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                       data-parent="#accordionExample">
+                    <div class="card-body">
+                      <p class='mb-0 text-1'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati,
+                        voluptatibus! Alias quod mollitia culpa quidem laborum necessitatibus deleniti, eligendi quas
+                        corporis ab consequatur labore ad tempora? Modi itaque ipsum fugit?</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingThree2">
+                    <h2 class="mb-0">
+                      <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse"
+                              data-target="#collapseThree2" aria-expanded="false" aria-controls="collapseThree2">
+                        Вы принимаете изделия без паспорта?
+
+                        <div class='card-header__btnBlock'>
+                          <span class='card-header__btnBlock-plus icon-plus'></span>
+                          <span class='card-header__btnBlock-minus icon-minus'></span>
+                        </div>
+                      </button>
+                    </h2>
+                  </div>
+                  <div id="collapseThree2" class="collapse" aria-labelledby="headingThree2"
+                       data-parent="#accordionExample">
+                    <div class="card-body">
+                      <p class='mb-0 text-1'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati,
+                        voluptatibus! Alias quod mollitia culpa quidem laborum necessitatibus deleniti, eligendi quas
+                        corporis ab consequatur labore ad tempora? Modi itaque ipsum fugit?</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="d-flex align-items-start">
+                <div class="col-item-1">
+                  <p class="text-2 mb-3 pb-1">Просмотрите нашу лицензию, чтобы убедиться в юридической чистоте каждой сделки и точности оценки</p>
+                  <button type="button" class="w-100" data-toggle="modal" data-target="#exampleModal">
+                    <img class="w-100" src="images/dogovor-img-small.png" alt="Dogovor">
+                  </button>
+
+                  <!-- Modal -->
+                  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog__width">
+                      <div class="modal-content">
+                        <div class="modal-body">
+                          <img class="w-100" src="images/dogovor-img-big.png" alt="Dogovor">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-item-2 ml-20">
+                  <div class="d-flex col-item-2__wrapper">
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 			<section class='section section--breadcrumb'>
 				<div class="container">
 					<div class="row">

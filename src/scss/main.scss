@@ -15818,3 +15818,158 @@ p.calculator__estimation-price-text.text-3 {
   text-transform: none;
   font-size: 16px;
 }
+
+/////////////////////////////////////
+
+.link-right-img-1 {
+  background: url(../images/link-right-img-1.png) no-repeat center;
+  background-size: 100% auto;
+  max-width: 75px;
+  width: 100%;
+  height: 74px;
+  display: block;
+}
+
+.streamline-ultimate_human-resources-rating-woman {
+  background: url(../images/streamline-ultimate_human-resources-rating-woman.svg) no-repeat center;
+  background-size: 100% auto;
+  width: 24px;
+  min-width: 24px;
+  height: 24px;
+  display: block;
+}
+
+.hugeicons_balance-scale {
+  background: url(../images/hugeicons_balance-scale.svg) no-repeat center;
+  background-size: 100% auto;
+  width: 24px;
+  min-width: 24px;
+  height: 24px;
+  display: block;
+}
+
+.arcticons_metro-moscow {
+  background: url(../images/arcticons_metro-moscow.svg) no-repeat center;
+  background-size: 100% auto;
+  width: 24px;
+  min-width: 24px;
+  height: 24px;
+  display: block;
+}
+
+.fluent_wallet-credit-card-24-regular {
+  background: url(../images/fluent_wallet-credit-card-24-regular.svg) no-repeat center;
+  background-size: 100% auto;
+  width: 24px;
+  min-width: 24px;
+  height: 24px;
+  display: block;
+}
+
+.clarity_license-line {
+  background: url(../images/clarity_license-line.svg) no-repeat center;
+  background-size: 100% auto;
+  width: 24px;
+  min-width: 24px;
+  height: 24px;
+  display: block;
+}
+
+.streamline-ultimate_cash-payment-bills {
+  background: url(../images/streamline-ultimate_cash-payment-bills.svg) no-repeat center;
+  background-size: 100% auto;
+  width: 24px;
+  min-width: 24px;
+  height: 24px;
+  display: block;
+}
+
+.block-reviews__elem {
+  padding: 5px;
+}
+
+.min-w-325 {
+  min-width: 325px;
+}
+
+.text-11 {
+  color: var(--secondary-color);
+  font-family: "Hind Madurai", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 120%;
+  letter-spacing: 0.02em;
+}
+
+.block-reviews {
+  padding: 10px;
+  background: var(--blue-3-color);
+  max-width: 472px;
+  margin-left: 0;
+}
+
+.block-reviews .row {
+  margin: -5px;
+}
+
+.block-reviews__link {
+  background: white;
+  padding: 10px;
+  border-radius: 3px;
+  border: 1px solid var(--turquoise-color);
+  transition: all 0.3s ease;
+  color: var(--dark-green-color);
+  font-family: "Lora", serif;
+  font-size: 16px;
+  line-height: 100%;
+}
+
+.block-reviews__link:hover {
+  box-shadow: 0 0 10px var(--turquoise-color);
+  color: var(--dark-green-color);
+  transition: all 0.3s ease;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.accordion-answer--small {
+  gap: 10px;
+}
+
+.modal-dialog__width {
+  max-width: 1241px;
+}
+
+.ml-20 {
+  margin-left: 20px;
+}
+
+.col-item-1 {
+  max-width: 370px;
+  width: 100%;
+  padding: 10px;
+  box-shadow: 0 0 5px 0 rgba(#000, 10%), 0 0 10px 0 rgba(#000, 10%),
+  0 0 15px 0 rgba(#000, 10%);
+}
+
+.col-item-2 {
+  width: 100%;
+  padding: 10px;
+  box-shadow: 0 0 5px 0 rgba(#000, 10%), 0 0 10px 0 rgba(#000, 10%),
+  0 0 15px 0 rgba(#000, 10%);
+}
+
+.col-item-2__wrapper {
+  border: 1px solid var(--turquoise-color);
+  border-radius: 5px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 767.98px) {
+  .link-right-img-1 {
+    max-width: 60px;
+    height: 59px;
+  }
+}
