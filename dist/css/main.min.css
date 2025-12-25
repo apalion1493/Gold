@@ -16798,8 +16798,17 @@ p.calculator__estimation-price-text.text-3 {
   display: block;
 }
 
+.logo-1 {
+  background: url(../images/main-logo.svg) no-repeat center;
+  background-size: 100% auto;
+  width: 171px;
+  height: 40px;
+  display: block;
+}
+
 .block-reviews__elem {
   padding: 5px;
+  height: 64px;
 }
 
 .min-w-325 {
@@ -16813,6 +16822,25 @@ p.calculator__estimation-price-text.text-3 {
   font-weight: 400;
   line-height: 120%;
   letter-spacing: 0.02em;
+}
+
+.text-12 {
+  color: var(--dark-green-color);
+  font-family: "Lora", serif;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 140%;
+}
+
+.text-13 {
+  color: var(--dark-green-color);
+  font-family: "Lora", serif;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  letter-spacing: 2%;
+  text-transform: uppercase;
 }
 
 .block-reviews {
@@ -16836,6 +16864,7 @@ p.calculator__estimation-price-text.text-3 {
   font-family: "Lora", serif;
   font-size: 16px;
   line-height: 100%;
+  height: 100%;
 }
 
 .block-reviews__link:hover {
@@ -16879,10 +16908,65 @@ p.calculator__estimation-price-text.text-3 {
   flex-direction: column;
 }
 
+.review-rating-block--ya {
+  display: flex;
+  width: 100%;
+}
+
+.review-rating-block--ya .review-rating-block__wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.review-rating-block__wrapper--ya {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.review-rating-block__wrapper--ya .review-banner__row {
+  align-items: center;
+}
+
+.ya-icon {
+  background: url(../images/ya-icon.svg) no-repeat center;
+  -webkit-background-size: 60px 60px;
+  background-size: 60px 60px;
+  display: block;
+  width: 60px;
+  height: 60px;
+  min-width: 60px;
+}
+
 @media (max-width: 767.98px) {
   .link-right-img-1 {
     max-width: 60px;
     height: 59px;
+  }
+  .col-item-1 {
+    max-width: 100%;
+  }
+  .block-reviews {
+    max-width: 100%;
+  }
+  .review-rating-block--ya .review-rating-block__subtitle {
+    margin-bottom: 8px;
+  }
+  .review-rating-block--ya .review-banner__body {
+    margin-top: 0px;
+  }
+  .review-rating-block__wrapper--ya .review-banner__row {
+    margin-bottom: 8px !important;
+  }
+  .review-rating-block--ya .review-rating-block__wrapper {
+    align-items: center;
+  }
+  .review-banner__rating-num {
+    font-size: 18px;
+  }
+  .review-banner__rating {
+    padding: 3px 5px 0;
   }
 }
 /*# sourceMappingURL=main.min.css.map */
