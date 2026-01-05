@@ -47,9 +47,13 @@ const scss = (isBuild) => {
 					],
 					safelist: {
 						standard: [
-							/^(container(-fluid)?|row|col-(sm|md|lg|xl)?-\d+|col|offset-\d+)$/, // Bootstrap grid
+							/^(container(-fluid)?|row|col-(sm|md|lg|xl|xxl)?-\d+|col|offset-\d+)$/, // Bootstrap grid
 							/^(show|collapse|collapsing|modal|fade|active|open)$/,
 							/^(dropdown|dropdown-menu|dropdown-item|show)$/,
+							/^(nav|navbar|nav-link|nav-item|navbar-brand|navbar-toggler|navbar-nav|navbar-collapse)/, // Bootstrap nav
+							/^(btn|btn-.*|badge|badge-.*)$/, // Bootstrap buttons/badges
+							/^(card|card-.*)$/, // Bootstrap cards
+							/^(form-.*|input-.*|custom-.*)$/, // Bootstrap forms
 							/^swiper(-|__|\b).*/, // Swiper classes
 							/^splide(.*)/, // Splide classes
 							/^aos(-|\b).*/, // AOS classes
