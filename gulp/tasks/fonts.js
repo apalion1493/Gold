@@ -32,7 +32,7 @@ const fontWeights = {
 const fontFaceTemplate = (name, file, weight, style) => `@font-face {
 	font-family: ${name};
 	font-display: swap;
-	src: url("../fonts/${file}.ttf") format("ttf");
+	src: url("../fonts/${file}.woff2") format("woff2");
 	font-weight: ${weight};
 	font-style: ${style};
 }\n`;
@@ -54,13 +54,6 @@ const otfToTtf = (done) => {
 };
 
 const ttfToWoff = () => {
-  if (fs.existsSync(fontFacesFile)) {
-    return gulp
-      .src(`${filePaths.src.fonts}/*.woff2`, {})
-      .pipe(logger.handleError('FONTS [ttfToWoff]'))
-      .pipe(gulp.dest(filePaths.build.fonts));
-  }
-
   /** Поиск шрифтов [.ttf] и конвертация в [.woff2] */
   return (
     gulp
@@ -104,8 +97,8 @@ const fontStyle = async () => {
 
       if (newFileOnly !== fileName) {
         const [name, weight = 'regular'] = fileName.split('-');
-        const weightString =
-          fontWeights[weight.replace(cleanSeparator, '').toLowerCase()];
+        const weightKey = weight.replace(cleanSeparator, '').toLowerCase() || 'regular';
+        const weightString = fontWeights[weightKey];
         const fontStyle = italicRegex.test(fileName) ? 'italic' : 'normal';
 
         await fs.promises.appendFile(

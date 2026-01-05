@@ -1,29 +1,91 @@
 @font-face {
-  font-family: 'Lora';
-  font-display: swap;
-  src: url('../fonts/Lora-Bold.ttf') format('ttf');
-  font-weight: 700;
-  font-style: normal;
+	font-family: HindMadurai;
+	font-display: swap;
+	src: url("../fonts/HindMadurai-Bold.woff2") format("woff2");
+	font-weight: 700;
+	font-style: normal;
 }
 @font-face {
-  font-family: 'Lora';
-  font-display: swap;
-  src: url('../fonts/Lora-Regular.ttf') format('ttf');
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Hind Madurai';
-  font-display: swap;
-  src: url('../fonts/HindMadurai-Bold.ttf') format('ttf');
-  font-weight: 700;
-  font-style: normal;
+	font-family: HindMadurai;
+	font-display: swap;
+	src: url("../fonts/HindMadurai-Light.woff2") format("woff2");
+	font-weight: 300;
+	font-style: normal;
 }
 @font-face {
-  font-family: 'Hind Madurai';
-  font-display: swap;
-  src: url('../fonts/HindMadurai-Regular.ttf') format('ttf');
-  font-weight: 400;
-  font-style: normal;
+	font-family: HindMadurai;
+	font-display: swap;
+	src: url("../fonts/HindMadurai-Medium.woff2") format("woff2");
+	font-weight: 500;
+	font-style: normal;
+}
+@font-face {
+	font-family: HindMadurai;
+	font-display: swap;
+	src: url("../fonts/HindMadurai-Regular.woff2") format("woff2");
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: HindMadurai;
+	font-display: swap;
+	src: url("../fonts/HindMadurai-SemiBold.woff2") format("woff2");
+	font-weight: 600;
+	font-style: normal;
+}
+@font-face {
+	font-family: Lora;
+	font-display: swap;
+	src: url("../fonts/Lora-Bold.woff2") format("woff2");
+	font-weight: 700;
+	font-style: normal;
+}
+@font-face {
+	font-family: Lora;
+	font-display: swap;
+	src: url("../fonts/Lora-BoldItalic.woff2") format("woff2");
+	font-weight: 700;
+	font-style: italic;
+}
+@font-face {
+	font-family: Lora;
+	font-display: swap;
+	src: url("../fonts/Lora-Italic.woff2") format("woff2");
+	font-weight: 400;
+	font-style: italic;
+}
+@font-face {
+	font-family: Lora;
+	font-display: swap;
+	src: url("../fonts/Lora-Medium.woff2") format("woff2");
+	font-weight: 500;
+	font-style: normal;
+}
+@font-face {
+	font-family: Lora;
+	font-display: swap;
+	src: url("../fonts/Lora-MediumItalic.woff2") format("woff2");
+	font-weight: 500;
+	font-style: italic;
+}
+@font-face {
+	font-family: Lora;
+	font-display: swap;
+	src: url("../fonts/Lora-Regular.woff2") format("woff2");
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: Lora;
+	font-display: swap;
+	src: url("../fonts/Lora-SemiBold.woff2") format("woff2");
+	font-weight: 600;
+	font-style: normal;
+}
+@font-face {
+	font-family: Lora;
+	font-display: swap;
+	src: url("../fonts/Lora-SemiBoldItalic.woff2") format("woff2");
+	font-weight: 600;
+	font-style: italic;
 }
